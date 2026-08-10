@@ -1,0 +1,12 @@
+.PageNotFoundContainer{
+    padding-top: 8rem;
+    background: linear-gradient(90deg, #d1f0f8, #e5d9ff);
+}
+.notfoundheading{
+  background: linear-gradient(13deg, #4d98d1, #8b70fd, #031f38);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+ 

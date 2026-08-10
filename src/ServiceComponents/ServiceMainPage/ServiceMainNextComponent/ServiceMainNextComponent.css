@@ -1,0 +1,15 @@
+.counterItem{
+    font-size: 20px;
+    color:#111827;
+    font-weight: 700;
+}
+.service_countnum{
+    color: #6d4df2;
+    font-size: 60px;
+    font-weight: 900;
+}
+.service_countnumspan{
+    color: #4b5563;
+    font-size: 20px;
+    font-weight: 500;
+}

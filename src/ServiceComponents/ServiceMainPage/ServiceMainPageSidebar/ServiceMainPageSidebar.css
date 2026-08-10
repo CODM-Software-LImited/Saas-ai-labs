@@ -1,0 +1,34 @@
+.ServiceMainPageBtn{
+    color: #111827;
+    background-color: #f3f4f6;
+    border-color: #e5e7eb;
+    font-weight: 600;
+    font-size: 20px;
+    /* padding: 19px 0 19px 43px; */
+    padding-left: 2rem;
+
+}
+.ServiceMainPageBtn:hover{
+    background-color: #6d4df2;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.ServiceMainPageBtn.active {
+  background-color: #6d4df2;
+  color: white !important;
+}
+
+/* 
+.zoom-img {
+  transform: translateZ(0);
+  overflow: hidden;
+}
+.zoom-img img {
+  display: block;
+  transition: transform 0.35s ease-in-out;
+}
+.zoom-img:hover img {
+  transform: scale(1.05);
+} */
+
+

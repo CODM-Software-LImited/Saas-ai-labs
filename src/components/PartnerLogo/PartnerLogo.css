@@ -1,0 +1,41 @@
+.section-logo-cloud {
+  padding: 5rem 0rem;
+}
+
+.logo-fade {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.logo-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  align-items: center;
+  animation: scroll 15s linear infinite;
+}
+.logo-item img {
+  height: auto;      
+  max-height: 4rem; 
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.w-90{
+  width: 15rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}

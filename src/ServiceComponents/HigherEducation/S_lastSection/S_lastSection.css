@@ -1,0 +1,85 @@
+.S_lastSectionConatiner{
+    background-color: #fff7ee;
+}
+
+.S_lastSectionDiv h5{
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.S_lastSectionDiv span{
+    font-size: 20px;
+    font-weight: 500;
+    color: #111827;
+    line-height: 1.2rem;
+}
+.S_lastSectionFormSection{
+    margin-top: 4rem;
+}
+.S_lastSectionForm h4{
+    font-size: 31px;
+    font-weight: 700;
+    color: #111827;
+}
+
+
+.custom-input-group {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.input-group {
+    width: 100%;
+}
+
+.icon-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12px;
+  color: #555;
+}
+
+.form-control {
+  height: auto;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+.S_lastSectionContactInfoContainer{
+  padding-left: 3rem;
+}
+.S_lastSectionContactInfo h6{
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;  
+}
+
+.S_lastSectionContactInfo .ContactInfoImg a{
+  font-size: 14px;
+}
+
+@media (max-width:567px) {
+  .S_lastSectionFormSection{
+    width: 80%;
+  }
+  .sendBtn{
+    margin-left:2rem;
+  }
+  
+.S_lastSectionDiv h5{
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+}

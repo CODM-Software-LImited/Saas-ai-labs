@@ -1,0 +1,167 @@
+
+.section-newsletter {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #d5f3f0 0%, #eae5f9 50%, #ffffff 100%);
+  margin-top: 3rem;
+  /* padding: 100px 0; */
+}
+
+.section-newsletter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+.carouse_expertise {
+  position: relative;
+  overflow: hidden;
+  height: 15rem;
+}
+
+.carousel_item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  /* animation: fade 44s infinite; */
+  animation: fade 72s infinite;
+  width: 10rem;
+}
+
+.carousel_item img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel_item h6 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Animation timing */
+.carousel_item:nth-child(1)  { animation-delay: 0s;  }
+.carousel_item:nth-child(2)  { animation-delay: 6s;  }
+.carousel_item:nth-child(3)  { animation-delay: 12s; }
+.carousel_item:nth-child(4)  { animation-delay: 18s; }
+.carousel_item:nth-child(5)  { animation-delay: 24s; }
+.carousel_item:nth-child(6)  { animation-delay: 30s; }
+.carousel_item:nth-child(7)  { animation-delay: 36s; }
+.carousel_item:nth-child(8)  { animation-delay: 42s; }
+.carousel_item:nth-child(9)  { animation-delay: 48s; }
+.carousel_item:nth-child(10) { animation-delay: 54s; }
+.carousel_item:nth-child(11) { animation-delay: 60s; }
+.carousel_item:nth-child(12) { animation-delay: 66s; }
+
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  3%   { opacity: 1; }
+  8%   { opacity: 1; }
+  11%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.learnMore_btn {
+  background-color: #6d4df2;
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 28px;
+  transition: 0.3s ease;
+}
+
+.learnMore_btn:hover {
+  background-color: #5a3ee0;
+  color: #fff;
+}
+
+
+.getInput form {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 6px;
+  width: 80%;
+  max-width: 420px;
+}
+
+.inputEmailBtn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 14px 18px;
+  font-size: 15px;
+  border-radius: 50px;
+  min-width: 0;
+}
+
+.joinBtn {
+  border: none;
+  background: #6f4ff3;
+  padding: 12px 22px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.joinBtn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+
+  .section-newsletter .row {
+    text-align: center;
+  }
+
+  .getInput form {
+    margin: 0 auto;
+  }
+
+  .NewsletterUpdatedBtn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .carousel_item {
+    width: 8rem;
+  }
+
+  .carousel_item h6 {
+    font-size: 0.9rem;
+  }
+
+  .joinBtn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .inputEmailBtn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

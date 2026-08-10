@@ -1,0 +1,610 @@
+.smartPortal{
+    padding-top: 10rem;
+    height: 100vh;
+    background-color: burlywood;
+}
+
+/*  */
+
+/* =====================================================
+   LOGIN PORTAL - REFACTORED CSS
+   ===================================================== */
+/* =====================================================
+   MAIN CONTAINER
+   ===================================================== */
+.smartPortal-portal-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-top: 4rem;
+}
+
+.smartPortal-portal-left {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef1f8;
+  padding: 2rem 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.smartPortal-login-container {
+  width: 100%;
+  max-width: 370px;
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER */
+.smartPortal-login-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1a3c8b;
+  text-align: center;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+  padding: 0;
+}
+
+.smartPortal-login-title-accent {
+  color: #7a3cff;
+}
+
+.smartPortal-login-subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: center;
+  margin: 4px 0 6px 0;
+  padding: 0;
+}
+
+.smartPortal-login-description {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  margin: 0 0 26px 0;
+  padding: 0;
+}
+
+/* =====================================================
+   FORM GROUPS & INPUTS
+   ===================================================== */
+.smartPortal-form-group {
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.smartPortal-form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+  padding: 0;
+}
+
+.smartPortal-input-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.smartPortal-input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.smartPortal-input-icon svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.smartPortal-form-input {
+  width: 100%;
+  padding: 13px 44px;
+  border: 1.5px solid #e0e4ef;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #374151;
+  outline: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.smartPortal-form-input::placeholder {
+  color: #b0b7c3;
+}
+
+.smartPortal-form-input:focus {
+  border-color: #7a3cff;
+  box-shadow: 0 0 0 3px rgba(122, 60, 255, 0.1);
+}
+
+.smartPortal-form-input:disabled {
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.smartPortal-password-toggle {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.smartPortal-password-toggle:hover {
+  background: rgba(122, 60, 255, 0.1);
+}
+
+.smartPortal-password-toggle:focus {
+  outline: 2px solid #7a3cff;
+  outline-offset: 2px;
+}
+
+.smartPortal-password-toggle svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* =====================================================
+   FORM OPTIONS
+   ===================================================== */
+.smartPortal-form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin: 10px 0 20px 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.smartPortal-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #374151;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.smartPortal-checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  accent-color: #7a3cff;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.smartPortal-forgot-password-link {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.smartPortal-forgot-password-link:hover {
+  text-decoration: underline;
+  color: #4338ca;
+}
+
+.smartPortal-forgot-password-link:focus {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+/* =====================================================
+   MICROSOFT LOGIN SECTION
+   ===================================================== */
+.smartPortal-ms-login-section {
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.smartPortal-ms-login-btn {
+  width: 100%;
+  padding: 13px 18px;
+  /* background: linear-gradient(90deg, #2563eb, #7a3cff); */
+  /* color: #ffffff; */
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  margin: 0;
+}
+
+.smartPortal-ms-login-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
+}
+
+.smartPortal-ms-login-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.smartPortal-ms-login-btn:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.smartPortal-ms-login-btn:disabled {
+  background: #c7c9d1;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+/* =====================================================
+   LOGIN BUTTON
+   ===================================================== */
+.smartPortal-login-button {
+  width: 100%;
+  background: linear-gradient(90deg, #7a3cff, #4f46e5);
+  border: none;
+  color: #ffffff;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  margin: 0;
+}
+
+.smartPortal-login-button:hover:not(:disabled) {
+  opacity: 0.92;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(122, 60, 255, 0.3);
+}
+
+.smartPortal-login-button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(122, 60, 255, 0.2);
+}
+
+.smartPortal-login-button:focus {
+  outline: 2px solid #7a3cff;
+  outline-offset: 2px;
+}
+
+.smartPortal-login-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.smartPortal-button-badge {
+  width: 22px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.smartPortal-button-badge svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+/* =====================================================
+   SIGN UP SECTION
+   ===================================================== */
+.smartPortal-signup-prompt {
+  text-align: center;
+  margin: 18px 0 0 0;
+  padding: 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.smartPortal-signup-link {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.smartPortal-signup-link:hover {
+  text-decoration: underline;
+  color: #4338ca;
+}
+
+.smartPortal-signup-link:focus {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+/* =====================================================
+   RIGHT PANEL — FEATURES & BRANDING
+   ===================================================== */
+.smartPortal-portal-right {
+  width: 52%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url('/resource/BackgroundImg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 2rem 20px;
+  box-sizing: border-box;
+}
+
+/* Dark + Blue Tint Overlay */
+.smartPortal-portal-right::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(10, 30, 100, 0.72) 0%,
+    rgba(80, 20, 160, 0.65) 100%);
+  z-index: 0;
+}
+
+/* =====================================================
+   FEATURE CARD (GLASSMORPHISM)
+   ===================================================== */
+.smartPortal-feature-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 20px;
+  padding: 38px 40px 40px 40px;
+  max-width: 420px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+  margin: 0;
+}
+
+/* CARD TITLE */
+.smartPortal-feature-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.smartPortal-feature-title-accent {
+  color: #a78bfa;
+}
+
+/* CARD DESCRIPTION */
+.smartPortal-feature-description {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.80);
+  margin: 0 0 18px 0;
+  padding: 0;
+  line-height: 1.55;
+}
+
+/* GRADIENT DIVIDER */
+.smartPortal-feature-divider {
+  height: 2px;
+  background: linear-gradient(90deg, #4f8ef7, #a855f7);
+  border-radius: 2px;
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
+/* =====================================================
+   FEATURE LIST
+   ===================================================== */
+.smartPortal-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.smartPortal-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/* FEATURE ICON BADGE */
+.smartPortal-feature-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.smartPortal-feature-icon svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* FEATURE TEXT */
+.smartPortal-feature-text {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.smartPortal-feature-text strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+@media (max-width: 1024px) {
+  .smartPortal-portal-left,
+  .smartPortal-portal-right {
+    width: 50%;
+    padding: 1.5rem 15px;
+  }
+
+  .smartPortal-login-container {
+    max-width: 330px;
+  }
+
+  .smartPortal-login-title {
+    font-size: 32px;
+  }
+
+  .smartPortal-feature-card {
+    padding: 30px 32px 32px 32px;
+    max-width: 380px;
+  }
+
+  .smartPortal-feature-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .smartPortal-portal-container {
+    flex-direction: column;
+  }
+
+  .smartPortal-portal-left,
+  .smartPortal-portal-right {
+    width: 100%;
+    min-height: auto;
+    padding: 2rem 20px;
+  }
+
+  .smartPortal-login-container {
+    max-width: 370px;
+  }
+
+  .smartPortal-login-title {
+    font-size: 28px;
+  }
+
+  .smartPortal-form-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .smartPortal-feature-card {
+    max-width: 100%;
+    padding: 30px 24px;
+  }
+
+  .smartPortal-feature-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .smartPortal-portal-left,
+  .smartPortal-portal-right {
+    padding: 1rem 16px;
+  }
+
+  .smartPortal-login-container {
+    max-width: 100%;
+  }
+
+  .smartPortal-login-title {
+    font-size: 24px;
+  }
+
+  .smartPortal-login-subtitle {
+    font-size: 18px;
+  }
+
+  .smartPortal-feature-card {
+    padding: 24px 20px;
+  }
+
+  .smartPortal-feature-title {
+    font-size: 20px;
+  }
+
+  .smartPortal-feature-description {
+    font-size: 14px;
+  }
+
+  .smartPortal-form-group {
+    margin-bottom: 14px;
+  }
+
+  .smartPortal-feature-item {
+    gap: 12px;
+  }
+}

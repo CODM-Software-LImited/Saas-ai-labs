@@ -1,0 +1,251 @@
+  .heroContainer{
+      display: flex;
+      font-family: 'Satoshi', sans-serif;
+  }
+  .hero-Section{
+    padding-top: 4rem;
+  }
+
+  .hero-img {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {  
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); } 
+    100% { transform: translateY(0px); }
+  }
+
+  .explorebtn{
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 12px;
+    padding:1.2rem 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: .1rem solid gray;
+    background-color: #7050f4;
+    color: white;
+    border: none;
+  }
+  .explorebtn:hover{
+         background-color: #5d3edb;
+         border: none;
+  }
+  .agentBtn{
+    background-color: #f5eeff;
+  }
+
+.shape-2 {
+      top: 40px;
+      right: 35px;
+}
+
+
+  body.dark-mode .agentBtn{
+    background-color: #271c52;
+    color: white;
+  }
+
+  body.dark-mode .hero-Section h1{
+    color: white;
+  }
+  body.dark-mode .hero-Section p{
+    color:  #8e8a82;
+  }
+
+
+  /* small phone */
+  @media (max-width: 576px) {
+    .heroContainer{
+      flex-direction: column;
+      padding: 1rem;
+      
+    }
+    .hero-Section {
+    padding-top: 4rem;
+    }
+    .robot_Container{
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    .robot_Container {
+      height: 300px !important;
+      margin-top: 2rem;
+    }
+    .hero-img {
+      max-width: 280px !important;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-Section{
+      text-align: center;
+    }
+    
+  }
+
+  /* medium phone */
+  @media (max-width:395px){
+  .explorebtn{
+    font-weight: 500;
+    font-size: .8rem;
+    border-radius: 12px;
+    padding: 0.8rem 1.4rem;
+  }
+  }
+
+
+  /* right side hero section */
+
+.animatedPills5 ,.animatedPills1 ,.animatedPills2,.animatedPills3 ,.animatedPills4 ,.animatedPills6{
+  animation: pulseFloat 4.5s ease-in-out infinite;
+}
+
+@keyframes pulseFloat {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-25px) scale(1.08);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+.rightsidePillSection{
+    width:100%;
+    /* background-color: blue; */
+}
+
+.animatedPillsContainer{
+    position: relative;
+}
+.animatedPills1{
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+}
+.animatedPills2{
+    position: absolute;
+    top: 18rem;
+    left: 7rem;
+}
+.animatedPills3{
+    position: absolute;
+    top: 1rem;
+    right: 8rem;
+}
+.animatedPills4{
+    position: absolute;
+    top: 10rem;
+    right: 4rem;
+}
+.animatedPills5{
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+    /* right: 30rem; */
+}
+.animatedPills6{
+    position: absolute;
+    top: 18rem;
+    right: 12rem;
+}
+
+@media (max-width:1000px){
+    .animatedPills5 {
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+    }
+    .animatedPills6{
+     position: absolute;
+    top: 18rem;
+    right: 7rem;
+    }
+    .animatedPills2{
+    position: absolute;
+    top: 18rem;
+    left: 1rem;
+    }
+    .animatedPills3{
+    position: absolute;
+    top: 1rem;
+    right: 7rem;
+    }
+    .animatedPills1 {
+    position: absolute;
+    top: 11rem;
+    left: -19px;
+    }
+     .animatedPills4 {
+    position: absolute;
+    top: 10rem ;
+    right: 1rem;
+    }
+
+
+}
+
+@media (max-width:576px){
+    .animatedPills5 {
+        top: 1rem;
+        right: 22rem;
+    }
+    .animatedPills2{
+    top: 18rem;
+    left: 1rem;
+    }
+    .animatedPills1{
+    position: absolute;
+    top: 10rem;
+    left: 0rem;
+    }
+    .animatedPills4{
+    position: absolute;
+    top: 10rem;
+    right:2rem;
+}}
+
+@media (max-width:360px){
+    .animatedPills5 {
+        top: 1rem;
+        right: 19rem;
+    }
+  }
+@media (max-width:320px){
+    .animatedPills5 {
+        top: 1rem;
+        right: 16rem;
+    }
+    .animatedPills1{
+    position: absolute;
+    top: 10rem;
+    left: 0rem;
+    } 
+    .animatedPills4{
+    position: absolute;
+    top: 10rem;
+    right:2rem;
+}
+}
+
+@media (min-width:580px) {
+      .animatedPills4 {
+        position: absolute;
+        top: 10rem;
+        right: 4rem;
+    }
+        .animatedPills6 {
+        position: absolute;
+        top: 18rem;
+        right: 8rem;
+      }
+      .salesforceLogo{
+        display: block;
+      }
+  
+}

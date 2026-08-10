@@ -1,0 +1,523 @@
+/* ============================================
+   MAIN SIDEBAR CONTAINER
+   ============================================ */
+.smartPortal-sidebar {
+  width: 240px;
+  min-width: 240px;
+  background: linear-gradient(135deg, #5b21b6 0%, #7c3aed 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: sticky;
+  top: 0;
+  scrollbar-width: none;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), min-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+/* Hide scrollbar */
+.smartPortal-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Collapsed State */
+.smartPortal-sidebar.smartPortal-sidebar-collapsed {
+  width: 70px;
+  min-width: 70px;
+}
+
+/* ============================================
+   SIDEBAR HEADER
+   ============================================ */
+.smartPortal-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.smartPortal-logo-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+}
+
+.smartPortal-logo-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  transition: opacity 0.3s ease;
+}
+
+.smartPortal-logo-short {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  animation: logoFadeIn 0.3s ease;
+}
+
+@keyframes logoFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Toggle Button */
+.smartPortal-toggle-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.smartPortal-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.smartPortal-toggle-btn:active {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(0.95);
+}
+
+.toggle-icon {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toggle-icon.rotated {
+  transform: rotate(180deg);
+}
+
+/* ============================================
+   NAVIGATION CONTAINER
+   ============================================ */
+.smartPortal-sidebar-nav {
+  padding: 10px 0 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.smartPortal-sidebar-nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================================
+   SECTION STYLING
+   ============================================ */
+.smartPortal-nav-section {
+  transition: all 0.3s ease;
+}
+
+.smartPortal-nav-section-label {
+  display: block;
+  padding: 14px 12px 8px;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ============================================
+   NAVIGATION ITEMS
+   ============================================ */
+.smartPortal-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 18px 10px 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 2px 8px;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.smartPortal-sidebar.smartPortal-sidebar-collapsed .smartPortal-nav-item {
+  padding: 12px 0;
+  justify-content: center;
+  gap: 0;
+  margin: 4px 0;
+  border-radius: 0;
+}
+
+.smartPortal-nav-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.smartPortal-nav-item.smartPortal-active {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.smartPortal-nav-item.smartPortal-active:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Navigation Indicator (Left Border) */
+.smartPortal-nav-indicator {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.smartPortal-nav-item.smartPortal-active .smartPortal-nav-indicator {
+  background: #ddd6fe;
+  top: 4px;
+  bottom: 4px;
+  border-radius: 0 4px 4px 0;
+}
+
+.smartPortal-sidebar.smartPortal-sidebar-collapsed .smartPortal-nav-indicator {
+  display: none;
+}
+
+/* ============================================
+   ICON WRAPPER
+   ============================================ */
+.smartPortal-nav-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  width: 18px;
+  height: 18px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.smartPortal-nav-item:hover .smartPortal-nav-icon-wrapper {
+  transform: scale(1.1);
+}
+
+.smartPortal-nav-icon {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease;
+}
+
+.smartPortal-nav-item:hover .smartPortal-nav-icon {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.smartPortal-nav-item.smartPortal-active .smartPortal-nav-icon {
+  color: #ddd6fe;
+}
+
+/* ============================================
+   LABEL
+   ============================================ */
+.smartPortal-nav-label {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity 0.3s ease;
+}
+
+.smartPortal-sidebar.smartPortal-sidebar-collapsed .smartPortal-nav-label {
+  display: none;
+}
+
+/* ============================================
+   MOBILE MENU BUTTON
+   ============================================ */
+.smartPortal-mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  padding: 16px;
+}
+
+.smartPortal-mobile-toggle {
+  background: #5b21b6;
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.smartPortal-mobile-toggle:hover {
+  background: #7c3aed;
+}
+
+.smartPortal-mobile-toggle:active {
+  transform: scale(0.95);
+}
+
+/* Mobile Overlay */
+.smartPortal-mobile-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   TABLET BREAKPOINT (1024px and below)
+   ============================================ */
+@media (max-width: 1024px) {
+  .smartPortal-sidebar {
+    width: 200px;
+    min-width: 200px;
+  }
+
+  .smartPortal-sidebar.smartPortal-sidebar-collapsed {
+    width: 70px;
+    min-width: 70px;
+  }
+
+  .smartPortal-nav-section-label {
+    font-size: 9px;
+  }
+
+  .smartPortal-nav-item {
+    font-size: 12px;
+    gap: 9px;
+    padding: 9px 16px 9px 18px;
+  }
+}
+
+/* ============================================
+   MOBILE BREAKPOINT (768px and below)
+   ============================================ */
+@media (max-width: 768px) {
+  .smartPortal-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 240px;
+    min-width: 240px;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 99;
+  }
+
+  .smartPortal-sidebar.smartPortal-sidebar-mobile-open {
+    transform: translateX(0);
+  }
+
+  .smartPortal-sidebar.smartPortal-sidebar-collapsed {
+    transform: translateX(-100%);
+    width: 240px;
+    min-width: 240px;
+  }
+
+  .smartPortal-mobile-menu-btn {
+    display: flex;
+  }
+
+  .smartPortal-mobile-overlay {
+    display: block;
+  }
+
+  .smartPortal-toggle-btn {
+    display: none;
+  }
+
+  .smartPortal-nav-item {
+    font-size: 13px;
+    padding: 12px 18px 12px 20px;
+  }
+
+  .smartPortal-nav-section-label {
+    padding: 14px 20px 8px;
+    font-size: 9.5px;
+  }
+}
+
+/* ============================================
+   SMALL MOBILE (480px and below)
+   ============================================ */
+@media (max-width: 480px) {
+  .smartPortal-mobile-menu-btn {
+    padding: 12px;
+  }
+
+  .smartPortal-mobile-toggle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .smartPortal-nav-item {
+    font-size: 12px;
+    padding: 10px 16px 10px 18px;
+    margin: 1px 4px;
+  }
+
+  .smartPortal-nav-section-label {
+    padding: 12px 16px 6px;
+    font-size: 8px;
+  }
+
+  .smartPortal-sidebar-header {
+    padding: 14px 10px;
+  }
+
+  .smartPortal-logo-text {
+    font-size: 13px;
+  }
+}
+
+/* ============================================
+   ANIMATIONS & TRANSITIONS
+   ============================================ */
+@supports (scroll-behavior: smooth) {
+  .smartPortal-sidebar-nav {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .smartPortal-sidebar,
+  .smartPortal-toggle-btn,
+  .toggle-icon,
+  .smartPortal-nav-item,
+  .smartPortal-nav-icon-wrapper,
+  .smartPortal-sidebar-header,
+  .smartPortal-mobile-overlay {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* .smartPortal-sidebar {
+  width: 240px;
+  min-width: 240px;
+  background: #5b21b6;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  scrollbar-width: none;
+}
+
+.smartPortal-sidebar-nav {
+  padding: 10px 0 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.smartPortal-nav-section-label {
+  padding: 14px 20px 5px;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 9.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.smartPortal-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 18px 10px 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.14s ease, color 0.14s ease;
+}
+
+.smartPortal-nav-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.smartPortal-nav-item.smartPortal-active {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-weight: 600;
+}
+
+.smartPortal-nav-indicator {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: transparent;
+}
+
+.smartPortal-nav-item.smartPortal-active .smartPortal-nav-indicator {
+  background: #ddd6fe;
+}
+
+.smartPortal-nav-icon {
+  color: white;
+}
+
+.smartPortal-nav-label {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+

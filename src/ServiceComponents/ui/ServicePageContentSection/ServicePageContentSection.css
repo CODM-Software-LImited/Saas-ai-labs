@@ -1,0 +1,33 @@
+.phase_itemContainer ul li{
+    width: 67%;
+}
+
+/*  for line after img*/
+.customLine {
+  position: absolute;
+  left: 50%;                    
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  margin-top: .2rem;
+  height: 0.2rem;
+  background: #6d4df2;
+  border-radius: 2px;
+}
+
+.S_secondLineImg {
+  position: relative;       
+  display: inline-block;   
+  background: #f5eeff;
+  border-radius: 6%;
+  padding: .5rem;
+}
+
+.S_secondLineImg img {
+  display: block;               
+  height: auto;
+}
+
+.S_secondLineImg:hover img{
+transition: all 0.3s ease-in-out;
+transform: scaleX(-1);
+}

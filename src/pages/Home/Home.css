@@ -1,0 +1,12 @@
+body.dark-mode .homepageFirstContainer{
+    background-color: #151515;
+}
+
+
+/* responsive */
+
+@media (max-width:800px){
+    *{
+        padding: .1rem;
+    }
+}

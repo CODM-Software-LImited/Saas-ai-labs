@@ -1,0 +1,25 @@
+.salesforcePartnerImg{
+    padding: 0%;
+    margin: 0%;
+    position: fixed;
+    bottom: 14%;
+    right: -119px;
+    z-index: 99;
+}
+.salesforcePartnerImg img{
+    width: 40%;
+}
+
+@media (max-width:567px){
+.salesforcePartnerImg img{
+    width: 30%;
+}
+.salesforcePartnerImg{
+    padding: 0%;
+    margin: 0%;
+    position: fixed;   
+    bottom: 17%;
+    right: -147px;
+}
+
+}

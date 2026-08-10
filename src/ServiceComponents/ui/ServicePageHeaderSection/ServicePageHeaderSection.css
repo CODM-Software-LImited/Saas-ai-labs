@@ -1,0 +1,14 @@
+.ServicePageHeaderSection_Container_Container{
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+    background: linear-gradient(90deg, #d1f0f8, #e5d9ff); 
+    background-color: #d1f0f8;
+}
+
+.ServicePageHeaderSection_Container h3{
+    font-size: 48px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}

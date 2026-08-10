@@ -1,0 +1,36 @@
+:root {
+  --pill-height: 44px;
+  --pill-padding: 22px;
+  --pill-font-size: 16px;
+  --pill-speed: 5s;
+  --pill-bg: linear-gradient(135deg, #4d98d1,#8b70fd, #031f38);
+  --pill-text-color: #fff;
+}
+.pill {
+  height: var(--pill-height);
+  padding: 0 var(--pill-padding);
+  background: var(--pill-bg);
+  color: var(--pill-text-color);
+  font-weight: 600;
+  font-size: var(--pill-font-size);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  box-shadow: 0 6px 16px rgba(0,0,0,.35);
+  cursor: default;
+}
+
+.pill:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+:root {
+    --pill-height: 30px;
+    --pill-padding: 14px;
+    --pill-font-size: 12px;
+    --pill-speed: 4s;
+  }
+}

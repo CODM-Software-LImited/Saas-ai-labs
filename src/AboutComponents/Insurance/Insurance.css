@@ -1,0 +1,102 @@
+.bgpolicy{
+    background: rgb(163,140,255);
+    color: white;
+}
+
+.policiesHeading ,.expertiseHeading{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.expertise{
+     background-color: rgb(243,244,246);
+}
+
+
+@media (max-width: 576px) {
+    .insuranceHeading{
+    font-size: 35px;
+    padding-top: 1rem;
+}
+.policiesHeading{
+  font-size: 35px;
+}
+}
+
+.expertise-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+@media (max-width:400px){
+.expertise-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+}
+
+.expertise-item {
+  background: rgb(163,140,255);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;  
+}
+
+
+.expertise-item::before {
+  content: "✓";
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.expertise-item:hover {
+   transform: scale(1.1); 
+}
+
+
+/*=============================  cards css ===============================*/
+
+.startContainer{
+ background-color: rgb(243,244,246);
+}
+
+.stats-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+}
+.stat-card {
+    background-color: rgb(232, 232, 234);
+    /* background: linear-gradient(135deg, #667eea, #764ba2); */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    margin: 1.2rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-number {
+    font-size: 3rem;
+    /* color: white; */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+ .stat-label {
+     /* color: rgba(255, 255, 255, 0.9); */
+     font-size: 1.1rem;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+ }
+ 

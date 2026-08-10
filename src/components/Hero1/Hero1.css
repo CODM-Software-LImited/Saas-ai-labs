@@ -1,0 +1,72 @@
+
+
+/* .hero2_featureSection{
+  width: 96%;
+  margin-top: 0;
+}
+
+.feature-section {
+  padding: 6rem 0;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.feature-title {
+  font-size: 2.9rem;
+  line-height: 1.2;
+}
+.star-lg {
+  top: 10%;
+  left: 60%;
+  width: 60px;
+}
+.star-md {
+  bottom: -10%;
+  left: 50%;
+  width: 35px;
+}
+/* ---------- Responsive image group ---------- */
+
+
+@media (max-width:578px) {
+  .hero2_featureSection{
+    margin: 0;
+    text-align: center;
+  }
+  .hero2_featureSection{
+     padding:0;
+  }
+
+  .bg-ellipse{
+    display: none;
+  }
+  .IndustriesBtn{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+}
+
+@media (max-width:800px){
+
+.right_container {
+    flex-direction: column;
+}
+
+ .bg-ellipse {
+    display: none;
+
+  }
+
+  .star-lg {
+    top: 5%;
+    left: 70%;
+  }
+
+  .star-md {
+    bottom: -5%;
+    left: 60%;
+  }
+}
+
+ */

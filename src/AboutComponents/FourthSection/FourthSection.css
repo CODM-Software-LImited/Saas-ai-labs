@@ -1,0 +1,87 @@
+.fourthSection_Header h3{
+    font-size: 64px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.CertificatesCards_Img{
+    transition: transform 0.35s ease-in-out;
+}
+.zoom-img {
+  transform: translateZ(0);
+}
+.zoom-img img {
+  display: block;
+  transition: transform 0.35s ease-in-out;
+}
+.zoom-img:hover img {
+  transform: scale(1.05);
+}
+
+.FourthSection_terms{
+    margin-top: 6rem;
+}
+.FourthSection_termsContent h6{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.FourthSection_termsContent a{
+    background: hsla(0, 0%, 100%, 0.8);
+    color: black;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: inset 1px 2px 0 0 hsla(0, 0%, 100%, 0.6), -12px 36px 44px 0 rgba(127, 124, 168, 0.18);
+}
+
+
+
+/* responsive */
+
+@media (max-width:767px) {
+  .img-12-custom{
+    width: 14rem;
+  }
+}
+
+@media (max-width:984px) {
+.CertificatesCards{
+  /* width: 300px; */
+  height:260px;
+}
+
+}
+
+@media (max-width:578px) {
+.fourthSection_Header h3{
+    font-size: 44px;
+  }
+  .CertificatesCards_Img {
+    width: 80%;
+    margin: auto;
+    padding-top: .2rem;
+  }
+}
+
+
+
+
+/*  */
+
+.swiper {
+  padding-bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+ .pt-4rem {
+  padding-top: 4rem;
+  margin-right: 2rem;
+  margin-left: .3rem;
+  }

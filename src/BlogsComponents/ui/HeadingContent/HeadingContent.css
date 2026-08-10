@@ -1,0 +1,19 @@
+.HeadingContent_heading{
+    color: #111827;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 31px;
+}
+.HeadingContent_para{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+/* @media (max-width:574px) {
+    .HeadingContent_heading{
+        text-align: center;
+        font-size: 21px;
+    }
+} */

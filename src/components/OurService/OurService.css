@@ -1,0 +1,13 @@
+.ourService_container{
+    padding-top: 4rem;
+}
+.ourServicepara{
+    padding-bottom: 4rem;
+}
+.ourService_heading{
+    font-size: 3.6rem;
+}
+
+.serviceBgImg{
+    z-index:0;
+}

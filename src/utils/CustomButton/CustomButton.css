@@ -1,0 +1,54 @@
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Variant: Filled */
+.custom-btn.filled.purple {
+  background: linear-gradient(90deg, #6a5ae0, #8b5cf6);
+  color: white;
+  border: none;
+}
+.custom-btn.filled.purple:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(139, 92, 246, 0.4);
+}
+
+/* Variant: Outlined */
+.custom-btn.outlined.purple {
+  background: white;
+  border: 1.5px solid #8b5cf6;
+  color: #333;
+}
+.custom-btn.outlined.purple:hover {
+  background: #f6f3ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.25);
+}
+
+/* Text */
+.btn-text {
+  line-height: 1;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.custom-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
+}

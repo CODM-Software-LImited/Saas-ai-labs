@@ -1,0 +1,127 @@
+.contactThird_left h5{
+    font-size: 48px;
+    font-weight: 700;
+}
+.contactThird_leftSpan{
+    font-size: 20px;
+}
+
+
+/* icon */
+.customLine {
+  position: absolute;
+  left: 50%;                    
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  margin-top: .2rem;
+  height: 0.2rem;
+  background: #6d4df2;
+  border-radius: 2px;
+}
+
+.C_secondLineImg {
+  position: relative;       
+  display: inline-block;   
+  background: #f5eeff;
+  border-radius: 6%;
+  padding: .5rem;
+}
+
+.C_secondLineImg img {
+  display: block;               
+  height: auto;
+}
+
+.C_secondLineImg:hover img{
+transition: all 0.3s ease-in-out;
+transform: scaleX(-1);
+}
+
+/* for icon section */
+.contactLeftIconContainer h6{
+ font-size: 20px;
+ font-weight: 700;
+}
+
+.contactLeftIconContainer p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* form div */
+.rectangle-bg {
+    bottom: -10px;
+    right: -10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color:#6342ec;
+}
+
+
+/* input style */
+.input_background{
+    background: hsla(0, 0%, 100%, 0.1) !important;
+}
+.form-control {
+  background-color: transparent !important;
+}
+
+.customCantact_input_group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  background-color:  hsla(0, 0%, 100%, 0.1) !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.input_background::placeholder {
+  color: white !important;
+  opacity: 1; 
+}
+
+/* for padding  */
+.customPadding{
+  padding: 7rem 3rem;
+}
+
+@media (max-width: 576px) {
+
+   .input-group {
+    width: 100% !important;
+    }
+
+  .purple-bg {
+    padding: 20px !important;
+  }
+
+  .customCantact_input_group {
+    padding: 6px !important;
+  }
+
+  .customCantact_input_group input,
+  .customCantact_input_group textarea {
+    font-size: 14px;
+    padding: 10px 10px !important;
+  }
+
+  .icon-input {
+    padding-left: 8px !important;
+  }
+  textarea {
+    min-height: 120px;
+  }
+
+  .hover-up .btn {
+    width: 100%;
+  }
+
+  .rectangle-bg {
+    margin-right: .2rem;
+}
+
+}

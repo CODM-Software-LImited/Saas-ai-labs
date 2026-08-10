@@ -1,0 +1,41 @@
+.FifthSection_Container {
+  padding-top: 1rem;
+}
+
+.FifthSection_Heading {
+  font-size: 4rem;
+}
+
+.FifthSection_CardsContainer {
+  padding-top: 4rem;
+}
+
+/* Blog button tag */
+.FifthSection_CardTag {
+  color: #886dfd;
+  background-color: #f5eeff;
+  border-radius: 40rem;
+  padding: 0.2rem 0.8rem;
+  width: fit-content;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.FifthSection_Content h5 {
+  color: #111827;
+  font-weight: 600;
+}
+.FifthSection_Container{
+    margin-bottom: 7rem;
+}
+
+@media (max-width:567px) {
+      .dotFromBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .FifthSection_Container{
+        text-align: center;
+      }
+}

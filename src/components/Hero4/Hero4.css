@@ -1,0 +1,30 @@
+.hero4_Heading{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #111827;
+}
+.Hero4_container{
+    background-color: #f3f4f6;
+}
+.odometer{
+    font-size: 48px;
+    font-weight: 700;
+}
+.hero4_righth6{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+@media (max-width:578px) {
+    .hero4_Heading{
+    font-size: 3rem;
+}
+.hero4_rightContainer{
+    padding: 2rem 0;
+    text-align: center;
+}
+.hero4_btns{
+    display: row;
+}            
+}

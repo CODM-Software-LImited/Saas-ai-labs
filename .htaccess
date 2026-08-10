@@ -1,0 +1,13 @@
+# Enable the Rewrite Engine
+RewriteEngine On
+RewriteBase /
+ 
+# MIME Type Fixes for JavaScript and WebAssembly
+AddType application/javascript .js .mjs
+AddType application/wasm .wasm
+ 
+# Handle SPA (Single Page Application) Routing for React
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

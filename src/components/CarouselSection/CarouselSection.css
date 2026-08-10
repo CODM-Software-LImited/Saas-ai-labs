@@ -1,0 +1,59 @@
+/* Ensure the image covers and is a fixed height */
+.carousel-img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* Style captions so they are readable */
+.custom-caption {
+  bottom: 20%;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive text size */
+.custom-caption h5 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.custom-caption p {
+  font-size: 1.1rem;
+}
+
+/* On smaller screens, center and make text smaller */
+@media (max-width: 768px) {
+  .custom-caption {
+    bottom: 10%;
+    padding: 0 15px;
+  }
+  .custom-caption h5 {
+    font-size: 1.3rem;
+  }
+  .custom-caption p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* 
+.custom-carousel {
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-img {
+  height: 450px;
+  object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #333;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); 
+} */

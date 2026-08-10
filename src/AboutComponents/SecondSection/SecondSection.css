@@ -1,0 +1,19 @@
+
+.aboutHeading{
+    font-size: 50px;
+    font-weight:700;
+}
+.aboutContainer2{
+    background: rgb(243,244,246);
+}
+p{
+    line-height: 1.7;
+}
+
+@media (max-width: 576px) {
+    .aboutHeading{
+    font-size: 35px;
+    font-weight:700;
+    padding-top: 1rem;
+}
+}

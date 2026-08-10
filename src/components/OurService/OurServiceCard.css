@@ -1,0 +1,78 @@
+.servicecard_container {
+  padding: 1rem;
+}
+
+.card-service_container{
+  padding-bottom: .2rem;
+  padding-top: .1rem;
+  background-color: white;
+}
+
+.card-service{
+    padding: 15rem;
+    margin: .4rem;
+    border: 1px solid #e6e8ec;
+    background-color: white;
+}
+.card-service:hover{
+    border: 1px solid #7152f3;  
+    transform: scale(1);
+    box-shadow: 0 0 18px rgba(0, 0,0, 0.3);
+}
+
+.addbtn {
+    border: 1px solid #e6e8ec;
+    width: 40px; 
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden; 
+    gap: 0.5rem;
+    color: #111827;
+    font-weight: 500;
+}
+
+.addbtn .plus {
+    display: inline-block;
+}
+
+.addbtn .arrow,
+.addbtn .btn-text {
+    display: none;
+}
+
+ .servicecard_container:hover .addbtn{
+    width: 180px;
+    border-radius: 50px; 
+
+}
+
+ .servicecard_container:hover .addbtn .plus {
+    display: none;
+}
+
+ .servicecard_container:hover .addbtn .arrow,
+ .servicecard_container:hover .addbtn .btn-text {
+    display: inline-block;
+}
+
+
+.learnmore_btn line{
+text-decoration: none;
+}
+.learnmore_btn{
+    border: 1px solid #e6e8ec;
+    width:fit-content;
+    padding: .5rem;
+    border-radius: 50px;
+    text-decoration-line: none;
+    display: none;
+}
+.learnmore_btn:hover{
+    display: block;
+} 

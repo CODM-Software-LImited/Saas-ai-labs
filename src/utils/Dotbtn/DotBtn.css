@@ -1,0 +1,26 @@
+.dot-btn {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  background: #f5f0ff;
+  border-radius: 999rem; 
+  padding: 0.2rem 1rem; 
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  gap: 0.5rem; 
+}
+
+.dot-icon {
+  font-size: 0.9rem;
+  letter-spacing: 0.125rem;
+}
+
+.dot-btn-text {
+  color: #856af5;
+}
+
+
+@media (max-width:567px) {
+  
+}

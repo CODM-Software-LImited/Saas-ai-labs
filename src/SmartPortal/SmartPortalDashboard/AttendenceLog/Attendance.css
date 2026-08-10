@@ -1,0 +1,381 @@
+/* Global base (moved from :host) */
+body {
+    font-family: 'DM Sans', 'Nunito', sans-serif;
+}
+
+/* Wrapper */
+.attendance-wrapper {
+    background: #f5f4fb;
+    min-height: 100vh;
+    padding: 28px 32px 48px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ── Page Header ─────────────────────────────── */
+.page-header { margin-bottom: 20px; }
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.header-icon { font-size: 1.4rem; }
+
+.header-subtitle {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #8888aa;
+}
+
+/* ── Clock Card ──────────────────────────────── */
+.clock-card {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(91,79,207,0.07);
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.clock-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.clock-icon-wrap {
+    width: 64px;
+    height: 64px;
+    background: #5b4fcf;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-icon-wrap lightning-icon { --sds-c-icon-color-foreground-default: #fff; }
+
+.clock-time {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.clock-date {
+    font-size: 0.85rem;
+    color: #8888aa;
+    margin-top: 4px;
+}
+
+.shift-status { text-align: right; }
+
+.shift-badge {
+    display: inline-block;
+    background: #f1f0f7;
+    color: #4a4a6a;
+    border-radius: 8px;
+    padding: 5px 14px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.shift-range {
+    display: block;
+    font-size: 0.8rem;
+    color: #8888aa;
+}
+
+/* ── Two-Column Layout ───────────────────────── */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+@media (max-width: 680px) {
+    .two-col { grid-template-columns: 1fr; }
+    .attendance-wrapper { padding: 16px; }
+}
+
+/* ── Panel Base ──────────────────────────────── */
+.panel {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(91,79,207,0.07);
+    padding: 24px;
+}
+
+.panel-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 18px;
+}
+
+.panel-icon {
+    font-size: 1rem;
+    color: #5b4fcf;
+}
+
+/* ── Clock In Panel ──────────────────────────── */
+.field-label {
+    display: block;
+    font-size: 0.78rem;
+    color: #8888aa;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.note-label { margin-top: 16px; }
+
+.select-wrap {
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.location-select {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    background: #ffffff;
+    border: 1.5px solid #e4e2f0;
+    border-radius: 8px;
+    padding: 10px 36px 10px 14px;
+    font-size: 0.9rem;
+    color: #1a1a2e;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.location-select:focus { border-color: #5b4fcf; }
+
+.select-arrow {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    color: #8888aa;
+    pointer-events: none;
+}
+
+.note-area {
+    width: 100%;
+    min-height: 80px;
+    border: 1.5px solid #e4e2f0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.88rem;
+    color: #1a1a2e;
+    font-family: inherit;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.note-area:focus { border-color: #5b4fcf; }
+.note-area::placeholder { color: #8888aa; }
+
+.shift-done-msg {
+    margin-top: 16px;
+    color: #22c55e;
+    font-size: 0.88rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.action-btn {
+    margin-top: 16px;
+    display: block;
+    width: 25%;
+    border: none;
+    background-color: #5b4fcf;
+    color: white;
+    border-radius: 4px;
+}
+
+/* ── Summary Panel ───────────────────────────── */
+.time-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.time-box {
+    background: #f7f5ff;
+    border-radius: 10px;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.time-box-label {
+    font-size: 0.75rem;
+    color: #8888aa;
+    margin-bottom: 6px;
+}
+
+.time-box-value {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.total-hours-box {
+    background: #f7f5ff;
+    border-radius: 10px;
+    padding: 14px 16px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.total-label {
+    font-size: 0.75rem;
+    color: #8888aa;
+    margin-bottom: 4px;
+}
+
+.total-value {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #5b4fcf;
+    letter-spacing: -0.5px;
+}
+
+.summary-location {
+    font-size: 0.82rem;
+    color: #8888aa;
+}
+
+/* ── Recent Attendance ───────────────────────── */
+.recent-section {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(91,79,207,0.07);
+    padding: 24px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+}
+
+.section-icon { font-size: 1rem; color: #5b4fcf; }
+
+.table-wrap { overflow-x: auto; }
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+}
+
+.attendance-table thead th {
+    text-align: left;
+    color: #5b4fcf;
+    font-weight: 600;
+    font-size: 0.82rem;
+    padding: 0 14px 12px;
+    border-bottom: 1.5px solid #e4e2f0;
+}
+
+.attendance-table thead th.center { text-align: center; }
+
+.attendance-table tbody tr {
+    border-bottom: 1px solid #e4e2f0;
+    transition: background 0.15s;
+}
+
+.attendance-table tbody tr:last-child { border-bottom: none; }
+.attendance-table tbody tr:hover { background: #faf9ff; }
+
+.attendance-table tbody td {
+    padding: 13px 14px;
+    color: #1a1a2e;
+    vertical-align: middle;
+}
+
+.attendance-table tbody td.center { text-align: center; }
+
+.date-cell { font-weight: 600; }
+
+.in-time, .out-time {
+    color: #5b4fcf;
+    font-weight: 600;
+}
+
+.hours-cell { font-weight: 600; color: #4a4a6a; }
+.location-cell { color: #4a4a6a; }
+
+/* ── Status Badges ───────────────────────────── */
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.76rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status-present {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status-halfday {
+    background: #fef9c3;
+    color: #92400e;
+}
+
+.status-absent {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.status-remote {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.clock-icon-wrap {
+  background: #5b4fcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-icon {
+  color: white;
+  font-size: 24px;
+}

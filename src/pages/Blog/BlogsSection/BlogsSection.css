@@ -1,0 +1,15 @@
+.blog-card {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card-img {
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .blog-card-img {
+  transform: scale(1.05);
+}
+.BlogSectionPage{
+  width: 400px;
+}

@@ -1,0 +1,41 @@
+.ThirdSection_card{
+    background: #f3f4f6;
+}
+.ThirdSection_cardbottom{
+  min-height: 470px;
+}
+
+/* custom line */
+
+.ThirdSectionImg {
+  position: relative;       
+  display: inline-block;      
+  
+}
+
+.ThirdSectionImg img {
+  display: block; 
+  height: auto;
+}
+
+.customLine {
+  position: absolute;
+  bottom: -10px;   
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #6d4df2;
+}
+
+
+/* flip the icon */
+.ThirdSection_card:hover img{
+transition: all 0.3s ease-in-out;
+transform: scaleX(-1);
+}
+
+.ThirdSection_container h5{
+  font-size: 48px;
+  font-weight: 700;
+}

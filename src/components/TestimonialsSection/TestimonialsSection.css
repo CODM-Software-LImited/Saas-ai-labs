@@ -1,0 +1,20 @@
+.testimonials_card{
+ background-color: #f3f4f6;
+}
+.testimonial_heading{
+    font-size: 4rem;
+    padding-bottom: .8rem;
+}
+.section-testimonial-1{
+    padding-top: 3rem;
+}
+
+.testimonial_leftcolumn{
+    padding-top: 4rem;
+}
+.testimonial_btn{
+    padding-top: 2rem;
+}
+.testimonial_middleColumn{
+    padding-top: 3rem;
+}

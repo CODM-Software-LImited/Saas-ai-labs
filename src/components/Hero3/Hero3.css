@@ -1,0 +1,79 @@
+.hero3_container{
+    background-color: #a38cff;
+    height: 37rem;
+}
+.section-padding{
+ padding: 8rem 0;
+}
+.bg-rotate {
+    top: 1%;
+    left: -10%;
+}
+.hover-up {
+    transition: all 0.3s ease-in-out;
+}
+.rotate-center {
+  animation: spin 15s linear infinite;
+}
+
+.hero3_rightBox{
+  padding-left: 7rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bloom_container{
+  padding: 2rem;
+}
+
+
+/* responsive */
+@media (max-width:578px) {
+ .rotate-center{
+  display: none;
+ }
+
+ .agentForce_Table_Img img{
+  width: 2rem;
+ }
+ .hero3_container{
+    background-color: #a38cff;
+    /* height: 67rem; */
+    height: fit-content;
+}
+.hero3_rightBox{
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+
+/* .hero3_container{
+  text-align: center;
+} */
+/* .hero3Uidiiv{
+  text-align: center;
+} */
+}
+
+/*  */
+
+@media (max-width:768px) {
+  .hero3_container{
+    background-color: #a38cff;
+    /* height: 67rem; */
+    height: fit-content;
+}
+.hero3_rightBox{
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+ .rotate-center{
+  display: none;
+ }
+}

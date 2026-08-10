@@ -1,0 +1,46 @@
+/* according css */
+.circleIcon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;          
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;               
+  align-items: center;    
+  justify-content: center;            
+
+}
+.accordion-button:not(.collapsed) {
+  color: #6d4df2;
+}
+.accordion-button:not(.collapsed) {
+  color: #6d4df2;
+}
+.accordion_title{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.accordion-button {
+  padding: 2px;
+}
+
+.accordion {
+    --bs-accordion-active-bg: white;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-border-color: none;
+}
+
+.accordion-body p{
+  font-size: 18px;
+  color: #4b5563;
+  line-height: 1.5;
+  font-weight: 500;
+}  
+
+.accordion-button{
+    margin: 1rem 0px;
+}

@@ -1,0 +1,45 @@
+.btn-scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.btn-scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-scroll-top button {
+  background-color: #a48bff;
+  border: none;
+  border-radius: 5%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.btn-scroll-top button:hover {
+  transform: translateY(-3px);
+}
+
+.ArrowUpIcon {
+  color: white;
+  font-size: 20px;
+}
+
+
+@media (max-width:567px){
+  .btn-scroll-top {
+    right: 13px;
+  }
+}

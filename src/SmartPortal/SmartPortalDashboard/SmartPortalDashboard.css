@@ -1,0 +1,97 @@
+/* Main Layout Container */
+.SmartPortal-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 0;
+  margin-top: 3.7rem;
+  /* min-height: 100vh; */
+  transition: grid-template-columns 0.3s ease;
+}
+
+/* Collapsed State - Sidebar takes only 70px */
+.SmartPortal-layout.SmartPortal-layout-collapsed {
+  grid-template-columns: 70px 1fr;
+}
+
+/* Sidebar Container */
+.SmartPortal-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 3.7rem);
+  overflow: hidden;
+}
+
+/* Dashboard Container */
+.SmartPortal-dashboard {
+  background: #ffffff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+  height: calc(100vh - 3.7rem);
+}
+
+/* Optional: Add subtle shadow between sidebar and dashboard */
+.SmartPortal-layout .SmartPortal-sidebar {
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .SmartPortal-layout {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .SmartPortal-layout.SmartPortal-layout-collapsed {
+    grid-template-columns: 70px 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .SmartPortal-layout {
+    grid-template-columns: 70px 1fr;
+    margin-top: 3.7rem;
+  }
+
+  .SmartPortal-layout.SmartPortal-layout-collapsed {
+    grid-template-columns: 70px 1fr;
+  }
+}
+
+/* Scrollbar Styling */
+.SmartPortal-dashboard::-webkit-scrollbar {
+  width: 8px;
+}
+
+.SmartPortal-dashboard::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.SmartPortal-dashboard::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 4px;
+}
+
+.SmartPortal-dashboard::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+
+/* .SmartPortal-layout{
+    display: flex;
+    margin-top: 3.7rem;
+  
+}
+
+.SmartPortal-dashboard{
+      flex: 1;
+}
+
+.SmartPortal-layout {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  min-height: 100vh;
+}
+
+.SmartPortal-dashboard {
+  background: #ffffff;
+} */

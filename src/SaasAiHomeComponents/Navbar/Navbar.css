@@ -1,0 +1,228 @@
+.navbar {
+  background: white;
+  z-index: 1030;
+}
+.navbar-logo {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar .nav-link {
+  color: black !important;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link.active-link {
+  color: #7354f5 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #8d78dc !important;
+  transform: scale(1.05);
+  text-shadow: 0 0 8px rgba(141, 120, 220, 0.6);
+}
+
+
+@media (min-width: 992px) {
+  .mega-dropdown {
+    position: static;
+  }
+
+  .mega-menu {
+    display: none;
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95rem;
+    max-width: 95vw;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem 3rem;
+    z-index: 1020;
+    border: none;
+  }
+
+  .mega-dropdown:hover .mega-menu {
+    display: block;
+  }
+
+  .mega-menu h6 {
+    color: #7354f5;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+  }
+
+  .mega-menu .dropdown-item {
+    /* padding: 0.4rem 0; */
+    color: #000;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: block;
+  }
+
+  .mega-menu .dropdown-item:hover {
+    color: #7354f5;
+  }
+  .mega-dropdown1 {
+    position: relative;
+  }
+
+  .mega-menu1 {
+    display: none;
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20rem;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem 2rem;
+    z-index: 1020;
+    margin-top: 0.5rem;
+  }
+
+  .mega-dropdown1:hover .mega-menu1 {
+    display: block;
+  }
+
+
+  .mega-menu1 .dropdown-item {
+    padding: 0.4rem 0;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: block;
+  }
+
+  .mega-menu1 .dropdown-item:hover {
+    color: #7354f5;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .navbar-collapse::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mega-menu,
+  .mega-menu1 {
+    display: none !important;
+  }
+
+  .mobile-toggle {
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0.75rem 0;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .mobile-toggle svg {
+    transition: transform 0.3s ease;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .mobile-accordion {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+  }
+
+  .mobile-accordion.open {
+    max-height: 3000px;
+    opacity: 1;
+  }
+
+  .accordion-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #7354f5;
+    margin: 0.75rem 0 0.4rem;
+    text-transform: uppercase;
+  }
+
+  .mobile-accordion li a {
+    display: block;
+    padding: 0.45rem 0;
+    font-size: 0.95rem;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .mobile-accordion li a:hover,
+  .mobile-accordion li a.active {
+    color: #7354f5;
+  }
+}
+
+
+.purple-bg {
+  background-color: #7354f5;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.purple-bg:hover {
+  background-color: #8d78dc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(115, 84, 245, 0.3);
+}
+
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item.active {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid #7354f5;
+  outline-offset: 2px;
+}
+
+@media (max-width:973px){
+   .serviceDiv{
+    height: 44px !important;
+   }
+   .blogsDiv{
+     height: 44px !important;
+   }
+}
+
+.servicesCrmDiv{
+  height: 250px;
+}
+
+/* .servicesCrm{
+    height: 190px;
+   overflow: scroll;
+   scrollbar-width: none;
+} */
+

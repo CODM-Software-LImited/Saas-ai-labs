@@ -1,0 +1,28 @@
+.footer-policies {
+  background: #0b1220;
+}
+
+.footer-policies .policy-link {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-policies .policy-link svg {
+  color: #6b7280;
+  transition: color 0.3s ease;
+}
+
+.footer-policies .policy-link:hover {
+  color: #ffffff;
+}
+
+.footer-policies .policy-link:hover svg {
+  color: #7c7cff;
+}
+
+.footerPara {
+  color: rgba(152, 164, 177, 0.75);
+}

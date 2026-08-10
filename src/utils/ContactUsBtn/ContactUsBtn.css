@@ -1,0 +1,23 @@
+
+.contact-btn {
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  padding:0.8rem 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: .1rem solid gray;
+}
+.contact-btn:hover{
+    background-color: #9ca3af;
+    color: white;
+}
+
+@media (max-width:395px){
+.contact-btn{
+  font-weight: 500;
+  font-size: .8rem;
+  border-radius: 12px;
+  padding: 0.8rem 1.4rem;
+}
+}
