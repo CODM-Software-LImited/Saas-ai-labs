@@ -1,0 +1,142 @@
+.gcloud-badge {
+  background: linear-gradient(180deg, #f6f3ff 0%, #ffffff 100%);
+  border: 1px solid #ece7ff;
+  border-radius: 16px;
+  padding: 20px 28px;
+}
+
+.gcloud-badge-logo {
+  height: 74px;
+  width: auto;
+}
+
+.gcloud-badge-title {
+  color: #111827;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.gcloud-badge-sub {
+  color: #4b5563;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.gcloud-badge-link {
+  color: #6d4df2;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+.gcloud-badge-link:hover {
+  color: #5a3ddb;
+  text-decoration: underline;
+}
+
+@media (max-width: 578px) {
+  .gcloud-badge-logo {
+    height: 60px;
+  }
+}
+
+/* ---------- Card variant (Home / About) ---------- */
+.gcloud-card {
+  background: linear-gradient(135deg, #f6f3ff 0%, #ffffff 55%, #f0ebff 100%);
+  border: 1px solid #ece7ff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 14px 35px rgba(109, 77, 242, 0.1);
+}
+
+.gcloud-card-logoPanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-right: 1px solid #f1f0f6;
+  padding: 40px 24px;
+  height: 100%;
+  min-height: 220px;
+}
+
+.gcloud-card-logo {
+  max-width: 100%;
+  max-height: 160px;
+  width: auto;
+}
+
+.gcloud-card-body {
+  padding: 36px 40px;
+}
+
+.gcloud-card-eyebrow {
+  display: inline-block;
+  color: #6d4df2;
+  background: rgba(109, 77, 242, 0.08);
+  border: 1px solid rgba(109, 77, 242, 0.25);
+  border-radius: 50rem;
+  padding: 5px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.gcloud-card-title {
+  color: #111827;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 16px 0 10px;
+}
+
+.gcloud-card-copy {
+  color: #4b5563;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 560px;
+}
+
+.gcloud-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  background: linear-gradient(90deg, #6a5ae0, #8b5cf6);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.gcloud-card-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 15px rgba(139, 92, 246, 0.4);
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .gcloud-card-logoPanel {
+    border-right: none;
+    border-bottom: 1px solid #f1f0f6;
+    min-height: 0;
+    padding: 28px 20px;
+  }
+  .gcloud-card-logo {
+    max-height: 110px;
+  }
+  .gcloud-card-body {
+    padding: 28px 24px;
+  }
+  .gcloud-card-title {
+    font-size: 22px;
+  }
+}

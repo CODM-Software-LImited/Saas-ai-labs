@@ -14,6 +14,25 @@ import brand from "../../config/brand";
 
 function Footer() {
   return (
+    <>
+    {brand.name === "CODM Software" && (
+      <div className="container py-4">
+        <p
+          className="text-center mb-0"
+          style={{ fontSize: "13px", color: "#6b7280", fontWeight: 500 }}
+        >
+          CODM Software Limited has been named as a supplier on Government
+          Commercial Agency&rsquo;s{" "}
+          <Link
+            to="/g-cloud-15"
+            style={{ color: "#6d4df2", textDecoration: "none", fontWeight: 600 }}
+          >
+            RM1557.15 G&#8209;Cloud 15 framework, Lot 3: Cloud Support
+          </Link>
+          .
+        </p>
+      </div>
+    )}
     <footer
       className="footer pb-4"
       style={{
@@ -122,6 +141,7 @@ function Footer() {
             <Link className="footer-link text-decoration-none text-white mb-2 fw-medium fs-6" to="/about">About</Link>
             <Link className="footer-link text-decoration-none text-white mb-2 fw-medium fs-6" to="/ItServices">Services</Link>
             <Link className="footer-link text-decoration-none text-white mb-2 fw-medium fs-6" to="/blog">Blog</Link>
+            <Link className="footer-link text-decoration-none text-white mb-2 fw-medium fs-6" to="/g-cloud-15">G&#8209;Cloud 15</Link>
           </div>
 
           {/* ADDRESS */}
@@ -168,6 +188,7 @@ function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }
 

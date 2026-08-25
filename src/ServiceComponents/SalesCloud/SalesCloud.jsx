@@ -2,6 +2,7 @@ import SEO from "../../SeoData/SEO";
 import HeaderWithBg from "../../utils/HeaderWithBg/HeaderWithBg";
 import S_lastSection from "../HigherEducation/S_lastSection/S_lastSection";
 import SalesCloud_First from "./SalesCloud_First/SalesCloud_First";
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function SalesCloud() {
   return (
@@ -20,6 +21,7 @@ function SalesCloud() {
         ]}
       />
       <SalesCloud_First />
+      <GCloudBadge />
       <S_lastSection />
     </>
   )

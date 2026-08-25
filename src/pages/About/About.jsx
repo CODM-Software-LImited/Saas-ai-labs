@@ -8,6 +8,7 @@ import ThirdSection from "../../AboutComponents/ThirdSection/ThirdSection";
 import WhatWeDo from "../../AboutComponents/WhatWeDo/WhatWeDo";
 import BlogSection from "../../components/BlogSection/BlogSection";
 import SEO from "../../SeoData/SEO";
+import GCloudBadge from "../../components/GCloudBadge/GCloudBadge";
  
  
 function About() {
@@ -26,6 +27,7 @@ function About() {
       {/* <ThirdSection/> */}
       <FourthSection/>
       <FounderSection/>
+      <GCloudBadge variant="card" />
       {/* <Insurance/> */}
       <BlogSection/>
       {/* <FifthSection/> */}

@@ -2,6 +2,7 @@ import HeaderWithBg from "../../utils/HeaderWithBg/HeaderWithBg";
 import EnergyUtilitiesCloud_First from "./EnergyUtilitiesCloud_First/EnergyUtilitiesCloud_First";
 import S_lastSection from '../HigherEducation/S_lastSection/S_lastSection.jsx';
 import SEO from "../../SeoData/SEO.jsx";
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function EnergyUtilitiesCloud() {
   return (
@@ -20,7 +21,8 @@ function EnergyUtilitiesCloud() {
                     ]}
     />
     <EnergyUtilitiesCloud_First/>
-    <S_lastSection/>
+    <GCloudBadge />
+    <S_lastSection />
     </>
   )
 }

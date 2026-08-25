@@ -4,6 +4,7 @@ import PythonApplication_Second from './PythonApplication_Second/PythonApplicati
 import S_lastSection from '../HigherEducation/S_lastSection/S_lastSection';
 import HeaderWithBg from '../../utils/HeaderWithBg/HeaderWithBg';
 import SEO from '../../SeoData/SEO';
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function PythonApplication() {
   return (
@@ -22,6 +23,7 @@ function PythonApplication() {
         ]}
       />
       <PythonApplication_Second />
+      <GCloudBadge />
       <S_lastSection />
     </>
   )

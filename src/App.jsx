@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter as Router, Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation, BrowserRouter, Navigate } from "react-router-dom";
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
@@ -47,6 +47,8 @@ import TermsAndConditions from './TermsAndConditions/TermsAndConditions';
 import NonprofitCloud from './ServiceComponents/NonprofitCloud/NonprofitCloud';
 import AgentforceAI from './BlogsComponents/AgentforceAI/AgentforceAI';
 import SaasAiHome from './pages/Home/SaasAiHome';
+import GCloud15 from './pages/GCloud15/GCloud15';
+import GCloudSuppliersBlog from './BlogsComponents/GCloudSuppliersBlog/GCloudSuppliersBlog';
  
 // home page condition
 import brand from "../src/config/brand";
@@ -115,6 +117,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
               <Route path='/terms-conditions' element={<TermsAndConditions/>}/>
+              <Route path='/g-cloud-15' element={<GCloud15/>}/>
               {/* <Route path='/MyKoda' element={<SmartPortal/>}/> */}
  
               {/* service routes */}
@@ -202,6 +205,8 @@ function App() {
               <Route path="/blog/field-service-automation" element={<FslAutomation/>} />
               <Route path="/blog/salesforce-llm-crm-automation" element={<SalesforceIIM/>} />      
               <Route path="/blog/salesforce-sso-authentication" element={<SSO/>}/>        
+              <Route path="/blog/g-cloud15" element={<GCloudSuppliersBlog/>}/>
+              <Route path="/blog/g-cloud-framework-suppliers-uk" element={<Navigate to="/blog/g-cloud15" replace />}/>
              
              
               {/* </Route> */}

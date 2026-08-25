@@ -18,6 +18,7 @@ import gearsetlogo from '../../assets/imgs/cta-15/gearset-logo.png';
 import googlecloudlogo from '../../assets/imgs/cta-15/googlecloud-logo.png';
 import salesforcelogo from '../../assets/imgs/cta-15/saleforce-logo.png';
 import isologo from '../../assets/imgs/cta-15/isologo.png';
+import gcalogo from '../../assets/imgs/gcloud/gca-supplier-black.png';
 import './fourthSection.css';
 import { Link } from 'react-router-dom';
 
@@ -48,6 +49,7 @@ const certificateImages = [
   { src: googlecloudlogo, alt: "Google Cloud" },
   { src: salesforcelogo, alt: "Salesforce", extraPadding: true },
   { src: isologo, alt: "ISO Certification", extraPadding: true },
+  { src: gcalogo, alt: "Government Commercial Agency Supplier - G-Cloud 15" },
 
 
 ];

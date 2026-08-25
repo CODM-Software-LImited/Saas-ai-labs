@@ -4,6 +4,7 @@ import S_rightSidebarDataDevelopment from "../ServiceSidebar/S_rightSidebarDataD
 import ReactApplication_Second from "./ReactApplication_Second/ReactApplication_Second";
 import HeaderWithBg from "../../utils/HeaderWithBg/HeaderWithBg";
 import SEO from "../../SeoData/SEO";
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function ReactApplication() {
   return (
@@ -22,6 +23,7 @@ function ReactApplication() {
         ]}
       />
       <ReactApplication_Second />
+      <GCloudBadge />
       <S_lastSection />
     </>
   )

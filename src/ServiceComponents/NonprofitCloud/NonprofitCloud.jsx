@@ -2,6 +2,7 @@ import SEO from "../../SeoData/SEO";
 import HeaderWithBg from "../../utils/HeaderWithBg/HeaderWithBg";
 import S_lastSection from "../HigherEducation/S_lastSection/S_lastSection";
 import NonprofitCloud_First from "./NonprofitCloud_First/NonprofitCloud_First";
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function NonprofitCloud() {
   return (
@@ -21,6 +22,7 @@ function NonprofitCloud() {
       />
 
       <NonprofitCloud_First />
+      <GCloudBadge />
       <S_lastSection />
     </>
   )

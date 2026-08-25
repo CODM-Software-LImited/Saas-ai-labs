@@ -2,7 +2,7 @@ import robotImg from "../../assets/imgs/hero-1/img-agent-1.webp";
 import bgImg from "../../assets/imgs/hero-1/background.png";
 
 import { heroSection } from "../../data";
-import ContactUsBtn from "../../utils/ContactUsBtn/ContactUsBtn";
+import gcaSupplierLogo from "../../assets/imgs/gcloud/gca-supplier-black.png";
 import AnimatedPill from "./AnimatedPill";
 import saleforceLogo from '../../assets/imgs/cta-15/saleforce-logo.png';
 import Appexchangelogo from '../../assets/imgs/cta-15/Appexchange_logo.png';
@@ -110,8 +110,15 @@ function Hero() {
                 </svg>
               </Link>
 
-              <ContactUsBtn />
-              
+              <Link to="/g-cloud-15" title="G-Cloud 15 Cloud Support Services">
+                <img
+                  src={gcaSupplierLogo}
+                  alt="Government Commercial Agency Supplier - G-Cloud 15"
+                  style={{ height: "72px", width: "auto" }}
+                  className="hover-up"
+                />
+              </Link>
+
               <img src={saleforceLogo} alt="" width={'16%'} className="salesforceLogo d-none d-md-block"/>
               <img src={Appexchangelogo} alt="" width={'16%'} className="Appexchangelogo d-none d-md-block"/>
               

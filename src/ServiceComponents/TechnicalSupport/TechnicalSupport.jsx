@@ -4,6 +4,7 @@ import TechnicalSupport_Seond from './TechnicalSupport_Second/TechnicalSupport_S
 import S_lastSection from '../HigherEducation/S_lastSection/S_lastSection';
 import HeaderWithBg from '../../utils/HeaderWithBg/HeaderWithBg';
 import SEO from '../../SeoData/SEO';
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function TechnicalSupport() {
   return (
@@ -22,6 +23,7 @@ function TechnicalSupport() {
         ]}
       />
       <TechnicalSupport_Seond />
+      <GCloudBadge />
       <S_lastSection />
     </>
   )

@@ -3,6 +3,7 @@ import S_lastSection from '../HigherEducation/S_lastSection/S_lastSection'
 import CRMDevelopment_Second from './CRMDevelopment_Second/CRMDevelopment_Second';
 import HeaderWithBg from '../../utils/HeaderWithBg/HeaderWithBg';
 import SEO from '../../SeoData/SEO';
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function CRMDevelopment() {
   return (
@@ -21,6 +22,7 @@ function CRMDevelopment() {
         ]}
       />
       <CRMDevelopment_Second />
+      <GCloudBadge />
       <S_lastSection />
     </>
   )

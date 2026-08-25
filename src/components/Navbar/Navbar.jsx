@@ -9,6 +9,7 @@ import flag2 from "../../assets/imgs/contact-4/Flag_of_India.png";
 import flag3 from "../../assets/imgs/contact-4/Flag_of_the_United_States.png";
 
 import brand from "../../config/brand";
+import gcaSupplierLogo from "../../assets/imgs/gcloud/gca-supplier-black.png";
 
 function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -165,6 +166,10 @@ function Navbar() {
       label: "Authentication using SSO",
       path: "/blog/salesforce-sso-authentication",
     },
+    {
+      label: "G-Cloud Framework Suppliers UK",
+      path: "/blog/g-cloud15",
+    },
   ];
 
   const renderDropdownLinks = (links) =>
@@ -292,6 +297,33 @@ function Navbar() {
                     {renderDropdownLinks(supportLinks)}
                   </div>
                 </div>
+
+                {/* G-Cloud 15 promo strip */}
+                {brand.key === "codm_Logo" && (
+                  <Link
+                    to="/g-cloud-15"
+                    className="mega-gcloud"
+                    onClick={handleNavItemClick}
+                  >
+                    <img
+                      src={gcaSupplierLogo}
+                      alt="Government Commercial Agency Supplier"
+                      className="mega-gcloud-logo"
+                    />
+                    <div className="mega-gcloud-text">
+                      <span className="mega-gcloud-title">
+                        G&#8209;Cloud 15 &middot; Lot 3: Cloud Support
+                      </span>
+                      <span className="mega-gcloud-sub">
+                        Salesforce, AI, integration, data and cloud application
+                        services for the public sector
+                      </span>
+                    </div>
+                    <span className="mega-gcloud-cta">
+                      Explore G&#8209;Cloud 15 &rarr;
+                    </span>
+                  </Link>
+                )}
               </div>
 
               {/* Mobile Services Accordion */}
@@ -311,6 +343,17 @@ function Navbar() {
 
                 <li className="accordion-title">Support</li>
                 {renderMobileLinks(supportLinks)}
+
+                {brand.key === "codm_Logo" && (
+                  <>
+                    <li className="accordion-title">Public Sector</li>
+                    <li>
+                      <NavLink to="/g-cloud-15" onClick={handleNavItemClick}>
+                        G&#8209;Cloud 15 &middot; Cloud Support
+                      </NavLink>
+                    </li>
+                  </>
+                )}
               </ul>
             </li>
 

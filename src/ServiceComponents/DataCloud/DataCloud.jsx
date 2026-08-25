@@ -4,6 +4,7 @@ import DataCloud_Second from './DataCloud_Second/DataCloud_Second'
 import S_lastSection from '../HigherEducation/S_lastSection/S_lastSection'
 import HeaderWithBg from '../../utils/HeaderWithBg/HeaderWithBg';
 import SEO from '../../SeoData/SEO';
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function DataCloud() {
   return (
@@ -22,6 +23,7 @@ function DataCloud() {
         ]}
       />
       <DataCloud_Second />
+      <GCloudBadge />
       <S_lastSection />
     </>
   )

@@ -1,51 +1,46 @@
-import { Helmet } from "react-helmet";
- 
+import { useEffect } from "react";
 
-function SEO({ title, description, url, image , keywords }) {
-  return (
-    <Helmet>
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <link rel="canonical" href={url} />
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:url" content={url} />
-      <meta property="og:image" content={image}/>
-      <meta property="og:type" content="website" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
-      <meta name="author" content="CODM Software Limited" />
-    </Helmet>
-  );
+function upsertMeta(attrName, attrValue, content) {
+  if (content === undefined || content === null) return;
+  let tag = document.head.querySelector(`meta[${attrName}="${attrValue}"]`);
+  if (!tag) {
+    tag = document.createElement("meta");
+    tag.setAttribute(attrName, attrValue);
+    document.head.appendChild(tag);
+  }
+  tag.setAttribute("content", content);
 }
- 
+
+function upsertCanonical(url) {
+  if (!url) return;
+  let tag = document.head.querySelector('link[rel="canonical"]');
+  if (!tag) {
+    tag = document.createElement("link");
+    tag.setAttribute("rel", "canonical");
+    document.head.appendChild(tag);
+  }
+  tag.setAttribute("href", url);
+}
+
+function SEO({ title, description, url, image, keywords }) {
+  useEffect(() => {
+    if (title) document.title = title;
+    upsertMeta("name", "description", description);
+    upsertMeta("name", "keywords", keywords);
+    upsertCanonical(url);
+    upsertMeta("property", "og:title", title);
+    upsertMeta("property", "og:description", description);
+    upsertMeta("property", "og:url", url);
+    upsertMeta("property", "og:image", image);
+    upsertMeta("property", "og:type", "website");
+    upsertMeta("name", "twitter:card", "summary_large_image");
+    upsertMeta("name", "twitter:title", title);
+    upsertMeta("name", "twitter:description", description);
+    upsertMeta("name", "twitter:image", image);
+    upsertMeta("name", "author", "CODM Software Limited");
+  }, [title, description, url, image, keywords]);
+
+  return null;
+}
+
 export default SEO;
-
-
-// import { Helmet } from "react-helmet-async";
-
-// function SEO({ title, description, url, image , keywords }) {
-//   return (
-//     <Helmet>
-//       <title>{title}</title>
-//       <meta name="description" content={description} />
-//       <meta name="keywords" content={keywords} />
-//       <link rel="canonical" href={url} />
-//       <meta charSet="utf-8" />
-//       <meta name="viewport" content="width=device-width, initial-scale=1"/>
-//       <meta property="og:title" content={title} />
-//       <meta property="og:description" content={description} />
-//       <meta property="og:url" content={url} />
-//       <meta property="og:image" content={image}/>
-//       <meta name="twitter:card" content="summary_large_image" />
-      
-//     </Helmet>
-//   );
-// }
-
-// export default SEO;

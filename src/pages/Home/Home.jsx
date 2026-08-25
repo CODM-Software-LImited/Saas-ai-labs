@@ -20,6 +20,7 @@ import 'aos/dist/aos.css';
 import ScrollOnTop from '../../components/ScrollOnTop/ScrollOnTop'
 import CarouselSectionCard from '../../components/CarouselSection/CarouselSectionCard';
 import SEO from '../../SeoData/SEO';
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function Home() {
   useEffect(() => {
@@ -52,6 +53,7 @@ function Home() {
       <Hero4/>
       <OurService />
       <OurExcellence />
+      <GCloudBadge variant="card" />
       {/* <TestimonialsSection /> */}
       <BlogSection/>
       <NewsletterSection/>

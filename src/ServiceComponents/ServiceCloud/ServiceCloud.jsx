@@ -3,6 +3,7 @@ import HeaderWithBg from '../../utils/HeaderWithBg/HeaderWithBg';
 import ServiceCloud_First from './ServiceCloud_First/ServiceCloud_First';
 import S_lastSection from '../HigherEducation/S_lastSection/S_lastSection';
 import SEO from '../../SeoData/SEO';
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function ServiceCloud() {
   return (
@@ -21,6 +22,7 @@ function ServiceCloud() {
         ]}
       />
       <ServiceCloud_First />
+      <GCloudBadge />
       <S_lastSection />
     </>
   )

@@ -2,6 +2,7 @@ import SEO from '../../SeoData/SEO';
 import HeaderWithBg from '../../utils/HeaderWithBg/HeaderWithBg';
 import S_lastSection from '../HigherEducation/S_lastSection/S_lastSection';
 import HealthInsuranceCloud_First from './HealthInsuranceCloud_First/HealthInsuranceCloud_First';
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function HealthInsuranceCloud() {
   return (
@@ -21,6 +22,7 @@ function HealthInsuranceCloud() {
         ]}
       />
       <HealthInsuranceCloud_First />
+      <GCloudBadge />
       <S_lastSection />
     </>
   )

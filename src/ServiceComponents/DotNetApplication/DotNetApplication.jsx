@@ -3,6 +3,7 @@ import DotNetApplication_Second from './DotNetApplication_Second/DotNetApplicati
 import S_lastSection from '../HigherEducation/S_lastSection/S_lastSection';
 import HeaderWithBg from '../../utils/HeaderWithBg/HeaderWithBg';
 import SEO from '../../SeoData/SEO';
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function DotNetApplication() {
   return (
@@ -21,6 +22,7 @@ function DotNetApplication() {
         ]}
       />
       <DotNetApplication_Second />
+      <GCloudBadge />
       <S_lastSection />
 
     </>

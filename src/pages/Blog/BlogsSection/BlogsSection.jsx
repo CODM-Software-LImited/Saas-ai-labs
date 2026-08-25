@@ -13,6 +13,7 @@ import blog9 from '../../../assets/imgs/blogImgs/salesforce-field-service.webp';
 // import blog10 from '../../../assets/imgs/blogImgs/salesforceLLM0.png'; 
 import blog10 from '../../../assets/imgs/blogImgs/salesforcellm_resized.png'; 
 import blog11 from '../../../assets/imgs/services-details-2/SSO/SSO2.png';
+import blog12 from '../../../assets/imgs/blogImgs/gcloud-blog-banner.png';
 
 
 import './BlogsSection.css';
@@ -116,6 +117,15 @@ const blogsData = [
   description:
     'Explore how SSO authentication works. Learn how to implement secure, seamless login experiences in React applications with enterprise-grade identity management.',
   link: '/blog/salesforce-sso-authentication',
+},
+{
+  id: 12,
+  image: blog12,
+  tag: 'G-Cloud 15',
+  title: "G-Cloud Framework Suppliers in the UK: How CODM Can Help with Cloud Support",
+  description:
+    'Discover how CODM supports public sector organisations with Salesforce, AI, integration, data and cloud application development through G-Cloud 15 Lot 3.',
+  link: '/blog/g-cloud15',
 }
 
 ];

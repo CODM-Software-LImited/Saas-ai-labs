@@ -2,6 +2,7 @@ import SEO from "../../SeoData/SEO";
 import HeaderWithBg from "../../utils/HeaderWithBg/HeaderWithBg";
 import S_lastSection from "../HigherEducation/S_lastSection/S_lastSection";
 import ManufacturingCloud_First from "./ManufacturingCloud_First/ManufacturingCloud_First";
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 function ManufacturingCloud() {
   return (  
     <>
@@ -19,6 +20,7 @@ function ManufacturingCloud() {
         ]}
       />
       <ManufacturingCloud_First />
+      <GCloudBadge />
       <S_lastSection />
     </>
 

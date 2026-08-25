@@ -3,6 +3,7 @@ import HeaderWithBg from '../../utils/HeaderWithBg/HeaderWithBg'
 import DeploymentSupport_First from './DeploymentSupport_First/DeploymentSupport_First';
 import S_lastSection from "../HigherEducation/S_lastSection/S_lastSection";
 import SEO from '../../SeoData/SEO';
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function DeploymentSupport() {
   return (
@@ -21,6 +22,7 @@ function DeploymentSupport() {
         ]}
       />
       <DeploymentSupport_First />
+      <GCloudBadge />
       <S_lastSection />
 
     </>

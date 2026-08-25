@@ -3,6 +3,7 @@ import S_lastSection from "./S_lastSection/S_lastSection";
 import S_rightContainer from "./S_rightContainer/S_rightContainer";
 import S_SecondSection from "./S_secondSection/S_secondSection";
 import SEO from "../../SeoData/SEO";
+import GCloudBadge from '../../components/GCloudBadge/GCloudBadge';
 
 function HigherEducation() {
   return (
@@ -15,7 +16,8 @@ function HigherEducation() {
       />
   <S_firstSection/>
   <S_SecondSection/>
-  <S_lastSection/>
+  <GCloudBadge />
+  <S_lastSection />
     </>
   )
 }

@@ -8,6 +8,7 @@ import gearsetlogo from '../../assets/imgs/cta-15/gearset-logo.png';
 import googlecloudlogo from '../../assets/imgs/cta-15/googlecloud-logo.png';
 import salesforcelogo from '../../assets/imgs/cta-15/saleforce-logo.png';
 import isologo from '../../assets/imgs/cta-15/isologo.png';
+import gcalogo from '../../assets/imgs/gcloud/gca-supplier-black.png';
 
 const FirstSection = () => {
     return (
@@ -43,7 +44,8 @@ const FirstSection = () => {
                                 <img src={salesforcelogo} alt="" width={"20%"}/>
                                 <img src={gearsetlogo} alt="" width={"15%"}/>
                                 <img src={isologo} alt="iso logo" width={"18%"}/>
-                                <img src={googlecloudlogo} alt="" width={"18%"}/>  
+                                <img src={googlecloudlogo} alt="" width={"18%"}/>
+                                <img src={gcalogo} alt="Government Commercial Agency Supplier" width={"12%"} style={{ background: "#ffffff", borderRadius: "8px", padding: "6px" }}/>
                             </div>
                         </div>
 
