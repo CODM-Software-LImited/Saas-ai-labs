@@ -1,4 +1,5 @@
 import "./WhatWeDo.css";
+import DotBtn from "../../utils/Dotbtn/Dotbtn";
 import {
     FaTools,
     FaCloud,
@@ -50,17 +51,6 @@ const services = [
 }
 ];
 
-const expertise = [
-    "Salesforce OmniStudio (Vlocity)",
-    "Salesforce CPQ",
-    "Lightning Web Components",
-    "Customer 360 Platform",
-    "Financial Services Cloud",
-    "Banking Services",
-    "Education Cloud",
-    "Managed Packages",
-];
-
 function WhatWeDo() {
     useEffect(() => {
     AOS.init({
@@ -71,16 +61,19 @@ function WhatWeDo() {
   }, []);
     return (
         <section className="what-we-do">
-            <div className="">
+            <div className="container">
                 <div className="section-header">
-                    <h2>What We Do</h2>
+                    <div className="d-flex justify-content-center">
+                        <DotBtn text="What We Do" />
+                    </div>
+                    <h2>Services Built Around Your Business</h2>
                     <p>
                         As a certified Salesforce Consulting Partner, we deliver innovative
-                        CRM solutions
+                        CRM, AI and custom software solutions end to end.
                     </p>
                 </div>
 
-                <div className="services-grid text-center">
+                <div className="services-grid text-center" data-aos="fade-up">
                     {services.map((service, index) => {
                         const Icon = service.icon;
                         return (

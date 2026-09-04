@@ -1,5 +1,18 @@
-.aboutHeading{
-    font-size: 64px;
-    font-weight: 700;
-    margin: 1rem 0;
+/* ---------- Section rhythm bands (About) ---------- */
+.about-band {
+  padding: 2.5rem 0;
+}
+
+.about-band--tint {
+  background: linear-gradient(180deg, #faf8ff 0%, #f3efff 100%);
+}
+
+body.dark-mode .about-band--tint {
+  background: linear-gradient(180deg, #1a1526 0%, #161221 100%);
+}
+
+@media (max-width: 800px) {
+  .about-band {
+    padding: 1.5rem 0;
+  }
 }

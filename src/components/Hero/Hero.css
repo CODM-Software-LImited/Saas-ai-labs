@@ -1,251 +1,386 @@
-  .heroContainer{
-      display: flex;
-      font-family: 'Satoshi', sans-serif;
-  }
-  .hero-Section{
-    padding-top: 4rem;
-  }
-
-  .hero-img {
-    animation: float 4s ease-in-out infinite;
-  }
-
-  @keyframes float {  
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); } 
-    100% { transform: translateY(0px); }
-  }
-
-  .explorebtn{
-    font-weight: 600;
-    font-size: 1rem;
-    border-radius: 12px;
-    padding:1.2rem 1.8rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: .1rem solid gray;
-    background-color: #7050f4;
-    color: white;
-    border: none;
-  }
-  .explorebtn:hover{
-         background-color: #5d3edb;
-         border: none;
-  }
-  .agentBtn{
-    background-color: #f5eeff;
-  }
-
-.shape-2 {
-      top: 40px;
-      right: 35px;
+.hero-Section {
+  position: relative;
+  overflow: hidden;
+  padding: 5.5rem 0 2.5rem;
+  font-family: 'Satoshi', sans-serif;
 }
 
+.heroContainer {
+  position: relative;
+  z-index: 1;
+  font-family: 'Satoshi', sans-serif;
+}
 
-  body.dark-mode .agentBtn{
-    background-color: #271c52;
-    color: white;
-  }
+/* Soft ambient glows behind the whole section */
+.cdmh-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+}
 
-  body.dark-mode .hero-Section h1{
-    color: white;
-  }
-  body.dark-mode .hero-Section p{
-    color:  #8e8a82;
-  }
+.cdmh-glow-left {
+  width: 480px;
+  height: 480px;
+  top: -160px;
+  left: -160px;
+  background: rgba(112, 80, 244, 0.14);
+}
 
+.cdmh-glow-right {
+  width: 520px;
+  height: 520px;
+  bottom: -200px;
+  right: -140px;
+  background: rgba(77, 152, 209, 0.14);
+}
 
-  /* small phone */
-  @media (max-width: 576px) {
-    .heroContainer{
-      flex-direction: column;
-      padding: 1rem;
-      
-    }
-    .hero-Section {
-    padding-top: 4rem;
-    }
-    .robot_Container{
-      overflow-x: hidden;
-      overflow-y: hidden;
-    }
+/* Legacy button class still used by FreeQuote and PageNotFound */
+.explorebtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.7rem;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, #7050f4, #5d3edb);
+  box-shadow: 0 8px 24px rgba(112, 80, 244, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
-    .robot_Container {
-      height: 300px !important;
-      margin-top: 2rem;
-    }
-    .hero-img {
-      max-width: 280px !important;
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
+.explorebtn:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(112, 80, 244, 0.5);
+}
 
-    .hero-Section{
-      text-align: center;
-    }
-    
-  }
+/* ---------- Badge ---------- */
+.cdmh-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #5d3edb;
+  background: #f5eeff;
+  border: 1px solid rgba(112, 80, 244, 0.25);
+}
 
-  /* medium phone */
-  @media (max-width:395px){
-  .explorebtn{
-    font-weight: 500;
-    font-size: .8rem;
-    border-radius: 12px;
-    padding: 0.8rem 1.4rem;
-  }
-  }
+.cdmh-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7050f4;
+  box-shadow: 0 0 0 0 rgba(112, 80, 244, 0.5);
+  animation: cdmh-pulse 2s infinite;
+}
 
+@keyframes cdmh-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(112, 80, 244, 0.5); }
+  70% { box-shadow: 0 0 0 8px rgba(112, 80, 244, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(112, 80, 244, 0); }
+}
 
-  /* right side hero section */
+/* ---------- Headline & lead ---------- */
+.cdmh-title {
+  margin-top: 1.4rem;
+  font-size: clamp(2rem, 3.6vw, 3.1rem);
+  font-weight: 700;
+  line-height: 1.18;
+  color: #1c1633;
+}
 
-.animatedPills5 ,.animatedPills1 ,.animatedPills2,.animatedPills3 ,.animatedPills4 ,.animatedPills6{
+.cdmh-highlight {
+  background: linear-gradient(90deg, #7050f4, #4d98d1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.cdmh-lead {
+  margin-top: 1.2rem;
+  max-width: 540px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #5a566b;
+}
+
+/* ---------- Stats ---------- */
+.cdmh-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  margin-top: 1.8rem;
+}
+
+.cdmh-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.cdmh-stat-value {
+  font-size: 1.7rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7050f4, #4d98d1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.cdmh-stat-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #736f83;
+  margin-top: 0.15rem;
+}
+
+/* ---------- CTAs ---------- */
+.cdmh-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.cdmh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.7rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.cdmh-btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, #7050f4, #5d3edb);
+  box-shadow: 0 8px 24px rgba(112, 80, 244, 0.35);
+}
+
+.cdmh-btn-primary:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(112, 80, 244, 0.5);
+}
+
+.cdmh-btn-primary svg {
+  transition: transform 0.25s ease;
+}
+
+.cdmh-btn-primary:hover svg {
+  transform: translateX(4px);
+}
+
+.cdmh-btn-ghost {
+  color: #5d3edb;
+  background: transparent;
+  border: 1.5px solid rgba(112, 80, 244, 0.45);
+}
+
+.cdmh-btn-ghost:hover {
+  color: #fff;
+  background: #7050f4;
+  border-color: #7050f4;
+  transform: translateY(-2px);
+}
+
+/* ---------- Trust strip ---------- */
+.cdmh-trust {
+  margin-top: 2.2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(28, 22, 51, 0.08);
+}
+
+.cdmh-trust-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8e8a9e;
+  margin-bottom: 0.8rem;
+}
+
+.cdmh-trust-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.cdmh-trust-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.cdmh-trust-logos a:hover .cdmh-trust-img,
+.cdmh-trust-img:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------- Right side: robot & pills ---------- */
+.cdmh-right {
+  padding-top: 2rem;
+}
+
+.rightsidePillSection {
+  width: 100%;
+}
+
+.robot_Container {
+  height: 400px;
+}
+
+.hero-img {
+  max-width: 400px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.animatedPillsContainer {
+  position: relative;
+}
+
+.animatedPills1, .animatedPills2, .animatedPills3,
+.animatedPills4, .animatedPills5, .animatedPills6 {
   animation: pulseFloat 4.5s ease-in-out infinite;
 }
 
 @keyframes pulseFloat {
-  0% {
-    transform: translateY(0) scale(1);
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-25px) scale(1.08); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+.animatedPills1 { position: absolute; top: 10rem; left: 2rem; }
+.animatedPills2 { position: absolute; top: 18rem; left: 7rem; }
+.animatedPills3 { position: absolute; top: 1rem; right: 8rem; }
+.animatedPills4 { position: absolute; top: 10rem; right: 4rem; }
+.animatedPills5 { position: absolute; top: 1rem; left: 4rem; }
+.animatedPills6 { position: absolute; top: 18rem; right: 12rem; }
+
+/* ---------- Dark mode ---------- */
+body.dark-mode .cdmh-badge {
+  background-color: #271c52;
+  color: #cfc3ff;
+  border-color: rgba(166, 140, 255, 0.35);
+}
+
+body.dark-mode .cdmh-title {
+  color: #fff;
+}
+
+body.dark-mode .cdmh-lead,
+body.dark-mode .cdmh-stat-label {
+  color: #8e8a82;
+}
+
+body.dark-mode .cdmh-trust {
+  border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+body.dark-mode .cdmh-trust-label {
+  color: #8e8a82;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  .animatedPills5 { top: 1rem; left: 2rem; }
+  .animatedPills6 { top: 18rem; right: 7rem; }
+  .animatedPills2 { top: 18rem; left: 1rem; }
+  .animatedPills3 { top: 1rem; right: 7rem; }
+  .animatedPills1 { top: 11rem; left: -19px; }
+  .animatedPills4 { top: 10rem; right: 1rem; }
+}
+
+@media (max-width: 991px) {
+  .hero-Section {
+    padding-top: 4.5rem;
   }
-  50% {
-    transform: translateY(-25px) scale(1.08);
-  }
-  100% {
-    transform: translateY(0) scale(1);
+
+  .cdmh-right {
+    padding-top: 3rem;
   }
 }
-.rightsidePillSection{
-    width:100%;
-    /* background-color: blue; */
-}
 
-.animatedPillsContainer{
-    position: relative;
-}
-.animatedPills1{
-    position: absolute;
-    top: 10rem;
-    left: 2rem;
-}
-.animatedPills2{
-    position: absolute;
-    top: 18rem;
-    left: 7rem;
-}
-.animatedPills3{
-    position: absolute;
-    top: 1rem;
-    right: 8rem;
-}
-.animatedPills4{
-    position: absolute;
-    top: 10rem;
-    right: 4rem;
-}
-.animatedPills5{
-    position: absolute;
-    top: 1rem;
-    left: 4rem;
-    /* right: 30rem; */
-}
-.animatedPills6{
-    position: absolute;
-    top: 18rem;
-    right: 12rem;
-}
-
-@media (max-width:1000px){
-    .animatedPills5 {
-        position: absolute;
-        top: 1rem;
-        left: 2rem;
-    }
-    .animatedPills6{
-     position: absolute;
-    top: 18rem;
-    right: 7rem;
-    }
-    .animatedPills2{
-    position: absolute;
-    top: 18rem;
-    left: 1rem;
-    }
-    .animatedPills3{
-    position: absolute;
-    top: 1rem;
-    right: 7rem;
-    }
-    .animatedPills1 {
-    position: absolute;
-    top: 11rem;
-    left: -19px;
-    }
-     .animatedPills4 {
-    position: absolute;
-    top: 10rem ;
-    right: 1rem;
-    }
-
-
-}
-
-@media (max-width:576px){
-    .animatedPills5 {
-        top: 1rem;
-        right: 22rem;
-    }
-    .animatedPills2{
-    top: 18rem;
-    left: 1rem;
-    }
-    .animatedPills1{
-    position: absolute;
-    top: 10rem;
-    left: 0rem;
-    }
-    .animatedPills4{
-    position: absolute;
-    top: 10rem;
-    right:2rem;
-}}
-
-@media (max-width:360px){
-    .animatedPills5 {
-        top: 1rem;
-        right: 19rem;
-    }
+@media (max-width: 576px) {
+  .hero-Section {
+    padding-top: 4rem;
+    text-align: center;
   }
-@media (max-width:320px){
-    .animatedPills5 {
-        top: 1rem;
-        right: 16rem;
-    }
-    .animatedPills1{
-    position: absolute;
-    top: 10rem;
-    left: 0rem;
-    } 
-    .animatedPills4{
-    position: absolute;
-    top: 10rem;
-    right:2rem;
-}
+
+  .cdmh-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cdmh-stats {
+    justify-content: center;
+    gap: 1.6rem;
+  }
+
+  .cdmh-actions {
+    justify-content: center;
+  }
+
+  .cdmh-trust-logos {
+    justify-content: center;
+  }
+
+  .cdmh-trust-img {
+    height: 44px;
+  }
+
+  .robot_Container {
+    height: 300px;
+    margin-top: 2rem;
+    overflow: hidden;
+  }
+
+  .hero-img {
+    max-width: 280px;
+    height: auto;
+    display: block;
+  }
+
+  .animatedPills5 { top: 1rem; right: 22rem; }
+  .animatedPills2 { top: 18rem; left: 1rem; }
+  .animatedPills1 { top: 10rem; left: 0; }
+  .animatedPills4 { top: 10rem; right: 2rem; }
 }
 
-@media (min-width:580px) {
-      .animatedPills4 {
-        position: absolute;
-        top: 10rem;
-        right: 4rem;
-    }
-        .animatedPills6 {
-        position: absolute;
-        top: 18rem;
-        right: 8rem;
-      }
-      .salesforceLogo{
-        display: block;
-      }
-  
+@media (max-width: 395px) {
+  .cdmh-btn {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.3rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .animatedPills5 { top: 1rem; right: 19rem; }
+}
+
+@media (max-width: 320px) {
+  .animatedPills5 { top: 1rem; right: 16rem; }
+  .animatedPills1 { top: 10rem; left: 0; }
+  .animatedPills4 { top: 10rem; right: 2rem; }
 }

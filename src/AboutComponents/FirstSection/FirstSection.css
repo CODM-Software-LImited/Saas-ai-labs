@@ -1,77 +1,431 @@
-.aboutFirstSection{
-    line-height: 1.9;
-}
-.aboutContainerbg{
-    background-color: rgb(163,140,255);
-    color: white;
-    overflow: hidden;
-    position: relative;
-}
-.about_first_section{
-    padding-top: 8%;
-}
-.rotating-img img{
-    animation: spin 12s linear infinite;
+/* About hero. All classes prefixed abh- so nothing leaks into other pages. */
+
+.abh-section {
+  position: relative;
+  overflow: hidden;
+  padding: 6.5rem 0 3.5rem;
+  font-family: 'Satoshi', sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #faf8ff 100%);
 }
 
-@keyframes spin{
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.abh-container {
+  position: relative;
+  z-index: 1;
 }
 
-.rotationdiv{
-    position: absolute;
-    right: -15rem;
-    top: -335px;
-    overflow-y: hidden;
+/* Soft ambient glows (same recipe as the home hero) */
+.abh-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
 }
 
-@media (max-width: 576px) {
-    .about_first_section{
-    padding-top: 30%;
-}   
-.paddingCustom{
-    padding-top: 5rem;
-    border-radius: 0rem !important;
-}
-.rotationdiv{
-    position: absolute;
-    right: -23rem;
-    top: -616px;
-    overflow-y: hidden;
-}
-.aboutLogoContainer{
-    display: none;
-}
-.aboutLogoContainer img{
-    width: 20%;
-}
+.abh-glow-left {
+  width: 480px;
+  height: 480px;
+  top: -160px;
+  left: -160px;
+  background: rgba(112, 80, 244, 0.14);
 }
 
-
-@media (max-width: 576px) {
-    .about_first_section{
-    padding-top: 40%;
-} 
-.aboutContainerbg{
-  margin-top: .2rem;
-}
+.abh-glow-right {
+  width: 520px;
+  height: 520px;
+  bottom: -220px;
+  right: -140px;
+  background: rgba(77, 152, 209, 0.14);
 }
 
+/* ---------- Badge ---------- */
+.abh-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5d3edb;
+  background: #f5eeff;
+  border: 1px solid rgba(112, 80, 244, 0.25);
+}
 
-@media (max-width:991px){
- .img-center {
+.abh-badge-dot,
+.abh-chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7050f4;
+  box-shadow: 0 0 0 0 rgba(112, 80, 244, 0.5);
+  animation: abh-pulse 2s infinite;
+}
+
+@keyframes abh-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(112, 80, 244, 0.5); }
+  70% { box-shadow: 0 0 0 8px rgba(112, 80, 244, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(112, 80, 244, 0); }
+}
+
+/* ---------- Headline & lead ---------- */
+.abh-title {
+  margin-top: 1.4rem;
+  font-size: clamp(2.1rem, 3.6vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.16;
+  color: #1c1633;
+}
+
+.abh-highlight {
+  background: linear-gradient(90deg, #7050f4, #4d98d1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.abh-lead {
+  margin: 1.2rem 0 0;
+  max-width: 540px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #5a566b;
+}
+
+/* ---------- Stats ---------- */
+.abh-stats {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  margin-top: 1.9rem;
+}
+
+.abh-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.abh-stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  background: linear-gradient(90deg, #7050f4, #4d98d1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.abh-stat-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #736f83;
+  margin-top: 0.25rem;
+}
+
+/* ---------- CTAs ---------- */
+.abh-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.abh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.7rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.abh-btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, #7050f4, #5d3edb);
+  box-shadow: 0 8px 24px rgba(112, 80, 244, 0.35);
+}
+
+.abh-btn-primary:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(112, 80, 244, 0.5);
+}
+
+.abh-btn-primary svg {
+  transition: transform 0.25s ease;
+}
+
+.abh-btn-primary:hover svg {
+  transform: translateX(4px);
+}
+
+.abh-btn-ghost {
+  color: #5d3edb;
+  background: transparent;
+  border: 1.5px solid rgba(112, 80, 244, 0.45);
+}
+
+.abh-btn-ghost:hover {
+  color: #fff;
+  background: #7050f4;
+  border-color: #7050f4;
+  transform: translateY(-2px);
+}
+
+/* ---------- Photo + floating chips ---------- */
+.abh-visual {
+  position: relative;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.abh-imgwrap {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  box-shadow:
+    0 24px 55px rgba(112, 80, 244, 0.25),
+    0 4px 14px rgba(28, 22, 51, 0.08);
+  animation: abh-breathe 6s ease-in-out infinite;
+}
+
+.abh-imgwrap::before {
+  /* subtle brand tint so the photo sits with the purple palette */
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(112, 80, 244, 0) 55%, rgba(60, 36, 140, 0.45) 100%);
+  pointer-events: none;
+}
+
+.abh-imgwrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  pointer-events: none;
+}
+
+.abh-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+  transition: transform 0.6s ease;
+}
+
+.abh-imgwrap:hover .abh-img {
+  transform: scale(1.04);
+}
+
+@keyframes abh-breathe {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.abh-chip {
+  position: absolute;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1c1633;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(112, 80, 244, 0.2);
+  box-shadow: 0 10px 26px rgba(28, 22, 51, 0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  white-space: nowrap;
+}
+
+.abh-chip--top {
+  top: 1.4rem;
+  right: -1rem;
+  animation: abh-bob 4.5s ease-in-out infinite;
+}
+
+.abh-chip--bottom {
+  bottom: 1.6rem;
+  left: -1rem;
+  animation: abh-bob 4.5s ease-in-out 2.2s infinite;
+}
+
+@keyframes abh-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ---------- Trust strip ---------- */
+.abh-trust {
+  margin-top: 3.5rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid rgba(28, 22, 51, 0.08);
+  text-align: center;
+}
+
+.abh-trust-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8e8a9e;
+  margin-bottom: 1.1rem;
+}
+
+.abh-trust-logos {
+  display: flex;
+  align-items: center;
   justify-content: center;
-}
-.aboutContainerbg{
-  margin-top: 3rem;
-}
-
+  flex-wrap: wrap;
+  gap: 0.9rem 1.2rem;
 }
 
+.abh-trust-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 74px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(112, 80, 244, 0.12);
+  box-shadow: 0 6px 18px rgba(28, 22, 51, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
+.abh-trust-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(112, 80, 244, 0.16);
+}
+
+.abh-trust-img {
+  max-height: 52px;
+  max-width: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .abh-imgwrap,
+  .abh-chip--top,
+  .abh-chip--bottom,
+  .abh-badge-dot,
+  .abh-chip-dot {
+    animation: none;
+  }
+}
+
+/* ---------- Dark mode ---------- */
+body.dark-mode .abh-section {
+  background: linear-gradient(180deg, #151515 0%, #1a1526 100%);
+}
+
+body.dark-mode .abh-title {
+  color: #ffffff;
+}
+
+body.dark-mode .abh-lead,
+body.dark-mode .abh-stat-label {
+  color: #a5a1b5;
+}
+
+body.dark-mode .abh-badge {
+  background: rgba(112, 80, 244, 0.15);
+  color: #c4b5fd;
+}
+
+body.dark-mode .abh-chip {
+  color: #f3f0ff;
+  background: rgba(30, 24, 48, 0.85);
+  border-color: rgba(112, 80, 244, 0.35);
+}
+
+body.dark-mode .abh-trust {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .abh-trust-item {
+  background: #f4f2fb;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991px) {
+  .abh-section {
+    padding-top: 5.5rem;
+  }
+
+  .abh-left {
+    text-align: center;
+  }
+
+  .abh-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .abh-stats,
+  .abh-actions {
+    justify-content: center;
+  }
+
+  .abh-stat {
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .abh-section {
+    padding: 4.5rem 0 2.5rem;
+  }
+
+  .abh-stats {
+    gap: 1.4rem;
+  }
+
+  .abh-stat-value {
+    font-size: 1.5rem;
+  }
+
+  .abh-chip {
+    font-size: 0.76rem;
+    padding: 0.5rem 0.85rem;
+  }
+
+  .abh-chip--top {
+    top: 0.9rem;
+    right: 0.8rem;
+  }
+
+  .abh-chip--bottom {
+    bottom: 1rem;
+    left: 0.8rem;
+  }
+
+  .abh-trust-item {
+    height: 62px;
+    padding: 0.5rem 0.9rem;
+  }
+
+  .abh-trust-img {
+    max-height: 42px;
+    max-width: 110px;
+  }
+}

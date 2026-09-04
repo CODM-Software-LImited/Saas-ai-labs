@@ -1,12 +1,24 @@
-body.dark-mode .homepageFirstContainer{
-    background-color: #151515;
+/* ---------- Section rhythm bands ---------- */
+/* Consistent vertical spacing between home page sections; --tint adds the
+   soft brand-purple wash used to alternate section backgrounds. */
+.home-band {
+  padding: 2.5rem 0;
 }
 
+.home-band--tint {
+  background: linear-gradient(180deg, #faf8ff 0%, #f3efff 100%);
+}
 
-/* responsive */
+body.dark-mode .homepageFirstContainer {
+  background-color: #151515;
+}
 
-@media (max-width:800px){
-    *{
-        padding: .1rem;
-    }
+body.dark-mode .home-band--tint {
+  background: linear-gradient(180deg, #1a1526 0%, #161221 100%);
+}
+
+@media (max-width: 800px) {
+  .home-band {
+    padding: 1.5rem 0;
+  }
 }

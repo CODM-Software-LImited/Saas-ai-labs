@@ -1,164 +1,132 @@
-
-import img1 from '../../assets/imgs/Certifications/Admin.png';
-import img2 from '../../assets/imgs/Certifications/ApplicationArchitect.png';
-import img3 from '../../assets/imgs/Certifications/Certified-Agentforce.png';
-import img4 from '../../assets/imgs/Certifications/SFBA.png';
-import img5 from '../../assets/imgs/Certifications/CPQ.png';
-import img6 from '../../assets/imgs/Certifications/DataArchitect.png';
-import img7 from '../../assets/imgs/Certifications/OmniStudioConsultant.jpeg';
-import img8 from '../../assets/imgs/Certifications/OmniStudioDeveloper.png';
-import img9 from '../../assets/imgs/Certifications/PlatformAppBuilder.png';
-import img10 from '../../assets/imgs/Certifications/PD1.png';
-import img11 from '../../assets/imgs/Certifications/PD2.png';
-import img12 from '../../assets/imgs/Certifications/ServiceCloudConsultant.png';
-import Dotbtn from '../../utils/Dotbtn/Dotbtn.jsx';
-
-import cyberEssentialsimg from '../../assets/imgs/cta-15/cyber-essentials-logo.png';
-import gearsetlogo from '../../assets/imgs/cta-15/gearset-logo.png';
-import googlecloudlogo from '../../assets/imgs/cta-15/googlecloud-logo.png';
-import salesforcelogo from '../../assets/imgs/cta-15/saleforce-logo.png';
-import isologo from '../../assets/imgs/cta-15/isologo.png';
-import gcalogo from '../../assets/imgs/gcloud/gca-supplier-black.png';
-import './fourthSection.css';
 import { Link } from 'react-router-dom';
+import Dotbtn from '../../utils/Dotbtn/Dotbtn.jsx';
+import './fourthSection.css';
 
-// for slider
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination, Autoplay } from 'swiper/modules';
+import admin from '../../assets/imgs/Certifications/Admin.png';
+import appArchitect from '../../assets/imgs/Certifications/ApplicationArchitect.png';
+import agentforce from '../../assets/imgs/Certifications/Certified-Agentforce.png';
+import sfba from '../../assets/imgs/Certifications/SFBA.png';
+import cpq from '../../assets/imgs/Certifications/CPQ.png';
+import dataArchitect from '../../assets/imgs/Certifications/DataArchitect.png';
+import omniConsultant from '../../assets/imgs/Certifications/OmniStudioConsultant.png';
+import omniDeveloper from '../../assets/imgs/Certifications/OmniStudioDeveloper.png';
+import platformAppBuilder from '../../assets/imgs/Certifications/PlatformAppBuilder.png';
+import pd1 from '../../assets/imgs/Certifications/PD1.png';
+import pd2 from '../../assets/imgs/Certifications/PD2.png';
+import serviceCloud from '../../assets/imgs/Certifications/ServiceCloudConsultant.png';
 
+import cyberEssentials from '../../assets/imgs/cta-15/cyber-essentials-logo.png';
+import gearset from '../../assets/imgs/cta-15/gearset-logo.png';
+import googleCloud from '../../assets/imgs/cta-15/googlecloud-logo.png';
+import salesforcePartner from '../../assets/imgs/cta-15/saleforce-logo.png';
+import iso from '../../assets/imgs/cta-15/isologo.png';
+import gca from '../../assets/imgs/gcloud/gca-supplier-black.png';
 
-// import EventsGallery from '../EventsGallery/EventsGallery.jsx';
+const certifications = [
+  { src: admin, name: 'Administrator', track: 'Admin' },
+  { src: appArchitect, name: 'Application Architect', track: 'Architect' },
+  { src: dataArchitect, name: 'Data Architect', track: 'Architect' },
+  { src: agentforce, name: 'Agentforce Specialist', track: 'AI' },
+  { src: sfba, name: 'Business Analyst', track: 'Consultant' },
+  { src: cpq, name: 'CPQ Specialist', track: 'Consultant' },
+  { src: serviceCloud, name: 'Service Cloud Consultant', track: 'Consultant' },
+  { src: omniConsultant, name: 'OmniStudio Consultant', track: 'Consultant' },
+  { src: omniDeveloper, name: 'OmniStudio Developer', track: 'Developer' },
+  { src: platformAppBuilder, name: 'Platform App Builder', track: 'Developer' },
+  { src: pd1, name: 'Platform Developer I', track: 'Developer' },
+  { src: pd2, name: 'Platform Developer II', track: 'Developer' },
+];
 
-const certificateImages = [
-  { src: img1, alt: "Admin" },
-  { src: img2, alt: "ApplicationArchitect" },
-  { src: img3, alt: "Certified-Agentforce" },
-  { src: img4, alt: "SFBA" },
-  { src: img5, alt: "CPQ" },
-  { src: img6, alt: "DataArchitect" },
-  { src: img7, alt: "OmniStudioConsultant" },
-  { src: img8, alt: "OmniStudioDeveloper" },
-  { src: img9, alt: "PlatformAppBuilder" },
-  { src: img10, alt: "PD1" },
-  { src: img11, alt: "PD2" },
-  { src: img12, alt: "ServiceCloudConsultant" },
-  { src: cyberEssentialsimg, alt: "Cyber Essentials" },
-  { src: gearsetlogo, alt: "Gearset" },
-  { src: googlecloudlogo, alt: "Google Cloud" },
-  { src: salesforcelogo, alt: "Salesforce", extraPadding: true },
-  { src: isologo, alt: "ISO Certification", extraPadding: true },
-  { src: gcalogo, alt: "Government Commercial Agency Supplier - G-Cloud 15" },
+const accreditations = [
+  { src: salesforcePartner, name: 'Salesforce Consulting Partner', note: 'Official partner programme' },
+  { src: gca, name: 'G-Cloud 15 Supplier', note: 'Lot 3: Cloud Support · RM1557.15', to: '/g-cloud-15' },
+  { src: cyberEssentials, name: 'Cyber Essentials', note: 'UK Government-backed security standard' },
+  { src: iso, name: 'ISO Certified', note: 'International management standards' },
+  { src: googleCloud, name: 'Google Cloud Partner', note: 'Cloud infrastructure & AI services' },
+  { src: gearset, name: 'Gearset', note: 'Salesforce DevOps & release management' },
+];
 
-
+const summary = [
+  { value: '12', label: 'Salesforce certifications' },
+  { value: '5', label: 'Certification tracks' },
+  { value: '6', label: 'Accreditations & partnerships' },
 ];
 
 const FourthSection = () => {
   return (
-    <section className="section-team-4 position-relative overflow-hidden pt-5">
+    <section className="crt-section">
       <div className="container">
         {/* Header */}
-        <div className="fourthSection_Header text-center">
-          <div className='d-flex justify-content-center'>
-            <Dotbtn text="OUR EXCELLENCE" data-aos="zoom-in" data-aos-delay="100" />
+        <div className="crt-header">
+          <div className="d-flex justify-content-center">
+            <Dotbtn text="Our Excellence" />
           </div>
-          <h3 className="ds-3 my-3">Our Certificates</h3>
-          <p className="fs-5">
-            Our certifications validate expertise in cutting edge technologies,
-            <br />
-            showcasing professional skills and industry readiness.
+          <h2 className="crt-heading">
+            Certified Expertise,{' '}
+            <span className="crt-highlight">Proven Credentials</span>
+          </h2>
+          <p className="crt-subtitle">
+            Our team holds Salesforce certifications across admin, architect,
+            consultant, developer and AI tracks, backed by recognised security
+            and partner accreditations.
           </p>
-        </div>
 
-        {/* Certificates grid */}
-        {/* <div className="FourthSection_certificates row mt-8 mb-lg-8 m-0">
-          {certificateImages.map((item, i) => (
-            <div className="CertificatesCards col-lg-2 col-md-4 mb-lg-4 mb-4 text-center" key={i}>
-              <div className="position-relative d-inline-block z-1">
-                <div className="CertificatesCards_Img zoom-img rounded-3">
-                  <img
-                    className={`img-fluid ${i === 2 || i === 11 ? "img-12-custom" : "img-normal"
-                      }`}
-                    src={item.src}
-                    alt={item.alt}
-                  />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div> */}
-
-        <div className="FourthSection_certificates mt-8 mb-lg-8">
-
-          {/* Swiper for mobile & tablet */}
-          <div className="d-lg-none">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              autoplay={{ delay: 1000 }}
-              loop={true}
-              spaceBetween={20}
-              pagination={{ clickable: true }}
-              breakpoints={{
-                0: { slidesPerView: 1 },
-                576: { slidesPerView: 2 },
-                768: { slidesPerView: 3 },
-              }}
-            >
-              {certificateImages.map((item, i) => (
-                <SwiperSlide key={i}>
-                  <div className="CertificatesCards text-center">
-                    <div className="position-relative d-inline-block z-1">
-                      <div className="CertificatesCards_Img zoom-img rounded-3">
-                        {/* <img
-                          className={`img-fluid ${i === 2 || i === 11 ? "img-12-custom" : "img-normal"
-                            }`}
-                          src={item.src}
-                          alt={item.alt}
-                        /> */}
-
-                        <img
-                          className={`img-fluid 
-                            ${i === 2 || i === 11 || cyberEssentialsimg ?  "img-12-custom" : "img-normal"} 
-                            ${item.extraPadding ? "pt-4rem" : ""}
-                          `}
-                          src={item.src}
-                          alt={item.alt}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-
-          <div className="row m-0 d-none d-lg-flex">
-            {certificateImages.map((item, i) => (
-              <div
-                // className="CertificatesCards col-lg-2 mb-lg-4 text-center"
-                className={`CertificatesCards col-lg-2 mb-lg-4 text-center ${item.extraPadding ? "pt-4rem" : ""}`}
-                key={i}
-              >
-                <div className="position-relative d-inline-block z-1">
-                  <div className="CertificatesCards_Img zoom-img rounded-3"> 
-                    <img
-                      className={`img-fluid ${i === 2 || i === 11 ? "img-12-custom" : "img-normal"
-                        }`}
-                      src={item.src}
-                      alt={item.alt}
-                    />
-                  </div>
-                </div>
+          <div className="crt-summary" aria-label="Certification summary">
+            {summary.map((s) => (
+              <div className="crt-summary-item" key={s.label}>
+                <span className="crt-summary-value">{s.value}</span>
+                <span className="crt-summary-label">{s.label}</span>
               </div>
             ))}
           </div>
-
         </div>
 
+        {/* Salesforce certifications */}
+        <div className="crt-grid" data-aos="fade-up">
+          {certifications.map((c) => (
+            <div className="crt-card" key={c.name}>
+              <div className="crt-badge">
+                <img src={c.src} alt={`Salesforce Certified ${c.name}`} loading="lazy" />
+              </div>
+              <h3 className="crt-name">{c.name}</h3>
+              <span className={`crt-track crt-track--${c.track.toLowerCase()}`}>{c.track}</span>
+            </div>
+          ))}
+        </div>
 
+        {/* Accreditations & partnerships */}
+        <div className="crt-accred" data-aos="fade-up">
+          <div className="crt-accred-head">
+            <span className="crt-accred-eyebrow">Accreditations &amp; partnerships</span>
+          </div>
+          <div className="crt-accred-grid">
+            {accreditations.map((a) => {
+              const inner = (
+                <>
+                  <div className="crt-accred-logo">
+                    <img src={a.src} alt={a.name} loading="lazy" />
+                  </div>
+                  <div className="crt-accred-body">
+                    <span className="crt-accred-name">{a.name}</span>
+                    <span className="crt-accred-note">{a.note}</span>
+                  </div>
+                </>
+              );
+              return a.to ? (
+                <Link to={a.to} className="crt-accred-item crt-accred-item--link" key={a.name}>
+                  {inner}
+                </Link>
+              ) : (
+                <div className="crt-accred-item" key={a.name}>
+                  {inner}
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </section>
   );
 };
+
 export default FourthSection;

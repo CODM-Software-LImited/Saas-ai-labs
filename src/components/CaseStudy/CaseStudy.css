@@ -1,0 +1,124 @@
+.casestudy-section {
+  padding: 4.5rem 0;
+  font-family: 'Satoshi', sans-serif;
+}
+
+.casestudy-subtitle {
+  max-width: 560px;
+  margin: 0 auto;
+  color: #5a566b;
+}
+
+.casestudy-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(112, 80, 244, 0.1);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.casestudy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(112, 80, 244, 0.16);
+}
+
+.casestudy-imgwrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.casestudy-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.casestudy-card:hover .casestudy-img {
+  transform: scale(1.05);
+}
+
+.casestudy-tag {
+  position: absolute;
+  top: 0.9rem;
+  left: 0.9rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(93, 62, 219, 0.85);
+}
+
+.casestudy-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.4rem 1.5rem 1.6rem;
+}
+
+.casestudy-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1c1633;
+  margin-bottom: 0.6rem;
+}
+
+.casestudy-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #5a566b;
+  margin-bottom: 1.1rem;
+  flex-grow: 1;
+}
+
+.casestudy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #5d3edb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.casestudy-link svg {
+  transition: transform 0.25s ease;
+}
+
+.casestudy-link:hover {
+  color: #7050f4;
+}
+
+.casestudy-link:hover svg {
+  transform: translateX(4px);
+}
+
+/* Dark mode */
+body.dark-mode .casestudy-card {
+  background: #1e1930;
+  border-color: rgba(166, 140, 255, 0.18);
+}
+
+body.dark-mode .casestudy-title {
+  color: #fff;
+}
+
+body.dark-mode .casestudy-subtitle,
+body.dark-mode .casestudy-desc {
+  color: #8e8a82;
+}
+
+@media (max-width: 768px) {
+  .casestudy-section {
+    padding: 3rem 0;
+  }
+}

@@ -1,4 +1,5 @@
 import './Hero2.css'
+import DotBtn from '../../utils/Dotbtn/Dotbtn';
 import oipimg from "../../assets/imgs/features-1/OIP.jpeg";
 import eduImg from "../../assets/imgs/features-1/Education.jpeg";
 import manuImg from "../../assets/imgs/features-1/coe-manufacturing-png-4.png";
@@ -79,7 +80,15 @@ const Hero2 = () => {
   return (
     <>
     <div className="hero2_container container">
-      <h4 className='text-center pt-lg-5 Heading3'>Industries We Serve</h4>
+      <div className="text-center">
+        <div className="d-flex justify-content-center">
+          <DotBtn text="Where We Work" />
+        </div>
+        <h2 className='text-center Heading3 my-3'>Industries We Serve</h2>
+        <p className="hero2-subtitle">
+          Deep Salesforce industry-cloud expertise across the sectors where digital transformation matters most.
+        </p>
+      </div>
       <div className="row mt-5 container">
         {features.map((feature, index) => (
           <div

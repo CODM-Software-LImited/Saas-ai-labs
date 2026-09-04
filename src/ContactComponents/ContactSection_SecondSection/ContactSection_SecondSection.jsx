@@ -1,174 +1,149 @@
-// import img from '../../assets/imgs/contact-5/icon-1.svg';
-// import img1 from '../../assets/imgs/contact-4/img-5.png';
-// import img2 from '../../assets/imgs/contact-4/img-3.png';
-// import bgLine from '../../assets/imgs/contact-4/img-bg-1.png';
 import './ContactSection_SecondSection.css';
-import icon1 from '../../assets/imgs/contact-5/icon-1.svg';
-import icon2 from '../../assets/imgs/contact-5/icon-2.svg';
-import icon3 from '../../assets/imgs/contact-5/icon-3.svg';
-import icon4 from '../..//assets/imgs/contact-5/icon-4.svg';
+import CountUp from '../../utils/CountUp/CountUp';
+import DotBtn from '../../utils/Dotbtn/Dotbtn';
 
-import flag1 from '../../assets/imgs/contact-4/Flag of UK.png';
-import flag2 from '../../assets/imgs/contact-4/Flag of UK.png';
-import flag3 from '../../assets/imgs/contact-4/Flag_of_India.png';
-import flag4 from '../../assets/imgs/contact-4/Flag_of_the_United_States.png';
+import flagUK from '../../assets/imgs/contact-4/Flag of UK.png';
+import flagIN from '../../assets/imgs/contact-4/Flag_of_India.png';
+import flagUS from '../../assets/imgs/contact-4/Flag_of_the_United_States.png';
+
+const counters = [
+  { end: 24, suffix: 'h', label: 'Average first response on business days' },
+  { end: 4, suffix: '', label: 'Offices across the UK, USA and India' },
+  { end: 12, suffix: '+', label: 'Certified Salesforce specialists on hand' },
+  { end: 3, suffix: '', label: 'Time zones covered for support' },
+];
+
+const IconMail = (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <rect x="3.5" y="5.5" width="17" height="13" rx="2.5" stroke="currentColor" strokeWidth="1.7" />
+    <path d="M4 7l8 6 8-6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+const IconPhone = (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M8.9 4.75H6.07C5.34 4.75 4.75 5.34 4.75 6.07c0 7.28 5.9 13.18 13.18 13.18.73 0 1.32-.59 1.32-1.32v-2.82l-3.1-2.07-1.62 1.61c-.28.28-.7.37-1.05.19a10.3 10.3 0 0 1-2.52-1.8 10.3 10.3 0 0 1-1.84-2.54c-.16-.34-.07-.73.2-1L10.96 7.86 8.9 4.75Z" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+const IconBuilding = (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M4.75 19.25h14.5M6.25 19.25V6.75a2 2 0 0 1 2-2h7.5a2 2 0 0 1 2 2v12.5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+    <path d="M9.5 8h1.5M13 8h1.5M9.5 11.5h1.5M13 11.5h1.5M9.5 15h1.5M13 15h1.5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+  </svg>
+);
+
+const IconGlobe = (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <circle cx="12" cy="12" r="8.5" stroke="currentColor" strokeWidth="1.7" />
+    <path d="M3.5 12h17M12 3.5c2.5 2.6 3.7 5.4 3.7 8.5s-1.2 5.9-3.7 8.5c-2.5-2.6-3.7-5.4-3.7-8.5S9.5 6.1 12 3.5z" stroke="currentColor" strokeWidth="1.7" />
+  </svg>
+);
+
+const channels = [
+  {
+    icon: IconMail,
+    title: 'Email us',
+    intro: 'For new projects, partnerships or support with an existing solution.',
+    rows: [{ text: 'info@codmsoftware.co.uk', href: 'mailto:info@codmsoftware.co.uk' }],
+    foot: 'We aim to reply within 24 hours on business days.',
+  },
+  {
+    icon: IconPhone,
+    title: 'Call us',
+    intro: 'Speak to a consultant in your region during local business hours.',
+    rows: [
+      { flag: flagUK, alt: 'United Kingdom', text: '+44 121 818 6924', href: 'tel:+441218186924' },
+      { flag: flagUS, alt: 'United States', text: '+1 201 623 3132', href: 'tel:+12016233132' },
+      { flag: flagIN, alt: 'India', text: '+91 97171 16432', href: 'tel:+919717116432' },
+    ],
+    foot: 'Mon to Fri, 9:00 to 18:00 local time.',
+  },
+  {
+    icon: IconBuilding,
+    title: 'UK offices',
+    intro: 'Registered head office in London with a delivery hub in Birmingham.',
+    rows: [
+      { flag: flagUK, alt: 'United Kingdom', text: '71-75 Shelton Street, Covent Garden, London WC2H 9JQ' },
+      { flag: flagUK, alt: 'United Kingdom', text: 'Regus, Edmund House, 12-22 Newhall St, Birmingham B3 3AS' },
+    ],
+    foot: 'Visits by appointment.',
+  },
+  {
+    icon: IconGlobe,
+    title: 'Global branches',
+    intro: 'Partner offices that let us support clients around the clock.',
+    rows: [
+      { flag: flagUS, alt: 'United States', text: 'Talent4World LLC, 4501 Nightland Dr, Plano, TX 75024' },
+      { flag: flagIN, alt: 'India', text: 'SaaS AI Labs, IHDP Business Park, Plot 7, Sector 127, Noida 201304' },
+    ],
+    foot: 'Follow-the-sun delivery and support.',
+  },
+];
 
 const ContactSection_SecondSection = () => {
   return (
-    <section className="ContactSection_SecondSection p-md-2 text-center text-md-start">
+    <section className="cc-section">
       <div className="container">
-        <div className="row">
-          {/* Help & Support */}
-          <div className="ContactSection_SecondSectionContainer col-12 col-md-6 col-lg-3 mb-md-0 pt-md-5 pt-3">
-            <div className="feature-item mb-5 mb-lg-0 pe-md-5 hover-up text-center text-md-start">
-              <div className="icon-flip position-relative rounded-3 mb-4">
-                <div className="S_secondLineImg">
-                  <img src={icon1} alt="Codm" />
-                  <span className="customLine"></span>
-                </div>
-              </div>
-              <h6 className='contactHeading'>Help &amp; Support</h6>
-              <p className="text-500">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path class="stroke-dark" d="M4.75 7.75C4.75 6.64543 5.64543 5.75 6.75 5.75H17.25C18.3546 5.75 19.25 6.64543 19.25 7.75V16.25C19.25 17.3546 18.3546 18.25 17.25 18.25H6.75C5.64543 18.25 4.75 17.3546 4.75 16.25V7.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path class="stroke-dark" d="M5.5 6.5L12 12.25L18.5 6.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                <span className='text-black'>info@codmsoftware.co.uk</span>
-              </p>
-              <p>Contact us for help with products, services, or developer tools.</p>
-              <p>We aim to respond within 24 hours on business days</p>
+        {/* Data strip */}
+        <div className="cc-counters" data-aos="fade-up">
+          {counters.map((c) => (
+            <div className="cc-counter" key={c.label}>
+              <span className="cc-counter-value">
+                {c.end === 24 && <span className="cc-counter-prefix">&lt;</span>}
+                <CountUp end={c.end} duration={1800} />
+                {c.suffix}
+              </span>
+              <span className="cc-counter-label">{c.label}</span>
             </div>
-          </div>
+          ))}
+        </div>
 
-          {/* Call Us */}
-          <div className="col-12 col-md-6 col-lg-3 mb-md-0 text-center text-md-start d-flex justify-content-center pt-md-5 pt-3">
-            <div className="feature-item mb-5 mb-lg-0 pe-md-5 hover-up text-center text-md-start">
+        {/* Heading */}
+        <div className="cc-head" data-aos="fade-up">
+          <DotBtn text="Ways to reach us" />
+          <h2 className="cc-title">
+            Choose the channel that{' '}
+            <span className="cc-highlight">works for you</span>
+          </h2>
+          <p className="cc-copy">
+            Email, phone or a visit to one of our offices. However you get in
+            touch, you will be speaking with a consultant, not a call centre.
+          </p>
+        </div>
 
-              <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4 mx-auto mx-md-0">
-                <div className="S_secondLineImg">
-                  <img src={icon2} alt="Codm" />
-                  <span className="customLine"></span>
-                </div>
-              </div>
+        {/* Channel cards */}
+        <div className="cc-grid">
+          {channels.map((ch, i) => (
+            <article
+              className="cc-card"
+              key={ch.title}
+              data-aos="fade-up"
+              data-aos-delay={i * 80}
+            >
+              <span className="cc-card-icon">{ch.icon}</span>
+              <h3 className="cc-card-title">{ch.title}</h3>
+              <p className="cc-card-intro">{ch.intro}</p>
 
-              <h6 className="contactHeading">Call Us</h6>
+              <ul className="cc-card-rows">
+                {ch.rows.map((r) => (
+                  <li className="cc-row" key={r.text}>
+                    {r.flag && <img src={r.flag} alt={r.alt} className="cc-flag" />}
+                    {r.href ? (
+                      <a href={r.href} className="cc-row-link">{r.text}</a>
+                    ) : (
+                      <span>{r.text}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
 
-              <p className="text-center text-md-start">
-                <span>
-                  <img
-                    src={flag1}
-                    alt="UK Flag"
-                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
-                  />
-                  UK: (+44)01218186924 <br />
-                </span>
-
-                <span>
-                  <img
-                    src={flag4}
-                    alt="USA Flag"
-                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
-                  />
-                  USA: (+1) 201 623 3132 <br />
-                </span>
-
-                <span>
-                  <img
-                    src={flag3}
-                    alt="India Flag"
-                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
-                  />
-                  India: (+91) 9717116432
-                </span>
-              </p>
-            </div>
-          </div>
-
-
-          {/* Business Department */}
-          <div className="col-12 col-md-6 col-lg-3 mb-5 mb-md-0 pt-5 d-flex justify-content-center">
-            <div className="feature-item mb-5 mb-lg-0 pe-md-5 hover-up text-center text-md-start">
-
-              <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4 mx-auto mx-md-0">
-                <div className="S_secondLineImg text-center text-md-start">
-                  <img src={icon3} alt="Codm" />
-                  <span className="customLine"></span>
-                </div>
-              </div>
-
-              <h6 className="contactHeading text-center text-md-start">
-                Business Department
-              </h6>
-
-              <p className="text-500 text-center text-md-start" style={{ display: "grid" }}>
-                <span>
-                  <img
-                    src={flag1}
-                    alt="UK Flag"
-                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
-                  />
-                  Regus - Edmund house, 12-22 Newhall St, Birmingham B3 3AS,UK
-                </span>
-                <br />
-
-                <span>
-                  <img
-                    src={flag2}
-                    alt="London Flag"
-                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
-                  />
-                  London: 71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, UK
-                </span>
-              </p>
-
-            </div>
-          </div>
-
-
-          {/* Global Branch */}
-          <div className="col-12 col-md-6 col-lg-3 mb-5 mb-md-0 pt-5 d-flex justify-content-center">
-            <div className="feature-item mb-5 mb-lg-0 pe-md-5 hover-up text-center text-md-start mb-3">
-
-              <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3 mb-4 mx-auto mx-md-0">
-                <div className="S_secondLineImg text-center text-md-start">
-                  <img src={icon4} alt="Codm" />
-                  <span className="customLine"></span>
-                </div>
-              </div>
-
-              <h6 className="contactHeading text-center text-md-start">
-                Global Branch
-              </h6>
-
-              <p className="text-500 text-center text-md-start" style={{ display: "grid" }}>
-                <span>
-                  <img
-                    src={flag4}
-                    alt="USA Flag"
-                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
-                  />
-                  USA: Talent4World LLC 4501 Nightland Dr Plano, TX 75024 - USA
-                </span>
-
-                <br />
-
-                <span>
-                  <img
-                    src={flag3}
-                    alt="India Flag"
-                    style={{ width: "28px", height: "20px", marginRight: "6px" }}
-                  />
-                  <b>SaaS AI Labs</b><br />
-                  Ihdp Business Park Plot Number 7, Serenia second floor,
-                  Sector 127, Noida Uttar Pradesh 201304
-                </span>
-              </p>
-
-            </div>
-          </div>
-
-
+              <p className="cc-card-foot">{ch.foot}</p>
+            </article>
+          ))}
         </div>
       </div>
     </section>
-
   );
 };
 

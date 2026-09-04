@@ -1,6 +1,7 @@
 .ourExcellence_Container{
     padding-top: 2rem;
-    height: 33rem;
+    /* was a fixed 33rem, which clipped the testimonial cards */
+    height: auto;
 }
 .ourExcelence_img{
         transition: 0.3s;

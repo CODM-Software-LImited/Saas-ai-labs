@@ -1,58 +1,277 @@
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+/* Testimonials — featured-card layout. All classes prefixed tsm- so nothing
+   leaks into Bootstrap's global .carousel / .card. */
+
+.tsm-section {
+  padding: 4.5rem 0 4rem;
+  font-family: 'Satoshi', sans-serif;
   position: relative;
-  width: 100%;
-  height: 470px;
-  /* background: #a38cff; */
   z-index: 1;
 }
 
-.carousel-track {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  height: 100%;
+/* ---------- Trust line under the heading ---------- */
+.tsm-trustline {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.9rem;
+  margin-top: 0.4rem;
 }
 
-.card {
-  position: absolute;
-  width: 300px;
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.6s ease, opacity 0.6s ease;
+.tsm-avatar-cluster {
+  display: flex;
 }
 
-.card-content { 
-  transition: all 0.5s ease;
-  margin: 2rem;
-}
-
-.author p {
-  margin-bottom: 1.5rem;
-}
-
-.avatarImg {
-  width: 3.6rem;
-  height: 3.6rem;
+.tsm-cluster-img {
+  width: 2.4rem;
+  height: 2.4rem;
   border-radius: 50%;
   object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(28, 22, 51, 0.15);
 }
 
-.ratingImg {
- width: 10%;
+.tsm-cluster-img + .tsm-cluster-img {
+  margin-left: -0.7rem;
 }
-.authorName{
-  color: #7354f5;
+
+.tsm-trustline-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
 }
-.card-content{
-  margin: 2rem;
+
+.tsm-trustline-text {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #5a566b;
+}
+
+/* ---------- Scrolling marquee ---------- */
+.tsm-marquee {
+  margin-top: 2.2rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.tsm-track {
+  display: flex;
+  width: max-content;
+  animation: tsm-scroll 38s linear infinite;
+}
+
+.tsm-marquee:hover .tsm-track {
+  animation-play-state: paused;
+}
+
+.tsm-track-group {
+  display: flex;
+  align-items: stretch;
+  gap: 1.5rem;
+  /* vertical room so hover lift and card shadows aren't clipped */
+  padding: 1rem 1.5rem 1.8rem 0;
+}
+
+@keyframes tsm-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Reduced motion: stop the marquee, let people swipe/scroll instead */
+@media (prefers-reduced-motion: reduce) {
+  .tsm-track {
+    animation: none;
+  }
+
+  .tsm-marquee {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+/* ---------- Cards ---------- */
+.tsm-card {
+  display: flex;
+  flex-direction: column;
+  width: min(380px, 82vw);
+  flex-shrink: 0;
+  margin: 0;
+  background: #fff;
+  border: 1px solid rgba(112, 80, 244, 0.12);
+  border-radius: 20px;
+  padding: 1.9rem 1.8rem 1.7rem;
+  box-shadow: 0 8px 24px rgba(28, 22, 51, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tsm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 44px rgba(112, 80, 244, 0.18);
+}
+
+.tsm-quote-icon {
+  fill: rgba(112, 80, 244, 0.25);
+  margin-bottom: 1.1rem;
+  flex-shrink: 0;
+}
+
+.tsm-quote {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #3d3852;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* Featured (center) card — brand gradient */
+.tsm-card--featured {
+  background: linear-gradient(150deg, #7050f4 0%, #5d3edb 55%, #4b2fc4 100%);
+  border-color: transparent;
+  box-shadow: 0 18px 44px rgba(93, 62, 219, 0.35);
+}
+
+.tsm-card--featured:hover {
+  box-shadow: 0 26px 56px rgba(93, 62, 219, 0.45);
+}
+
+.tsm-card--featured .tsm-quote-icon {
+  fill: rgba(255, 255, 255, 0.4);
+}
+
+.tsm-card--featured .tsm-quote {
+  color: rgba(255, 255, 255, 0.94);
+}
+
+/* ---------- Stars ---------- */
+.tsm-stars {
+  display: flex;
+  gap: 0.18rem;
+}
+
+.tsm-star {
+  fill: #e4e0f2;
+}
+
+.tsm-star--filled {
+  fill: #f5a623;
+}
+
+.tsm-star--light {
+  fill: #ffd166;
+}
+
+/* ---------- Card footer (person + stars) ---------- */
+.tsm-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(28, 22, 51, 0.08);
+}
+
+.tsm-card--featured .tsm-footer {
+  border-top-color: rgba(255, 255, 255, 0.25);
+}
+
+.tsm-avatar {
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(112, 80, 244, 0.35);
+  flex-shrink: 0;
+}
+
+.tsm-card--featured .tsm-avatar {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.tsm-person-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.tsm-name {
+  font-weight: 700;
+  color: #1c1633;
+  font-size: 0.96rem;
+}
+
+.tsm-role {
+  font-size: 0.8rem;
+  color: #8e8a9e;
+}
+
+.tsm-card--featured .tsm-name {
+  color: #fff;
+}
+
+.tsm-card--featured .tsm-role {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.tsm-footer-stars {
+  margin-left: auto;
+}
+
+/* ---------- Dark mode ---------- */
+body.dark-mode .tsm-card {
+  background: #1e1930;
+  border-color: rgba(166, 140, 255, 0.18);
+}
+
+body.dark-mode .tsm-card--featured {
+  background: linear-gradient(150deg, #7050f4 0%, #5d3edb 55%, #4b2fc4 100%);
+}
+
+body.dark-mode .tsm-quote {
+  color: #d8d4e8;
+}
+
+body.dark-mode .tsm-card--featured .tsm-quote {
+  color: rgba(255, 255, 255, 0.94);
+}
+
+body.dark-mode .tsm-name {
+  color: #fff;
+}
+
+body.dark-mode .tsm-trustline-text,
+body.dark-mode .tsm-role {
+  color: #8e8a82;
+}
+
+body.dark-mode .tsm-footer {
+  border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+body.dark-mode .tsm-cluster-img {
+  border-color: #1e1930;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .tsm-section {
+    padding: 3rem 0 2.8rem;
+  }
+
+  .tsm-trustline {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .tsm-trustline-meta {
+    align-items: center;
+  }
+
+  .tsm-card {
+    padding: 1.6rem 1.4rem 1.4rem;
+  }
+
+  .tsm-footer-stars {
+    display: none;
+  }
 }
