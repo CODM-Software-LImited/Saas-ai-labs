@@ -80,7 +80,7 @@ function MarketingCloud_Second() {
                             {/*new */}
 
                             <h4 className="mb-3 mt-1">What Is a Salesforce Marketing Cloud?</h4>
-                            <p className='mb-4'>Salesforce Marketing Cloud (SFMC) is a leading digital marketing platform that empowers businesses to create highly personalized customer experiences at scale. From email marketing and social media engagement to customer journey management and real-time analytics, Marketing Cloud offers an integrated suite of tools designed to build relationships and increase ROI across every stage of the customer lifecycle. Whether you're a small business or a global enterprise, Marketing Cloud helps you connect with your audience in meaningful ways—on the right channel, at the right time, with the right message.</p>
+                            <p className='mb-4'>Salesforce Marketing Cloud (SFMC) is a leading digital marketing platform that empowers businesses to create highly personalized customer experiences at scale. From email marketing and social media engagement to customer journey management and real-time analytics, Marketing Cloud offers an integrated suite of tools designed to build relationships and increase ROI across every stage of the customer lifecycle. Whether you're a small business or a global enterprise, Marketing Cloud helps you connect with your audience in meaningful ways: on the right channel, at the right time, with the right message.</p>
 
                             {/* content */}
 
@@ -112,7 +112,7 @@ function MarketingCloud_Second() {
                                         <div className="ps-5">
                                             <h4 className='font-20'>Omnichannel Engagement</h4>
                                             <p>
-                                             Engage your customers across email, SMS, social media, and advertising platforms—while maintaining a consistent message and brand voice.
+                                             Engage your customers across email, SMS, social media, and advertising platforms, while maintaining a consistent message and brand voice.
                                             </p>
                                         </div>
                                     </div>

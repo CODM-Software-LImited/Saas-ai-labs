@@ -74,7 +74,7 @@ const HeroSection = () => {
 
             <p className="hero-description" data-aos="fade-up" data-aos-delay="350">
               <strong>SaaS AI Labs</strong> is a company of <strong>CODM Software Limited, UK</strong>
-              — together, we bring global expertise in software development, automation, and
+              and together, we bring global expertise in software development, automation, and
               intelligent system design.
             </p>
 

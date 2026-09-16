@@ -450,6 +450,10 @@
   width: 40rem;
 }
 
+.products-menu {
+  width: 26rem;
+}
+
 .small-menu-title {
   display: flex;
   align-items: center;

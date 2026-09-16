@@ -32,7 +32,7 @@ function SalesforceRevenueCloud_first() {
                                 title="Salesforce CPQ to Revenue Cloud Advanced (RCA)"
                                 content={
                                     <>
-                                        <p>There is a strong buzz in the Trailblazer community right now Is CPQ dying? What's the future of CPQ now that Salesforce has launched Revenue Cloud Advanced (RCA)? Well, Salesforce CPQ is entering the 'End of Sale'(EOS) phase. Now, to clarify—EOS doesn't mean End-of-Life. It means Salesforce will no longer sell CPQ to new customers. At least, no official announcement regarding retirement has been made yet.<b className='text-black'>Revenue Cloud Advanced (RCA) </b> This shift didn't come out of the blue. The suspicion in the Salesforce ecosystem and partner community was growing strong as many had already picked up on the signs—no major updates in 4 years, and a clear focus on newer products like Revenue Cloud Advanced (RCA) the writing was on the wall Migrating from Salesforce CPQ to Salesforce Revenue Cloud (Revenue Cloud Advanced/RCA) requires a strategic, phased approach to minimize disruption and maximize long-term value. Below is a detailed breakdown of each step, synthesized from multiple sources.</p>
+                                        <p>There is a strong buzz in the Trailblazer community right now Is CPQ dying? What's the future of CPQ now that Salesforce has launched Revenue Cloud Advanced (RCA)? Well, Salesforce CPQ is entering the 'End of Sale'(EOS) phase. Now, to clarify, EOS doesn't mean End-of-Life. It means Salesforce will no longer sell CPQ to new customers. At least, no official announcement regarding retirement has been made yet.<b className='text-black'>Revenue Cloud Advanced (RCA) </b> This shift didn't come out of the blue. The suspicion in the Salesforce ecosystem and partner community was growing strong as many had already picked up on the signs: no major updates in 4 years, and a clear focus on newer products like Revenue Cloud Advanced (RCA) the writing was on the wall Migrating from Salesforce CPQ to Salesforce Revenue Cloud (Revenue Cloud Advanced/RCA) requires a strategic, phased approach to minimize disruption and maximize long-term value. Below is a detailed breakdown of each step, synthesized from multiple sources.</p>
                                     </>
                                 }
                             />
@@ -48,7 +48,7 @@ function SalesforceRevenueCloud_first() {
                                 title="What's new in Salesforce Revenue Cloud (RCA)?"
                                 content={
                                     <>
-                                        <p>Fully built on the core Salesforce platform, Revenue Cloud Advanced (RCA) is Salesforce's new and improved way to handle everything from quoting to payments, all in one place.What makes RCA different? For starters, it's more flexible and modern. It doesn't use the old-school managed package setup. With API-first approach, Revenue Cloud Advanced is more scalable and can handle a wide range of revenue models—whether you're selling one-time products, offering subscriptions, or charging based on usage. Everything runs from a single system that's easier to integrate with other tools and is ready to work alongside AI-powered agents like Agentforce across the entire sales process.</p>
+                                        <p>Fully built on the core Salesforce platform, Revenue Cloud Advanced (RCA) is Salesforce's new and improved way to handle everything from quoting to payments, all in one place.What makes RCA different? For starters, it's more flexible and modern. It doesn't use the old-school managed package setup. With API-first approach, Revenue Cloud Advanced is more scalable and can handle a wide range of revenue models, whether you're selling one-time products, offering subscriptions, or charging based on usage. Everything runs from a single system that's easier to integrate with other tools and is ready to work alongside AI-powered agents like Agentforce across the entire sales process.</p>
                                     </>}
                             />
 
@@ -64,7 +64,7 @@ function SalesforceRevenueCloud_first() {
                                         <div className="ps-5">
                                             <h4 className='font-20'>Built Natively on Salesforce</h4>
                                             <p>
-                                                RCA is fully native to the Salesforce platform, meaning it works seamlessly within the Salesforce ecosystem. This native architecture enables it to handle high transaction volumes, large and complex quotes and orders, and extensive rule-based configurations — all with better speed and performance.
+                                                RCA is fully native to the Salesforce platform, meaning it works seamlessly within the Salesforce ecosystem. This native architecture enables it to handle high transaction volumes, large and complex quotes and orders, and extensive rule-based configurations, all with better speed and performance.
                                             </p>
                                         </div>
                                     </div>

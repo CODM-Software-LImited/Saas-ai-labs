@@ -157,7 +157,7 @@ const whyCards = [
   },
   {
     title: "Technology that works together",
-    copy: "We focus on connecting systems, data and teams—not introducing isolated tools. Our services are designed to help cloud platforms work effectively within your wider technology environment.",
+    copy: "We focus on connecting systems, data and teams, not introducing isolated tools. Our services are designed to help cloud platforms work effectively within your wider technology environment.",
   },
   {
     title: "Practical AI delivery",
@@ -243,7 +243,7 @@ function GCloud15() {
               <p className="gc-hero-intro">
                 We provide cloud-specific professional services across
                 Salesforce, AI, integration, data and cloud application
-                development&mdash;helping public sector teams modernise
+                development, helping public sector teams modernise
                 services, connect systems and improve operational delivery.
               </p>
               <div className="d-flex gap-3 flex-wrap mt-4">
@@ -440,7 +440,7 @@ function GCloud15() {
               >
                 <div className="gc-step">
                   <div className="gc-step-number">
-                    {step.number} &mdash;
+                    {step.number}
                   </div>
                   <h3>{step.title}</h3>
                   <p>{step.copy}</p>

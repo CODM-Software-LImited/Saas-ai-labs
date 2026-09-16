@@ -35,4 +35,10 @@ if (hostname.includes("saasailabs")) {
   brand = "saasai";
 }
 
+// Dev-only preview switch: http://localhost:5173/?brand=saasai
+if (import.meta.env.DEV) {
+  const preview = new URLSearchParams(window.location.search).get("brand");
+  if (preview && brandConfig[preview]) brand = preview;
+}
+
 export default brandConfig[brand];

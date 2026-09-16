@@ -35,7 +35,7 @@ function DataCloud_Second() {
 
 
                             <h4 className="my-3">Salesforce Data Cloud + AI: Powering Smarter Education</h4>
-                            <p className="mb-0">Empower your institution with the next generation of AI and real-time data. Salesforce Data Cloud + AI brings together every student interaction, system, and insight—so you can deliver personalized experiences, smarter engagement, and accelerated outcomes.<b>Salesforce Data Cloud + AI </b> is designed to help educational institutions harness the power of AI and real-time data to create personalized learning experiences, enhance student engagement, and drive better outcomes.
+                            <p className="mb-0">Empower your institution with the next generation of AI and real-time data. Salesforce Data Cloud + AI brings together every student interaction, system, and insight, so you can deliver personalized experiences, smarter engagement, and accelerated outcomes.<b>Salesforce Data Cloud + AI </b> is designed to help educational institutions harness the power of AI and real-time data to create personalized learning experiences, enhance student engagement, and drive better outcomes.
                             </p>
 
                             {/* Phase items */}
@@ -81,7 +81,7 @@ function DataCloud_Second() {
                             {/*new */}
 
                             <h4 className="mb-3 mt-1">What is Salesforce Data Cloud ?</h4>
-                            <p className='mb-4'>Salesforce Data Cloud is a real-time, hyperscale customer data platform (CDP) built directly into the Salesforce ecosystem. It allows organizations to collect, harmonize, and unify massive volumes of data from disparate systems—such as CRM platforms, ERP software, mobile apps, websites, social media, POS systems, and third-party sources—into a single, dynamic view of each individual customer. This enables brands to eliminate data silos, reduce manual reconciliation, and create a 360-degree profile for every customer, prospect, or partner across the entire business lifecycle.</p>
+                            <p className='mb-4'>Salesforce Data Cloud is a real-time, hyperscale customer data platform (CDP) built directly into the Salesforce ecosystem. It allows organizations to collect, harmonize, and unify massive volumes of data from disparate systems, such as CRM platforms, ERP software, mobile apps, websites, social media, POS systems, and third-party sources, into a single, dynamic view of each individual customer. This enables brands to eliminate data silos, reduce manual reconciliation, and create a 360-degree profile for every customer, prospect, or partner across the entire business lifecycle.</p>
 
                             {/* content */}
 
@@ -128,7 +128,7 @@ function DataCloud_Second() {
                                         <div className="ps-5">
                                             <h4 className='font-20'>Dynamic Dashboards & Predictive Analytics</h4>
                                             <p>
-                                               Make data-informed decisions with real-time dashboards, intelligent trend analysis, and forecasted performance metrics—right where your teams work.
+                                               Make data-informed decisions with real-time dashboards, intelligent trend analysis, and forecasted performance metrics, right where your teams work.
                                             </p>
                                         </div>
                                     </div>

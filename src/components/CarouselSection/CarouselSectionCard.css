@@ -27,7 +27,7 @@
   to { transform: scale(1.08); }
 }
 
-/* Gradient overlay — heavier on the left where the text sits */
+/* Gradient overlay - heavier on the left where the text sits */
 .cs-overlay {
   position: absolute;
   inset: 0;

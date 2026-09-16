@@ -32,7 +32,7 @@ function ReactApplication_Second() {
                             />  
 
                             <h4 className="my-3">Build Fast, Scalable, and Engaging User Interfaces with React</h4>
-                            <p className="mb-0">At Codm,we deliver high-performance React applications that combine speed, scalability, and a seamless user experience. React.js, developed and maintained by Facebook, is the go-to JavaScript library for building interactive and dynamic front-end applications — and we use it to craft everything from MVPs to enterprise-grade solutions.Our innovative business services are designed to help you navigate the complexities of the modern marketplace, leveraging cutting-edge technology and forward-thinking strategies to transform your operations and achieve your goals. We implement intelligent automation tools tailored to your specific needs.
+                            <p className="mb-0">At Codm,we deliver high-performance React applications that combine speed, scalability, and a seamless user experience. React.js, developed and maintained by Facebook, is the go-to JavaScript library for building interactive and dynamic front-end applications, and we use it to craft everything from MVPs to enterprise-grade solutions.Our innovative business services are designed to help you navigate the complexities of the modern marketplace, leveraging cutting-edge technology and forward-thinking strategies to transform your operations and achieve your goals. We implement intelligent automation tools tailored to your specific needs.
                             </p>
 
                             {/* Phase items */}
@@ -77,7 +77,7 @@ function ReactApplication_Second() {
                             {/*new */}
 
                             <h4 className="mb-3 mt-1">What Is React?</h4>
-                            <p className='mb-4'>React (or React.js) is a popular open-source JavaScript library used for building user interfaces, especially single-page applications (SPAs). It enables fast rendering, reusable components, and a virtual DOM for optimized performance — making it ideal for modern web development.</p>
+                            <p className='mb-4'>React (or React.js) is a popular open-source JavaScript library used for building user interfaces, especially single-page applications (SPAs). It enables fast rendering, reusable components, and a virtual DOM for optimized performance, making it ideal for modern web development.</p>
 
                             {/* content */}
 

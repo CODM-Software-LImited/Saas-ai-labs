@@ -37,41 +37,41 @@ function Home() {
         image="https://yourwebsite.com/images/salesforce-education-cloud.jpg"
       />
 
-      {/* 1. Who we are — hero + industry showcase carousel */}
+      {/* 1. Who we are - hero + industry showcase carousel */}
       <div className='homepageFirstContainer'>
         <Hero />
         <CarouselSectionCard />
       </div>
 
-      {/* 2. What we do — core services */}
+      {/* 2. What we do - core services */}
       <div className="home-band">
         <OurService />
       </div>
 
-      {/* 3. Where we work — industries grid */}
+      {/* 3. Where we work - industries grid */}
       <div className="home-band home-band--tint">
         <Hero2 />
       </div>
 
-      {/* 4. Learn — CRM explainer with video */}
+      {/* 4. Learn - CRM explainer with video */}
       <Hero1 />
 
-      {/* 5. Why us — vision + counters */}
+      {/* 5. Why us - vision + counters */}
       <Hero4 />
 
-      {/* 6. Lead magnet — executive guide */}
+      {/* 6. Lead magnet - executive guide */}
       <ExecutiveGuide />
 
-      {/* 7. Proof of work — case studies */}
+      {/* 7. Proof of work - case studies */}
       {/* <CaseStudy /> */}
 
-      {/* 7. Social proof — testimonials */}
+      {/* 7. Social proof - testimonials */}
       <OurExcellence />
 
-      {/* 8. Trust — public sector framework */}
+      {/* 8. Trust - public sector framework */}
       <GCloudBadge variant="card" />
 
-      {/* 9. Resources — latest blogs */}
+      {/* 9. Resources - latest blogs */}
       <div className="home-band home-band--tint">
         <BlogSection />
       </div>

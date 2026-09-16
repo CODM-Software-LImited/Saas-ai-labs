@@ -18,7 +18,7 @@ function AIPoweredDashboard_FirstSection() {
             icon: icon1,
             title: "Strategic AI Roadmapping",
             description:
-                "Align your Einstein + AI strategy with business goals—identifying where automation and predictive insights can drive maximum ROI."
+                "Align your Einstein + AI strategy with business goals, identifying where automation and predictive insights can drive maximum ROI."
         },
         {
             icon: icon2,
@@ -62,7 +62,7 @@ function AIPoweredDashboard_FirstSection() {
                         {/* next section */}
                         <HeadingContent
                             title="Why This Matters for the Pharmaceutical Industry"
-                            content="In an industry where speed, accuracy, and compliance can make or break operations, AI is not just an advantage — it's a necessity. Our solution proves that intelligent dashboards can reshape how pharma companies operate, making them more agile, compliant, and competitive."
+                            content="In an industry where speed, accuracy, and compliance can make or break operations, AI is not just an advantage, it's a necessity. Our solution proves that intelligent dashboards can reshape how pharma companies operate, making them more agile, compliant, and competitive."
                         />
 
                         {/* filp img and content */}
@@ -75,7 +75,7 @@ function AIPoweredDashboard_FirstSection() {
                                 title="Overview of the Solution"
                                 content="We developed a next-generation Pharmaceutical Admin Dashboard in Salesforce, leveraging Lightning Web Components (LWC), Apex, advanced admin configurations, and AI-driven intelligence. Designed to streamline operations and reduce manual effort, the dashboard automates critical tasks like report generation, inventory monitoring, compliance tracking, and sales/service performance analysis."
                             /><br />
-                            <p><b>The solution is tailored for both Sales and Service teams—each with its own specialized dashboard view—offering:</b></p>
+                            <p><b>The solution is tailored for both Sales and Service teams, each with its own specialized dashboard view, offering:</b></p>
 
                             <img src={img1} alt="AI-Powered Dashboard" width={'100%'} />
                             <p className="pt-3"><b>Forecasting tools</b> to predict sales trends and stock requirements.</p>
@@ -167,7 +167,7 @@ function AIPoweredDashboard_FirstSection() {
                                 <>
                                     <p><b className="text-black">Salesforce Expertise: </b>Over years of experience in LWC, Apex, and Salesforce Admin development, delivering tailored, high-performance solutions.</p>
 
-                                    <p><b className="text-black">Industry-Focused Approach: </b>We understand the unique challenges of the pharmaceutical industry—from compliance to forecasting—and design dashboards that address them head-on.</p>
+                                    <p><b className="text-black">Industry-Focused Approach: </b>We understand the unique challenges of the pharmaceutical industry, from compliance to forecasting, and design dashboards that address them head-on.</p>
 
                                     <p><b className="text-black">AI-Driven Innovation: </b>Seamless integration of Salesforce AI for predictive analytics, smart inventory alerts, and actionable insights.</p>
 
@@ -177,7 +177,7 @@ function AIPoweredDashboard_FirstSection() {
 
                                     <p><b className="text-black">User-Centric Design: </b>Intuitive, responsive interfaces built with LWC for both sales and service teams, ensuring ease of adoption and maximum productivity.</p>
 
-                                    <p>With Codm Software, you're not just getting a dashboard—you're getting a strategic partner dedicated to optimizing your operations and driving measurable growth.</p>
+                                    <p>With Codm Software, you're not just getting a dashboard. You're getting a strategic partner dedicated to optimizing your operations and driving measurable growth.</p>
                                 </>
                             }
                         />

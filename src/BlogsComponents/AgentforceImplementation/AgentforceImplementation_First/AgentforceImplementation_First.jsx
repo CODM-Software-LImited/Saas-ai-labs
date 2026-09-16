@@ -51,7 +51,7 @@ function AgentforceImplementation_First() {
             icon: icon2,
             title: "Step 6: Open the Agent Builder",
             description:
-                "Once the agent is created, click into the Agent Builder. Think of it as your design studio—this is where you configure how the agent listens, understands, and responds."
+                "Once the agent is created, click into the Agent Builder. Think of it as your design studio. This is where you configure how the agent listens, understands, and responds."
         }, {
             icon: icon2,
             title: "Step 7: Define Topics",
@@ -272,7 +272,7 @@ function AgentforceImplementation_First() {
                                 <h3>Outcome of the Implementation:</h3>
                                 <p>
                                     By combining Einstein Generative AI with Salesforce data and actions,
-                                    Agentforce delivers instant, personalized support at scale—transforming
+                                    Agentforce delivers instant, personalized support at scale, transforming
                                     customer engagement.
                                 </p>
 

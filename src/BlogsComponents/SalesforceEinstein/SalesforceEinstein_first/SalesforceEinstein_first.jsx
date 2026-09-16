@@ -21,7 +21,7 @@ function SalesforceEinstein_first() {
             icon: icon1,
             title: "Strategic AI Roadmapping",
             description:
-                "Align your Einstein + AI strategy with business goals—identifying where automation and predictive insights can drive maximum ROI."
+                "Align your Einstein + AI strategy with business goals, identifying where automation and predictive insights can drive maximum ROI."
         },
         {
             icon: icon2,

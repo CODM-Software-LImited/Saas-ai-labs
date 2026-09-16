@@ -56,7 +56,7 @@ function Hero4() {
               </h2>
 
               <p className="hero4-lead">
-                We&rsquo;re here to revolutionize the digital world — creating
+                We&rsquo;re here to revolutionize the digital world by creating
                 AI-driven, scalable, and user-friendly technology that empowers
                 businesses and enriches lives globally.
               </p>

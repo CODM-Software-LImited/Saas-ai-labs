@@ -18,13 +18,13 @@ const accordionData = [
     number: 3,
     title: "Student Support Services",
     content:
-      "Manage student issues—from financial aid queries to mental health concerns—through a centralized support system that ensures no case is overlooked."
+      "Manage student issues, from financial aid queries to mental health concerns, through a centralized support system that ensures no case is overlooked."
   },
   {
     number: 4,
     title: "Alumni & Advancement",
     content:
-      "Education Cloud empowers advancement teams to drive fundraising with personalized donor journeys, event management, and contribution tracking—creating lifelong relationships with alumni."
+      "Education Cloud empowers advancement teams to drive fundraising with personalized donor journeys, event management, and contribution tracking, creating lifelong relationships with alumni."
   },
   {
     number: 5,

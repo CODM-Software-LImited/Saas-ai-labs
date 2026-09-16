@@ -37,7 +37,7 @@ function IndustriesCloud_Second() {
 
 
                             <h4 className="my-3">Unlock Industry-Specific Success with Salesforce Industries Cloud</h4>
-                            <p className="mb-0">At Codm Software UK, we help businesses across the UK accelerate digital transformation with Salesforce Industries Cloud (formerly Vlocity). Tailored to meet the unique needs of different sectors, Industries Cloud delivers industry-specific data models, processes, and workflows—so you can get to market faster and innovate with confidence.Salesforce Industries Cloud (formerly Vlocity) is a powerful solution that combines the flexibility of Salesforce with industry-specific capabilities. It provides pre-built data models, workflows, and user interfaces tailored to various sectors, including healthcare, financial services, communications, and more. This allows businesses to quickly implement solutions that meet their unique requirements while leveraging the scalability and security of the Salesforce platform.
+                            <p className="mb-0">At Codm Software UK, we help businesses across the UK accelerate digital transformation with Salesforce Industries Cloud (formerly Vlocity). Tailored to meet the unique needs of different sectors, Industries Cloud delivers industry-specific data models, processes, and workflows, so you can get to market faster and innovate with confidence.Salesforce Industries Cloud (formerly Vlocity) is a powerful solution that combines the flexibility of Salesforce with industry-specific capabilities. It provides pre-built data models, workflows, and user interfaces tailored to various sectors, including healthcare, financial services, communications, and more. This allows businesses to quickly implement solutions that meet their unique requirements while leveraging the scalability and security of the Salesforce platform.
                             </p>
 
                             {/* Phase items */}
@@ -143,7 +143,7 @@ function IndustriesCloud_Second() {
                             <div className='border-bottom'>
                               <h4 className="mt-5 pt-4 border-top mb-3">OmniStudio: Visual Tools for Business Automation</h4>
                             <p className="mb-3">
-                                With Industries Cloud, you gain access to OmniStudio, a set of configuration-based tools that lets you design customer experiences, automate logic, and integrate with external systems—all without deep coding.<br/>
+                                With Industries Cloud, you gain access to OmniStudio, a set of configuration-based tools that lets you design customer experiences, automate logic, and integrate with external systems, all without deep coding.<br/>
                                 From guided workflows (OmniScripts) to dynamic UI components (FlexCards), OmniStudio allows you to quickly deploy complex business processes specific to your sector.
                             </p>
 
@@ -166,7 +166,7 @@ function IndustriesCloud_Second() {
                               <div className='border-bottom'>
                               <h4 className="mt-3 pt-4 mb-3">Compliance and Regulatory Readiness</h4>
                             <p className="mb-3">
-                                Whether it's GDPR, HIPAA, FCA, or CQC—Industries Cloud helps your business meet industry-specific regulations with secure, compliant, and auditable data handling. The platform provides built-in access control, validation logic, and audit trails to support secure, compliant operations.
+                                Whether it's GDPR, HIPAA, FCA, or CQC, Industries Cloud helps your business meet industry-specific regulations with secure, compliant, and auditable data handling. The platform provides built-in access control, validation logic, and audit trails to support secure, compliant operations.
                             </p>
 
                             <img class="rounded-3 mt-3 " src={img4} alt="Codm" width={'80%'} height={'301px'}/>
@@ -176,7 +176,7 @@ function IndustriesCloud_Second() {
                             <div className=''>
                               <h4 className="mt-3 pt-4 mb-3">Seamless Customer Journeys</h4>
                             <p className="mb-3">
-                               Using Industries Cloud, you can create connected customer journeys across departments, products, and channels. From onboarding to service requests and case handling—everything is managed through a unified platform with automation at every step.This connected experience improves customer satisfaction and reduces service delivery times across industries.
+                               Using Industries Cloud, you can create connected customer journeys across departments, products, and channels. From onboarding to service requests and case handling, everything is managed through a unified platform with automation at every step.This connected experience improves customer satisfaction and reduces service delivery times across industries.
                             </p>
 
                             <img class="rounded-3 mt-3 " src={img5} alt="Codm" width={'80%'} height={'301px'}/>

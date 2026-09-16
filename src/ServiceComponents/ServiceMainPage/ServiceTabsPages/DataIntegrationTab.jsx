@@ -38,7 +38,7 @@ function DataIntegrationTab() {
             </h3>
 
             <p className="custom-p">
-             We handle data integration and migration with precision—ensuring integrity, validation, and structure for uninterrupted business continuity.
+             We handle data integration and migration with precision, ensuring integrity, validation, and structure for uninterrupted business continuity.
             </p>
 
             <div>

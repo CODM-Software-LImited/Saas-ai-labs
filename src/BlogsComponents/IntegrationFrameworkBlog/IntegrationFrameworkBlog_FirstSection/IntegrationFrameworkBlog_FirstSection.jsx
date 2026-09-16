@@ -74,7 +74,7 @@ function IntegrationFrameworkBlog_FirstSection() {
                             title={"Integration Framework: Connect, Automate, and Scale Your Business"}
                             content={
                                 <>
-                                    In today's rapidly evolving digital ecosystem, businesses rely on multiple applications—CRM, ERP, finance, e-commerce, and more. Our Integration Framework empowers you to seamlessly connect all your systems, enabling real-time data exchange, automated workflows, and enhanced customer experiences.Whether you're integrating cloud platforms like Salesforce, SAP, Oracle, or third-party services via REST APIs, our framework is designed to be secure, scalable, and future-ready.
+                                    In today's rapidly evolving digital ecosystem, businesses rely on multiple applications such as CRM, ERP, finance, e-commerce, and more. Our Integration Framework empowers you to seamlessly connect all your systems, enabling real-time data exchange, automated workflows, and enhanced customer experiences.Whether you're integrating cloud platforms like Salesforce, SAP, Oracle, or third-party services via REST APIs, our framework is designed to be secure, scalable, and future-ready.
                                 </>
                             }
                         />
@@ -117,7 +117,7 @@ function IntegrationFrameworkBlog_FirstSection() {
                         <HeadingContent 
                         title={"Error Handling and Recovery"}
                         content={<>
-                           It’s important to include an error handling and recovery strategy as part of the overall solution. Error handling—When an error occurs (exceptions or error codes are returned to the caller), the caller manages error handling. For example, an error message displayed on the end user’s page or logged to a table requiring further action.Recovery—Changes aren’t committed to Salesforce until the caller receives a successful response. For example, the order status isn’t updated in the database until a response that indicates success is received. If necessary, the caller can retry the operation
+                           It’s important to include an error handling and recovery strategy as part of the overall solution. Error handling: When an error occurs (exceptions or error codes are returned to the caller), the caller manages error handling. For example, an error message displayed on the end user’s page or logged to a table requiring further action. Recovery: Changes aren’t committed to Salesforce until the caller receives a successful response. For example, the order status isn’t updated in the database until a response that indicates success is received. If necessary, the caller can retry the operation
                         </>}
                         />
 

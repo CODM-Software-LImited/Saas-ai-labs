@@ -1,19 +1,18 @@
-import HeroSection from '../../SaasAiHomeComponents/HeroSection/HeroSection';
-import Hero1 from '../../SaasAiHomeComponents/Hero1Section/Hero1Section';
-import AboutSection from '../../SaasAiHomeComponents/AboutSection/AboutSection';
-import WhatWeDo from '../../SaasAiHomeComponents/WhatWeDo/WhatWeDo';
-import ContactSection from '../../SaasAiHomeComponents/ContactSection/ContactSection';
+import SEO from '../../SeoData/SEO';
+import GovHome from '../../SaasAiHomeComponents/GovHome/GovHome';
 
 function SaasAiHome() {
   return (
     <>
-    <HeroSection/>
-    <Hero1/>
-    <AboutSection/>
-    <WhatWeDo/>
-    <ContactSection/>
+      <SEO
+        title="SaaS AI Labs | AI Engineering for Government, Public Services & Enterprise"
+        description="SaaS AI Labs builds safe, responsible AI tools for government and public services in India: AI helpers that answer questions, find information in your documents, cut paperwork and train your teams, backed by 14+ years of building software for large organisations."
+        url="https://saasailabs.codmsoftware.co.uk"
+        keywords="SaaS AI Labs, Government AI, GovTech India, AI agents, Generative AI, RAG, Knowledge AI, intelligent automation, responsible AI, AI skills, FUTURA"
+      />
+      <GovHome />
     </>
-  )
+  );
 }
 
 export default SaasAiHome;

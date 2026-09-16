@@ -5,13 +5,13 @@ const accordionData = [
         number: 1,
         title: "What is Einstein AI in Salesforce?",
         content:
-            "Einstein AI is Salesforce’s native artificial intelligence engine that embeds predictive and generative intelligence directly into your business processes. It uses machine learning models, natural language processing (NLP), and real-time data analysis to help users make smarter decisions, automate routine tasks, and engage customers more effectively. Einstein can analyze historical data to predict outcomes—such as which leads are likely to convert or which customers are at risk of churning—and provide intelligent recommendations that guide teams toward more successful actions."
+            "Einstein AI is Salesforce’s native artificial intelligence engine that embeds predictive and generative intelligence directly into your business processes. It uses machine learning models, natural language processing (NLP), and real-time data analysis to help users make smarter decisions, automate routine tasks, and engage customers more effectively. Einstein can analyze historical data to predict outcomes, such as which leads are likely to convert or which customers are at risk of churning, and provide intelligent recommendations that guide teams toward more successful actions."
     },
     {
         number: 2,
         title: "The Power of Salesforce Data Cloud + AI Combined ?",
         content:
-            "When real-time data from Salesforce Data Cloud meets the intelligence of Einstein AI, businesses can move beyond reactive strategies and embrace true, proactive customer engagement. Together, these tools allow you to not only understand what’s happening with your customers right now—but also predict what’s likely to happen next, and act on it instantly.For example, you can trigger personalized product recommendations based on a customer’s latest online behavior, automatically alert a service rep if a VIP customer shows signs of dissatisfaction, or send a targeted tuition reminder to a student showing signs of disengagement. All of this happens automatically and contextually, based on unified, live data and AI-generated insights."
+            "When real-time data from Salesforce Data Cloud meets the intelligence of Einstein AI, businesses can move beyond reactive strategies and embrace true, proactive customer engagement. Together, these tools allow you to not only understand what’s happening with your customers right now, but also predict what’s likely to happen next, and act on it instantly.For example, you can trigger personalized product recommendations based on a customer’s latest online behavior, automatically alert a service rep if a VIP customer shows signs of dissatisfaction, or send a targeted tuition reminder to a student showing signs of disengagement. All of this happens automatically and contextually, based on unified, live data and AI-generated insights."
     },
     {
         number: 3,

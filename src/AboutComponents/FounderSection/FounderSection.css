@@ -129,14 +129,22 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.2rem;
   margin-top: 1.1rem;
 }
 
-.fdr-card-role {
-  font-size: 1.1rem;
-  font-weight: 700;
+.fdr-card-name {
+  font-size: 1.35rem;
+  font-weight: 800;
   color: #1c1633;
+  letter-spacing: -0.01em;
+}
+
+.fdr-card-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5a566b;
 }
 
 .fdr-card-company {
@@ -145,6 +153,29 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #7050f4;
+}
+
+.fdr-linkedin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 0.75rem auto 0;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0a66c2;
+  background: #eaf2fb;
+  border: 1px solid #cfe0f5;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.fdr-linkedin:hover {
+  background: #0a66c2;
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 .fdr-quote {
@@ -168,7 +199,22 @@ body.dark-mode .fdr-section {
 }
 
 body.dark-mode .fdr-title,
+body.dark-mode .fdr-card-name {
+  color: #fff;
+}
+
 body.dark-mode .fdr-card-role {
+  color: #a5a1b5;
+}
+
+body.dark-mode .fdr-linkedin {
+  background: rgba(10, 102, 194, 0.15);
+  border-color: rgba(10, 102, 194, 0.35);
+  color: #7ab8f5;
+}
+
+body.dark-mode .fdr-linkedin:hover {
+  background: #0a66c2;
   color: #fff;
 }
 

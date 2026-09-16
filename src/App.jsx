@@ -49,6 +49,8 @@ import AgentforceAI from './BlogsComponents/AgentforceAI/AgentforceAI';
 import SaasAiHome from './pages/Home/SaasAiHome';
 import GCloud15 from './pages/GCloud15/GCloud15';
 import GCloudSuppliersBlog from './BlogsComponents/GCloudSuppliersBlog/GCloudSuppliersBlog';
+import Products from './pages/Products/Products';
+import ProductDetail from './pages/Products/ProductDetail';
  
 // home page condition
 import brand from "../src/config/brand";
@@ -89,14 +91,16 @@ function App() {
   }, []);
  
  
-   function HomeSwitcher() {
-  if (brand.name === "SaasAi Labs") {
-    // return <Home />;
-     return <SaasAiHome/>;  
+  // Brand-specific home page (brand is resolved in src/config/brand.js;
+  // on localhost append ?brand=saasai to preview the SaaS AI Labs home).
+  function HomeSwitcher() {
+    if (brand.name === "SaasAi Labs") {
+      return <SaasAiHome />;
+          // return <Home />;
+    }
+    return <Home />;
+    // return <SaasAiHome />;
   }
-   return <Home />;
-  //  return <SaasAiHome/>;  
-}
  
   return (
     <>
@@ -118,6 +122,10 @@ function App() {
               <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
               <Route path='/terms-conditions' element={<TermsAndConditions/>}/>
               <Route path='/g-cloud-15' element={<GCloud15/>}/>
+
+              {/* product routes */}
+              <Route path='/products' element={<Products/>}/>
+              <Route path='/products/:slug' element={<ProductDetail/>}/>
               {/* <Route path='/MyKoda' element={<SmartPortal/>}/> */}
  
               {/* service routes */}

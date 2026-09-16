@@ -394,24 +394,24 @@ function GCloudSuppliersBlog_First() {
                             <p>Our approach can be summarised as:</p>
                             <ol>
                                 <li className="pb-2">
-                                    <strong>Understand the requirement</strong> &ndash; We establish what the
+                                    <strong>Understand the requirement</strong>: We establish what the
                                     organisation is trying to achieve and the challenges that need to be
                                     addressed.
                                 </li>
                                 <li className="pb-2">
-                                    <strong>Review the existing environment</strong> &ndash; We consider the
+                                    <strong>Review the existing environment</strong>: We consider the
                                     platforms, systems, data and integrations already in place.
                                 </li>
                                 <li className="pb-2">
-                                    <strong>Define the technical approach</strong> &ndash; We identify the
+                                    <strong>Define the technical approach</strong>: We identify the
                                     appropriate technologies, services and delivery approach.
                                 </li>
                                 <li className="pb-2">
-                                    <strong>Provide specialist support</strong> &ndash; Our team delivers the
+                                    <strong>Provide specialist support</strong>: Our team delivers the
                                     required advisory, development, integration or technical services.
                                 </li>
                                 <li>
-                                    <strong>Improve over time</strong> &ndash; Where required, we continue to
+                                    <strong>Improve over time</strong>: Where required, we continue to
                                     support optimisation, enhancements and technical improvement.
                                 </li>
                             </ol>

@@ -34,31 +34,31 @@ function About() {
         image="https://codmsoftware.co.uk/images/about-hero.jpg"
       />
 
-      {/* 1. Who we are — hero with photo, stats and trust logos */}
+      {/* 1. Who we are - hero with photo, stats and trust logos */}
       <FirstSection />
 
-      {/* 2. Data — counters, story and company facts */}
+      {/* 2. Data - counters, story and company facts */}
       <AtAGlance />
 
-      {/* 3. Purpose — mission, vision and values */}
+      {/* 3. Purpose - mission, vision and values */}
       <SecondSection />
 
-      {/* 4. What we do — services grid */}
+      {/* 4. What we do - services grid */}
       <WhatWeDo />
 
-      {/* 5. Proof — certifications */}
+      {/* 5. Proof - certifications */}
       <FourthSection />
 
-      {/* 6. Lead magnet — executive guide */}
+      {/* 6. Lead magnet - executive guide */}
       <ExecutiveGuide />
 
-      {/* 7. People — founder */}
+      {/* 7. People - founder */}
       <FounderSection />
 
-      {/* 8. Trust — public sector framework */}
+      {/* 8. Trust - public sector framework */}
       <GCloudBadge variant="card" />
 
-      {/* 9. Resources — latest blogs */}
+      {/* 9. Resources - latest blogs */}
       <div className="about-band about-band--tint">
         <BlogSection />
       </div>

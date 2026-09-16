@@ -32,7 +32,7 @@ function CRMDevelopment_Second() {
 
 
                             <h4 className="my-3">Drive Business Growth with Salesforce CRM</h4>
-                            <p className="mb-0">At Codm, we empower businesses to transform their customer relationships, streamline operations, and boost revenue using Salesforce — the world’s #1 CRM platform. Whether you're a small business or a global enterprise, our Salesforce CRM services are tailored to help you unlock the full potential of your customer data and workflows. <b>Our innovative business</b> services are designed to help you navigate the complexities of the modern marketplace, leveraging cutting-edge technology and forward-thinking strategies to transform your operations and achieve your goals. We implement intelligent automation tools tailored to your specific needs.
+                            <p className="mb-0">At Codm, we empower businesses to transform their customer relationships, streamline operations, and boost revenue using Salesforce, the world’s #1 CRM platform. Whether you're a small business or a global enterprise, our Salesforce CRM services are tailored to help you unlock the full potential of your customer data and workflows. <b>Our innovative business</b> services are designed to help you navigate the complexities of the modern marketplace, leveraging cutting-edge technology and forward-thinking strategies to transform your operations and achieve your goals. We implement intelligent automation tools tailored to your specific needs.
                             </p>
 
                             {/* Phase items */}
@@ -78,7 +78,7 @@ function CRMDevelopment_Second() {
                             {/*new */}
 
                             <h4 className="mb-3 mt-1">What is Salesforce CRM?</h4>
-                            <p className='mb-4'>Salesforce CRM (Customer Relationship Management) is a cloud-based platform that enables businesses to manage sales, marketing, customer service, and more—all in one place. With powerful automation, analytics, and integration capabilities, Salesforce helps you nurture leads, close deals faster, and deliver personalized customer experiences.</p>
+                            <p className='mb-4'>Salesforce CRM (Customer Relationship Management) is a cloud-based platform that enables businesses to manage sales, marketing, customer service, and more, all in one place. With powerful automation, analytics, and integration capabilities, Salesforce helps you nurture leads, close deals faster, and deliver personalized customer experiences.</p>
 
                             {/* content */}
 

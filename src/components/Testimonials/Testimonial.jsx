@@ -13,7 +13,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    text: "The team modernised our Salesforce org end to end — automation that used to take days now runs in minutes, and adoption across our sales team has never been higher.",
+    text: "The team modernised our Salesforce org end to end. Automation that used to take days now runs in minutes, and adoption across our sales team has never been higher.",
     author: "Sarah Smith",
     role: "Head of Sales",
     img: avatar2,

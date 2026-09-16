@@ -6,7 +6,7 @@ const accordionData = [
         number: 1,
         title: "What is React Integration, and how does it benefit businesses?",
         content:
-            "React Integration involves incorporating React—a JavaScript library for building user interfaces—into existing or new applications to create dynamic and responsive user experiences. By integrating React, businesses can enhance performance, improve scalability, and provide a seamless user interface across various platforms."
+            "React Integration involves incorporating React, a JavaScript library for building user interfaces, into existing or new applications to create dynamic and responsive user experiences. By integrating React, businesses can enhance performance, improve scalability, and provide a seamless user interface across various platforms."
     },
     {
         number: 2,

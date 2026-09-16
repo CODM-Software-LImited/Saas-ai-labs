@@ -59,7 +59,7 @@ function GCloudSuppliersSidebar() {
       <Link to="/g-cloud-15" className="text-decoration-none">
         <div className="zoom-img mt-5 rounded-4 border p-4 bg-white text-center">
           <img src={gcaLogo} alt="Government Commercial Agency Supplier" width={'70%'} />
-          <p className='text-center pt-3 mb-0 custom-p'>CODM Software Limited &mdash; G&#8209;Cloud 15 supplier, Lot 3: Cloud Support</p>
+          <p className='text-center pt-3 mb-0 custom-p'>CODM Software Limited, G&#8209;Cloud 15 supplier, Lot 3: Cloud Support</p>
         </div>
       </Link>
     </div>

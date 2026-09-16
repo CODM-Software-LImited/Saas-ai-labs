@@ -3,8 +3,8 @@ import gcaLogo from "../../assets/imgs/gcloud/gca-supplier-black.png";
 import "./GCloudBadge.css";
 
 /**
- * variant="strip" (default) — slim banner used on service pages.
- * variant="card" — larger showcase card used on Home and About.
+ * variant="strip" (default) - slim banner used on service pages.
+ * variant="card" - larger showcase card used on Home and About.
  */
 function GCloudBadge({ variant = "strip" }) {
   if (variant === "card") {

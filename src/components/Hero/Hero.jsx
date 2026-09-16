@@ -36,7 +36,7 @@ function Hero() {
 
             <p className="cdmh-lead">
               We deliver enterprise-scale Salesforce solutions and AI-driven
-              transformations that create measurable business impact — from Sales
+              transformations that create measurable business impact, from Sales
               Cloud optimization to intelligent automation, our certified experts
               modernize, streamline, and scale your operations.
             </p>

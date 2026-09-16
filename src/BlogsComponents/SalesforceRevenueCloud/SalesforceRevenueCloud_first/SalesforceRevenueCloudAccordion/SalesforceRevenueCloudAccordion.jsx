@@ -10,7 +10,7 @@ const accordionData = [
     number: 2,
     title: "How is RCA different from Salesforce CPQ?",
     content:
-      "While CPQ focused mainly on configuring products, pricing, and generating quotes, RCA goes further. It integrates with contract lifecycle management, billing systems, compliance tools, and analytics — providing a full quote-to-cash solution."
+      "While CPQ focused mainly on configuring products, pricing, and generating quotes, RCA goes further. It integrates with contract lifecycle management, billing systems, compliance tools, and analytics, providing a full quote-to-cash solution."
   },
   {
     number: 3,
@@ -20,7 +20,7 @@ const accordionData = [
   {
     number: 4,
     title:"What types of businesses can benefit from RCA?",
-    content:"RCA is ideal for any business with complex pricing, recurring revenue models, or multi-step sales cycles — including SaaS companies, manufacturing, telecom, and professional services."
+    content:"RCA is ideal for any business with complex pricing, recurring revenue models, or multi-step sales cycles, including SaaS companies, manufacturing, telecom, and professional services."
   },
   {
     number: 5,

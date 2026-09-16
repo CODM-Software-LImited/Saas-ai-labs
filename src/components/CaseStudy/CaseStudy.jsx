@@ -40,7 +40,7 @@ function CaseStudy() {
           </div>
           <h2 className="Heading3 my-3">Case Studies</h2>
           <p className="casestudy-subtitle">
-            A look at how we help teams modernize with Salesforce and AI — explored in depth on our blog.
+            A look at how we help teams modernize with Salesforce and AI, explored in depth on our blog.
           </p>
         </div>
 

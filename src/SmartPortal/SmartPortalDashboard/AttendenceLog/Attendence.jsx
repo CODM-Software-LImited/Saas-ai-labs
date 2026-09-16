@@ -85,7 +85,7 @@ useEffect(() => {
           <h1>Attendance Log</h1>
         </div>
         <p className="header-subtitle">
-          {todayLabel} — Log your daily in & out times
+          {todayLabel}: Log your daily in & out times
         </p>
       </div>
 
@@ -107,7 +107,7 @@ useEffect(() => {
           <div className="shift-status">
             <span className="shift-badge">Shift Complete</span>
             <span className="shift-range">
-              {inTime} — {outTime}
+              {inTime} to {outTime}
             </span>
           </div>
         )}

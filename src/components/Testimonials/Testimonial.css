@@ -1,4 +1,4 @@
-/* Testimonials — featured-card layout. All classes prefixed tsm- so nothing
+/* Testimonials - featured-card layout. All classes prefixed tsm- so nothing
    leaks into Bootstrap's global .carousel / .card. */
 
 .tsm-section {
@@ -125,7 +125,7 @@
   flex-grow: 1;
 }
 
-/* Featured (center) card — brand gradient */
+/* Featured (center) card - brand gradient */
 .tsm-card--featured {
   background: linear-gradient(150deg, #7050f4 0%, #5d3edb 55%, #4b2fc4 100%);
   border-color: transparent;

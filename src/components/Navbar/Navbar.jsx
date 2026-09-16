@@ -9,6 +9,7 @@ import {
   FiCode,
   FiDatabase,
   FiLifeBuoy,
+  FiPackage,
   FiPhone,
 } from "react-icons/fi";
 
@@ -20,6 +21,7 @@ import flag3 from "../../assets/imgs/contact-4/Flag_of_the_United_States.png";
 
 import brand from "../../config/brand";
 import gcaSupplierLogo from "../../assets/imgs/gcloud/gca-supplier-black.png";
+import products from "../../data/products";
 
 const salesforceLinks = [
   { label: "Salesforce Education Cloud", path: "/ItServices/salesforce-education-cloud" },
@@ -52,6 +54,11 @@ const supportLinks = [
   { label: "Technical Support", path: "/ItServices/technical-support" },
   { label: "Deployment Support", path: "/ItServices/deployment-support" },
 ];
+
+const productLinks = products.map((p) => ({
+  label: `${p.name}: ${p.tagline}`,
+  path: `/products/${p.slug}`,
+}));
 
 const blogLinks = [
   { label: "Integration Framework", path: "/blog/integration-framework" },
@@ -376,6 +383,51 @@ function Navbar() {
                     </li>
                   </>
                 )}
+              </ul>
+            </li>
+
+            {/* Products */}
+            <li
+              className={`nav-item small-dropdown ${
+                openDropdown === "products" ? "is-open" : ""
+              }`}
+            >
+              <div className="nav-dropdown-head">
+                <NavLink
+                  to="/products"
+                  className={({ isActive }) =>
+                    `nav-link dropdown-main-link ${isActive ? "active-link" : ""}`
+                  }
+                  onClick={closeAll}
+                >
+                  Products
+                </NavLink>
+                {renderArrow({ menu: "products", label: "Toggle products menu", controls: "products-menu" })}
+              </div>
+
+              {/* Desktop Products Dropdown */}
+              <div className="small-menu products-menu" id="products-menu">
+                <h6 className="small-menu-title">
+                  <FiPackage aria-hidden="true" /> Our products
+                </h6>
+                {renderDropdownLinks(productLinks)}
+                <Link to="/products" className="small-menu-all" onClick={closeAll}>
+                  View all products <FiArrowRight aria-hidden="true" />
+                </Link>
+              </div>
+
+              {/* Mobile Products Accordion */}
+              <ul
+                className={`mobile-accordion ${
+                  openDropdown === "products" ? "open" : ""
+                }`}
+              >
+                {renderMobileLinks(productLinks)}
+                <li>
+                  <NavLink to="/products" end onClick={closeAll}>
+                    All products
+                  </NavLink>
+                </li>
               </ul>
             </li>
 

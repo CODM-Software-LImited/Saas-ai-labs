@@ -30,7 +30,7 @@ function S_secondSection() {
               <h4 className="my-3">Salesforce Education Cloud Services</h4>
               <p className="mb-0">Salesforce Education Cloud is a unified platform designed
                 specifically for educational institutions to manage the entire
-                student lifecycle—from recruitment and admissions to student success, alumni engagement, and beyond.{" "}
+                student lifecycle, from recruitment and admissions to student success, alumni engagement, and beyond.{" "}
                 <span className="text-900 fw-bold">
                   Codm's Salesforce Education Cloud services
                 </span>{" "}
