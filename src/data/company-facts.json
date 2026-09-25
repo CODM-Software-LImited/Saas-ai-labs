@@ -1,0 +1,205 @@
+{
+  "_note": "Single source of truth for codmsoftware.co.uk company facts. Used by SEO/JSON-LD, sitemap, llms.txt and the About page. Any value starting with {{TODO_VERIFY is omitted from live schema and meta tags. Human-readable copy: docs/ai-visibility/FACTS.md",
+  "siteUrl": "https://codmsoftware.co.uk",
+  "brandName": "CODM Software",
+  "legalName": "CODM Software Limited",
+  "alternateNames": [
+    "CODM Software Ltd",
+    "CodM Software"
+  ],
+  "companiesHouseNumber": "15333870",
+  "foundingDate": "2023-12-07",
+  "foundingYear": 2023,
+  "relatedEntities": {
+    "india": "{{TODO_VERIFY: relationship between CODM Software Limited (UK) and CodM Software Pvt Ltd (India, codmsoftware.com) — parent, subsidiary or sister company?}}",
+    "saasAiLabs": {
+      "name": "SaaS AI Labs",
+      "url": "https://saasailabs.codmsoftware.co.uk",
+      "relationship": "A company of CODM Software Limited focused on AI for government and public services"
+    }
+  },
+  "description": "CODM Software Limited is a UK Salesforce Consulting Partner headquartered in London, with a regional office in Birmingham and delivery teams in the USA and India. We implement Salesforce, build AI and Agentforce solutions, integrate systems and develop custom software.",
+  "salesforcePartner": {
+    "status": "Salesforce Consulting Partner",
+    "tier": "{{TODO_VERIFY: partner tier (e.g. Base / Ridge / Crest / Summit)}}",
+    "since": "{{TODO_VERIFY: year CODM Software Limited joined the Salesforce partner programme}}",
+    "appExchangeUrl": "{{TODO_VERIFY: AppExchange consultant listing URL}}"
+  },
+  "stats": {
+    "implementations": "50+",
+    "certifiedSpecialists": "12+",
+    "salesforceCertifications": "12+",
+    "cloudsCovered": "8 {{TODO_VERIFY: About page says 8 clouds covered, but 14 clouds are listed as services}}",
+    "industriesServed": "8+",
+    "clientRetention": "99%",
+    "leadershipExperienceYears": "14+"
+  },
+  "offices": [
+    {
+      "id": "london",
+      "name": "CODM Software Limited — London (Headquarters)",
+      "role": "Headquarters",
+      "streetAddress": "71-75 Shelton Street, Covent Garden",
+      "addressLocality": "London",
+      "postalCode": "WC2H 9JQ",
+      "addressCountry": "GB",
+      "telephone": "+44 121 818 6924",
+      "email": "info@codmsoftware.co.uk",
+      "schema": true
+    },
+    {
+      "id": "birmingham",
+      "name": "CODM Software Limited — Birmingham",
+      "role": "Regional office",
+      "streetAddress": "Regus, Edmund House, 12-22 Newhall St",
+      "addressLocality": "Birmingham",
+      "postalCode": "B3 3AS",
+      "addressCountry": "GB",
+      "telephone": "+44 121 818 6924",
+      "email": "info@codmsoftware.co.uk",
+      "schema": true
+    },
+    {
+      "id": "plano",
+      "name": "CODM Software — USA (Talent4World LLC)",
+      "role": "USA team",
+      "streetAddress": "4501 Nightland Dr",
+      "addressLocality": "Plano",
+      "addressRegion": "TX",
+      "postalCode": "75024",
+      "addressCountry": "US",
+      "telephone": "+1 201 623 3132",
+      "email": "info@codmsoftware.co.uk",
+      "schema": false,
+      "note": "{{TODO_VERIFY: is this an office of CODM Software Limited or of a related company (Plano = Talent4World LLC, Noida = SaaS AI Labs / CodM Software Pvt Ltd)?}}"
+    },
+    {
+      "id": "noida",
+      "name": "CODM Software — India delivery centre",
+      "role": "India team",
+      "streetAddress": "IHDP Business Park, Plot 7, 2nd floor, Sector 127",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "201304",
+      "addressCountry": "IN",
+      "telephone": "+91 97171 16432",
+      "email": "info@codmsoftware.co.uk",
+      "schema": false,
+      "note": "{{TODO_VERIFY: is this an office of CODM Software Limited or of a related company (Plano = Talent4World LLC, Noida = SaaS AI Labs / CodM Software Pvt Ltd)?}}"
+    }
+  ],
+  "contact": {
+    "email": "info@codmsoftware.co.uk",
+    "telephoneUK": "+44 121 818 6924",
+    "telephoneUS": "+1 201 623 3132",
+    "telephoneIN": "+91 97171 16432"
+  },
+  "founder": {
+    "name": "Vinod Kumar",
+    "jobTitle": "Founder & Director",
+    "sameAs": "https://www.linkedin.com/in/vinod-kumar-a1477954/"
+  },
+  "services": [
+    "Salesforce implementation and consulting",
+    "Sales Cloud",
+    "Service Cloud",
+    "Experience Cloud",
+    "Marketing Cloud",
+    "Data Cloud",
+    "Commerce Cloud",
+    "CPQ and Revenue Cloud",
+    "Education Cloud",
+    "Health & Insurance Cloud",
+    "Financial Services Cloud",
+    "Manufacturing Cloud",
+    "Energy & Utilities Cloud",
+    "Nonprofit Cloud",
+    "Agentforce and AI",
+    "LLM application development",
+    "API integration",
+    "Data integration and migration",
+    "Custom software development (.NET, React, Python)",
+    "Technical and deployment support"
+  ],
+  "knowsAbout": [
+    "Salesforce",
+    "Salesforce Sales Cloud",
+    "Salesforce Service Cloud",
+    "Salesforce Experience Cloud",
+    "Salesforce Marketing Cloud",
+    "Salesforce Data Cloud",
+    "Salesforce Financial Services Cloud",
+    "Salesforce Education Cloud",
+    "Salesforce Health Cloud",
+    "Salesforce Nonprofit Cloud",
+    "Salesforce Manufacturing Cloud",
+    "Salesforce Energy & Utilities Cloud",
+    "Salesforce CPQ",
+    "Salesforce Revenue Cloud",
+    "Agentforce",
+    "Large language models",
+    "API integration",
+    "Data migration"
+  ],
+  "industries": [
+    "Financial services",
+    "Insurance",
+    "Healthcare",
+    "Higher education",
+    "Manufacturing",
+    "Nonprofit",
+    "Energy and utilities",
+    "Retail",
+    "Technology",
+    "Government and public sector"
+  ],
+  "areaServed": [
+    "United Kingdom",
+    "United States",
+    "India",
+    "Worldwide"
+  ],
+  "accreditations": [
+    "Salesforce Consulting Partner",
+    "G-Cloud 15 supplier (RM1557.15), Lot 3: Cloud Support",
+    "Cyber Essentials",
+    "ISO certified {{TODO_VERIFY: which ISO standard(s) and certificate number}}",
+    "Google Cloud Partner",
+    "Gearset partner"
+  ],
+  "salesforceCertifications": [
+    "Administrator",
+    "Application Architect",
+    "Data Architect",
+    "Agentforce Specialist",
+    "Business Analyst",
+    "CPQ Specialist",
+    "Service Cloud Consultant",
+    "OmniStudio Consultant",
+    "OmniStudio Developer",
+    "Platform App Builder",
+    "Platform Developer I",
+    "Platform Developer II"
+  ],
+  "products": [
+    {
+      "name": "FUTURA",
+      "slug": "futura",
+      "url": "https://codmsoftware.co.uk/products/futura",
+      "category": "EducationalApplication",
+      "summary": "AI chatbot and admissions assistant for universities, colleges and other education providers."
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/codm-software-limited/",
+    "https://www.youtube.com/channel/UC7fU84Na9QuC7dPDVMpuGVQ",
+    "https://find-and-update.company-information.service.gov.uk/company/15333870"
+  ],
+  "sameAsTodo": [
+    "{{TODO_VERIFY: Clutch profile URL}}",
+    "{{TODO_VERIFY: Crunchbase profile URL}}",
+    "{{TODO_VERIFY: Salesforce AppExchange consultant listing URL}}",
+    "{{TODO_VERIFY: X/Twitter profile URL — footer currently links to https://twitter.com}}"
+  ],
+  "logo": "https://codmsoftware.co.uk/logo.png"
+}
