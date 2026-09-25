@@ -51,6 +51,7 @@ import GCloud15 from './pages/GCloud15/GCloud15';
 import GCloudSuppliersBlog from './BlogsComponents/GCloudSuppliersBlog/GCloudSuppliersBlog';
 import Products from './pages/Products/Products';
 import ProductDetail from './pages/Products/ProductDetail';
+import Faq from './pages/Faq/Faq';
  
 // home page condition
 import brand from "../src/config/brand";
@@ -105,7 +106,6 @@ function App() {
   return (
     <>
       <ScrollOnTop />
-      useAutoRefresh()
  
       <Router>
          <ScrollToTop/>
@@ -118,7 +118,9 @@ function App() {
               {/* <Route path="/" element={<Home />} /> */}
              
               <Route path="/" element={<HomeSwitcher/>} />
+              <Route path="/index" element={<Navigate to="/" replace />} />
               <Route path="/about" element={<About />} />
+              <Route path="/faq" element={<Faq />} />
               <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
               <Route path='/terms-conditions' element={<TermsAndConditions/>}/>
               <Route path='/g-cloud-15' element={<GCloud15/>}/>

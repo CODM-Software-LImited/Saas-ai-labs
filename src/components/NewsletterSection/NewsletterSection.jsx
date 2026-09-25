@@ -126,13 +126,13 @@ function NewsletterSection() {
                                 <DotBtn text="Stay Updated"/>
                             </div>     
                             
-                            <h1
-                                className="mt-3 mb-3 aos-init"
+                            <h2
+                                className="h1 mt-3 mb-3 aos-init"
                                 data-aos="fade-zoom-in"
                                 data-aos-delay="100"
                             >
                                 Subscribe to our Blogs! 
-                            </h1>
+                            </h2>
                             <p
                                 className="fs-6 fw-medium aos-init"
                                 data-aos="fade-zoom-in"

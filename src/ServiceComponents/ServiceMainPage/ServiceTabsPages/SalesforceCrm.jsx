@@ -16,7 +16,7 @@ function SalesforceCrm() {
       icon: icon2,
       title: "Investment",
       description:
-        " 12 years CRM industries experience in implementating the Salesforce CRMs helps in maximizing your teams productivity resulting in higher revenue. "
+        "Our leadership team has 14+ years of experience building CRM and customer systems, so we implement Salesforce in a way that makes your teams more productive and helps you grow revenue."
     }]
   return (
     <>

@@ -32,7 +32,7 @@ function CRMDevelopment_Second() {
 
 
                             <h4 className="my-3">Drive Business Growth with Salesforce CRM</h4>
-                            <p className="mb-0">At Codm, we empower businesses to transform their customer relationships, streamline operations, and boost revenue using Salesforce, the world’s #1 CRM platform. Whether you're a small business or a global enterprise, our Salesforce CRM services are tailored to help you unlock the full potential of your customer data and workflows. <b>Our innovative business</b> services are designed to help you navigate the complexities of the modern marketplace, leveraging cutting-edge technology and forward-thinking strategies to transform your operations and achieve your goals. We implement intelligent automation tools tailored to your specific needs.
+                            <p className="mb-0">At CODM, our certified Salesforce consultants and architects implement, customise and support Salesforce CRM so your teams can manage customer relationships, streamline operations and grow revenue. We handle the full project: <b>discovery and design</b>, configuration and custom development, data migration, integration with your other systems, user training and ongoing support after go-live. Whether you are a small business or a large organisation, we shape Salesforce around the way your team already works.
                             </p>
 
                             {/* Phase items */}

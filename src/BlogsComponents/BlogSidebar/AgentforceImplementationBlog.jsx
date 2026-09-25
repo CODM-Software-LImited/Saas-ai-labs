@@ -52,7 +52,7 @@ function AgentforceImplementationBlog() {
         
                         <div class="developer-info mt-4 pt-3">
                             <div class="d-flex align-items-center">
-                                <img src={chanderkant} alt="prachi pathak" class="rounded-circle me-3" width={'100%'} />
+                                <img src={chanderkant} alt="Chander Kant" class="rounded-circle me-3" width={'100%'} />
                             </div><p class="mb-1 text-muted">Written by:</p><p class="mb-0 fw-semibold">Chander kant ,Senior Salesforce Developer
                                 <br />  <a href="https://www.linkedin.com/in/chander-kant-9aa727222/" target="_blank" rel="noopener noreferrer" class="purple-text text-decoration-underline">View LinkedIn Profile</a></p>
                         </div>

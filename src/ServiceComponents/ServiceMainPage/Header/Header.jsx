@@ -6,13 +6,13 @@ const Header = () => {
   return (
     <section className="serviceHeader section-page-header py-10 fix position-relative">
       <div className="d-flex justify-content-center">
-         <DotBtn text="What we offers" />
+         <DotBtn text="What we offer" />
       </div>
      
       <div className="container mt-5">
-         <h3 className="servicePageHeading text-center">Building <b>enduring value</b> 
+         <h1 className="servicePageHeading text-center">Salesforce, AI and software <b>services</b>{" "}
               <br/>
-            through bold strategies</h3>
+            that build enduring value</h1>
       </div>
 
       <img

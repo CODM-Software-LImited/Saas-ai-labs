@@ -95,7 +95,7 @@ function AgentforceImplementation_First() {
                         <FlipImgwithContentAgentforce items={items} />
 
                         <div className="implementation-section">
-                            <h1 className="mb-4">Agentforce Implementation Use Cases</h1>
+                            <h2 className="h1 mb-4">Agentforce Implementation Use Cases</h2>
 
                             {/* 1 */}
                             <div className="mb-5">

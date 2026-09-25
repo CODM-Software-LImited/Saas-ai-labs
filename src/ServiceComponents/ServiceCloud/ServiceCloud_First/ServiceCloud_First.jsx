@@ -56,7 +56,7 @@ function ServiceCloud_First() {
                             content={
                                 <>
                                     <p>
-                                        Salesforce Service Cloud is a customer relationship management (CRM) platform.That help  designed to enhance and automate customer service and support interactions. It centralizes customer data and service tools into one interface, providing service reps with a complete view of the customer's history. This helps prevent repetitive converations and enables faster, more personalized service.It include omnichannel support, AI powered assistance, and automation tools to improve service rep productivity, boost customer satisfaction, and lower service costs. It supports various use cases like highvolume case management, self service, and field service operations.
+                                        Salesforce Service Cloud is a customer relationship management (CRM) platform.That help  designed to enhance and automate customer service and support interactions. It centralizes customer data and service tools into one interface, providing service reps with a complete view of the customer's history. This helps prevent repetitive conversations and enables faster, more personalized service.It include omnichannel support, AI powered assistance, and automation tools to improve service rep productivity, boost customer satisfaction, and lower service costs. It supports various use cases like high-volume case management, self service, and field service operations.
                                     </p>
                                 </>
                             }
