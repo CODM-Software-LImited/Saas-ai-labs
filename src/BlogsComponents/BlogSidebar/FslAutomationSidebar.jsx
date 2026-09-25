@@ -77,7 +77,7 @@ function FslAutomationSidebar() {
         
                         {/* img container */}
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'}/>
+                            <img alt="Top Use Cases" src={img2} className="" width={'100%'}/>
                             <p className='text-center pt-3'>use cases of fsl</p>
                         </div>
                                     

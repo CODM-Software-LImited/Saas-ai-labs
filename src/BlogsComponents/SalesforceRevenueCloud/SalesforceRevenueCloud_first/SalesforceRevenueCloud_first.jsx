@@ -57,7 +57,7 @@ function SalesforceRevenueCloud_first() {
                                     <div className="d-flex">
                                         <div className="position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon1} alt="Codm" />
+                                                <img src={icon1} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -72,7 +72,7 @@ function SalesforceRevenueCloud_first() {
                                     <div className="d-flex pt-3">
                                         <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon2} alt="Codm" />
+                                                <img src={icon2} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>

@@ -1,4 +1,4 @@
-import img1 from '../../../assets/imgs/service-4/API.png';
+import img1 from '../../../assets/imgs/service-4/API.webp';
 import FlipImgwithContent from '../../../BlogsComponents/ui/FlipImgwithContent/FlipImgwithContent';
 import icon1 from '../../../assets/imgs/service-4/icon-1.svg';
 import icon2 from '../../../assets/imgs/service-4/icon-2.svg';

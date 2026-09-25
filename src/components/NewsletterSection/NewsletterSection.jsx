@@ -169,7 +169,7 @@ function NewsletterSection() {
                 </div>
 
                 <div className="position-absolute top-50 start-50 translate-middle z-0">
-                    <img src={bgLine} alt="Codm"  width={'100%'}/>
+                    <img src={bgLine} alt=""  width={'100%'}/>
                 </div>
             </div>
         </section>

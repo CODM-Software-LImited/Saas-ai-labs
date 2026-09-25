@@ -72,12 +72,12 @@ function AgentforceFinancialServicesBlog() {
         
                         {/* img container */}
                         <div className="zoom-img mt-5 rounded-4">
-                            <img src={img2} className="" width={'100%'} />
+                            <img alt="" src={img2} className="" width={'100%'} />
                         </div>
 
                          {/* img container */}
                         <div className="zoom-img mt-5 rounded-4">
-                            <img src={img3} className="" width={'100%'} />
+                            <img alt="Features of Financial Services Cloud" src={img3} className="" width={'100%'} />
                         </div>
                         
     

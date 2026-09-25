@@ -43,11 +43,11 @@ function DataCloud_Second() {
                                 {/* First Column */}
                                 <ul className="list-unstyled phase-items mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Real-Time 360° Learner Profiles</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">AI-Driven Engagement & Outreach</span>
                                     </li>
                                 </ul>
@@ -55,11 +55,11 @@ function DataCloud_Second() {
                                 {/* Second Column */}
                                 <ul className="list-unstyled phase-items ms-md-6 mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Dynamic Dashboards & Predictive Analytics</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Automate Student Journeys with Intelligence</span>
                                     </li>
                                 </ul>
@@ -67,11 +67,11 @@ function DataCloud_Second() {
                                 {/* Third Column */}
                                 <ul className="list-unstyled phase-items ms-md-6 mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Trusted, Scalable, and Secure</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Enhanced Retention, Satisfaction, and ROI</span>
                                     </li>
                                 </ul>
@@ -91,7 +91,7 @@ function DataCloud_Second() {
                                     <div className="d-flex">
                                         <div className="position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon1} alt="Codm" />
+                                                <img src={icon1} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -106,7 +106,7 @@ function DataCloud_Second() {
                                     <div className="d-flex pt-3">
                                         <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon2} alt="Codm" />
+                                                <img src={icon2} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -121,7 +121,7 @@ function DataCloud_Second() {
                                     <div className="d-flex pt-3">
                                         <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon3} alt="Codm" />
+                                                <img src={icon3} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -175,7 +175,7 @@ function DataCloud_Second() {
                             <ServiceSidebar/>
                             
                                <div className="zoom-img mt-5 rounded-4">
-                                 <img src={img3} className="" width={'100%'}/>
+                                 <img alt="" src={img3} className="" width={'100%'}/>
                                 </div>
                             
 

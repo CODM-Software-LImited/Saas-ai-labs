@@ -93,7 +93,7 @@ function SSOSidebar() {
         
                         {/* img container */}
                         <div className="zoom-img mt-5 rounded-4">
-                            <img src={HowSsoWorks} className="" width={'100%'} />
+                            <img alt="How SSO works in Salesforce" src={HowSsoWorks} className="" width={'100%'} />
                         </div>
                          </div>
   )

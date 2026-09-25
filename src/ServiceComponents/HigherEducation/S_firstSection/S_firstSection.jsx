@@ -66,7 +66,7 @@ const S_firstSection = () => {
         className="position-absolute bottom-0 start-0 end-0 top-0 z-0"
         src={bgImg}
         width={'100%'}
-        alt="Codm"
+        alt=""
       />
 
     </section>

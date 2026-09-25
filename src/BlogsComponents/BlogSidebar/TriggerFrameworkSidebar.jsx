@@ -92,7 +92,7 @@ function TriggerFrameworkSidebar() {
         
                         {/* img container */}
                         <div className="zoom-img mt-5 rounded-4">
-                            <img src={img2} className="" width={'100%'} />
+                            <img alt="" src={img2} className="" width={'100%'} />
                         </div>
                         
     

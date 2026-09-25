@@ -142,7 +142,7 @@ const S_lastSection = () => {
                                     <h6>Chat with us</h6>
                                     <p className="text-500">The support team is always available 24/7</p>
                                     <div className="ContactInfoImg d-flex mb-2">
-                                        <img src={whatsappIcon} alt="Codm" />
+                                        <img src={whatsappIcon} alt="" />
                                         <a className="ms-2 text-decoration-underline text-900 fs-7 black-text" href="https://wa.me/+4407436934216" target="_blank">
                                             Chat via Whatsapp
                                         </a>
@@ -151,7 +151,7 @@ const S_lastSection = () => {
                                     <h6>Send us an email</h6>
                                     <p className="text-500">Our team will respond promptly to your inquiries</p>
                                     <div className="d-flex mb-2">
-                                        <img src={emailIcon} alt="Codm" />
+                                        <img src={emailIcon} alt="" />
                                         <a className="ms-2 text-decoration-underline text-900 fs-7 black-text" href="mailto:info@codmsoftware.co.uk">
                                             info@codmsoftware.co.uk
                                         </a>
@@ -160,7 +160,7 @@ const S_lastSection = () => {
                                     <h6>For more inquiry</h6>
                                     <p className="text-500">Reach out for immediate assistance</p>
                                     <div className="d-flex mb-2">
-                                        <img src={phoneIcon} alt="Codm" />
+                                        <img src={phoneIcon} alt="" />
                                         <a className="ms-2 text-decoration-underline text-900 fs-7 black-text" href="tel:(+44) 0121 818 6924">
                                             (+44) 0121 818 6924
                                         </a>

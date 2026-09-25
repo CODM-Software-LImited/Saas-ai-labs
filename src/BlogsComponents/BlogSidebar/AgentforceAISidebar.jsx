@@ -71,16 +71,16 @@ function AgentforceAISidebar() {
         
                         {/* img container */}
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'}/>
+                            <img alt="" src={img2} className="" width={'100%'}/>
                             <p className='text-center pt-3'>Salesforce project where Agentforce is deploying a Sales Operation Manager app</p>
                         </div>
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'}/>
+                            <img alt="" src={img2} className="" width={'100%'}/>
                         </div>
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img3} className="" width={'100%'}/>
+                            <img alt="Agentforce Vibes" src={img3} className="" width={'100%'}/>
                         </div>
             
     </div>

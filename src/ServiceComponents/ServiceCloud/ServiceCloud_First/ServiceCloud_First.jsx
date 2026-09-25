@@ -232,20 +232,20 @@ function ServiceCloud_First() {
                         </div>
 
                         {/* <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'} />
+                            <img alt="Salesforce Service Cloud" src={img2} className="" width={'100%'} />
                         </div> */}
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img3} className="" width={'100%'} />
+                            <img alt="Business person looking finance graphs" src={img3} className="" width={'100%'} />
                         </div>
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img4} className="" width={'100%'} />
+                            <img alt="Salesforce Service Cloud features" src={img4} className="" width={'100%'} />
                             <p className="pt-3 text-center">Salesforce Service Cloud Features </p>
                         </div>
 
                         <div className="zoom-img mt-5 rounded-4 border mb-3">
-                            <img src={img5} className="" width={'100%'} />
+                            <img alt="Omnichannel Customer Service" src={img5} className="" width={'100%'} />
                             <p className="pt-3 text-center">Omnichannel Support</p>
                         </div>
 

@@ -262,11 +262,11 @@ function SalesCloud_First() {
                         {/* need to create different componets with useState */}
                         <ServiceSidebar />
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'} />
+                            <img alt="" src={img2} className="" width={'100%'} />
                         </div>
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img3} className="" width={'100%'} />
+                            <img alt="Salesforce activity management" src={img3} className="" width={'100%'} />
                             <p className="pt-3 text-center">Activity management</p>
                         </div>
                         

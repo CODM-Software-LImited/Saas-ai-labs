@@ -79,7 +79,7 @@ function Salesforcellm_Sidebar() {
         
                         {/* img container */}
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={salesForceIIM} className="" width={'100%'}/>
+                            <img alt="Salesforce LLM" src={salesForceIIM} className="" width={'100%'}/>
                         </div>
                                     
     </div>
