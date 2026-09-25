@@ -7,6 +7,8 @@ import Accordion from "../../ServiceComponents/ui/Accordion/Accordion";
 import CountUp from "../../utils/CountUp/CountUp";
 import products, { BOOKING_URL, getProduct } from "../../data/products";
 import ProductHeroArt from "./ProductHeroArt";
+import { faqPage, absUrl, ORG_ID } from "../../SeoData/schema";
+import { toSchemaFaqs } from "../../data/faqs";
 
 import "./Products.css";
 
@@ -56,6 +58,20 @@ function ProductDetail() {
         description={product.short}
         url={`https://codmsoftware.co.uk/products/${product.slug}`}
         keywords={`${product.name}, ${product.tagline}, ${product.category}, CODM Software, ${product.highlights.join(", ")}`}
+        schema={[
+          {
+            "@type": "SoftwareApplication",
+            "@id": `${absUrl(`/products/${product.slug}`)}#software`,
+            name: product.name,
+            description: product.short,
+            url: absUrl(`/products/${product.slug}`),
+            applicationCategory: "EducationalApplication",
+            operatingSystem: "Web",
+            publisher: { "@id": ORG_ID },
+            provider: { "@id": ORG_ID },
+          },
+          faqPage(`/products/${product.slug}`, toSchemaFaqs(product.faqs || [])),
+        ]}
       />
 
       {/* ===== Hero ===== */}

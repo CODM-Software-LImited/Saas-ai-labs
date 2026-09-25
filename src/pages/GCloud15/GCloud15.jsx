@@ -15,6 +15,8 @@ import {
 
 import SEO from "../../SeoData/SEO";
 import Accordion from "../../ServiceComponents/ui/Accordion/Accordion";
+import { gcloudFaqs, toSchemaFaqs } from "../../data/faqs";
+import { faqPage } from "../../SeoData/schema";
 
 import checkImg from "../../assets/imgs/services-details/check.svg";
 import outcomesImg from "../../assets/imgs/services-details-2/Api/img-2.svg";
@@ -185,38 +187,8 @@ const frameworkDetails = [
   },
 ];
 
-const faqItems = [
-  {
-    number: 1,
-    title: "What can CODM provide through G‑Cloud 15 Lot 3?",
-    content:
-      "CODM provides cloud-specific professional services. These include Salesforce advisory, implementation and optimisation; AI and Agentforce support; API integration; data integration and migration; cloud application development; deployment support; and ongoing technical support.",
-  },
-  {
-    number: 2,
-    title: "Does CODM provide cloud software or hosting through this framework?",
-    content:
-      "CODM is named on Lot 3: Cloud Support. Our G‑Cloud 15 offer is focused on professional services that help organisations plan, implement, integrate, develop, support and improve their cloud services.",
-  },
-  {
-    number: 3,
-    title: "Can CODM help us assess our requirement?",
-    content:
-      "Yes. Contact our public sector team with an outline of your objectives. We can explain the scope of our services and provide information to support your procurement process.",
-  },
-  {
-    number: 4,
-    title: "Can you support existing Salesforce or cloud platforms?",
-    content:
-      "Yes. CODM can provide technical support, optimisation, integration, enhancement and development services for existing Salesforce and cloud-based systems.",
-  },
-  {
-    number: 5,
-    title: "How do we begin?",
-    content:
-      "Contact our public sector team to discuss your requirement. We will help identify the relevant CODM Cloud Support service and provide the information needed for your next steps.",
-  },
-];
+const faqItems = gcloudFaqs;
+const faqSchema = faqPage("/g-cloud-15", toSchemaFaqs(gcloudFaqs));
 
 function GCloud15() {
   return (
@@ -226,6 +198,7 @@ function GCloud15() {
         description="CODM Software provides Salesforce, AI, cloud integration, data migration and technical support services through G-Cloud 15 Lot 3: Cloud Support."
         url="https://codmsoftware.co.uk/g-cloud-15"
         keywords="G-Cloud 15, Cloud Support, Lot 3, public sector, Salesforce, AI, Agentforce, API integration, data migration, cloud application development, CODM Software"
+        schema={faqSchema}
       />
 
       {/* ===== Hero ===== */}

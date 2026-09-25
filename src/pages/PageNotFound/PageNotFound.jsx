@@ -2,10 +2,12 @@ import './PageNotFound.css';
 import { Link } from 'react-router-dom';
 import img from '../../assets/imgs/pageNotFoundImg.png'
 import DotBtn from '../../utils/Dotbtn/Dotbtn';
+import SEO from '../../SeoData/SEO';
 
 function PageNotFound() {
   return (
     <>
+    <SEO title="Page not found | CODM Software" description="This page could not be found." noindex />
 
     <div className="PageNotFoundContainer">
         <div className='mb-5 d-flex align-items-center justify-content-center'>
@@ -15,7 +17,7 @@ function PageNotFound() {
     <div className="container d-sm-flex gap-5">
     
         <div className='col-sm-6 text-center'>
-            <h2 className='notfoundheading'>404</h2>
+            <h1 className='notfoundheading'>404</h1>
             <h5 className='text-gray'>Page Not Found</h5>
             <p className='text-gray my-0'>Oops! Looks like this page got lost </p>
             <p className='text-gray'>But don't worry let's get you back on track</p>
