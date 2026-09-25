@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/generate-route-dates.mjs",
     "build": "vite build",
-    "postbuild": "react-snap",
+    "postbuild": "node scripts/prerender.mjs && node scripts/generate-seo-files.mjs",
+    "serve:dist": "node scripts/serve-dist.mjs",
+    "check:ai": "node scripts/ai-visibility-check.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -43,8 +46,5 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "vite": "^7.1.2"
-  },
-  "reactSnap": {
-    "inlineCss": true
   }
 }

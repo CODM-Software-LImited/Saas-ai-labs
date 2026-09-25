@@ -1,0 +1,128 @@
+{
+  "/": {
+    "modified": "2026-09-16"
+  },
+  "/about": {
+    "modified": "2026-09-16"
+  },
+  "/contact": {
+    "modified": "2026-09-04"
+  },
+  "/faq": {
+    "modified": "2026-09-25"
+  },
+  "/g-cloud-15": {
+    "modified": "2026-09-25"
+  },
+  "/ItServices": {
+    "modified": "2026-09-25"
+  },
+  "/ItServices/salesforce-financial-services": {
+    "modified": "2026-08-25"
+  },
+  "/ItServices/salesforce-education-cloud": {
+    "modified": "2026-09-25"
+  },
+  "/ItServices/salesforce-health-insurance-cloud": {
+    "modified": "2026-08-25"
+  },
+  "/ItServices/salesforce-sales-cloud": {
+    "modified": "2026-08-25"
+  },
+  "/ItServices/salesforce-service-cloud": {
+    "modified": "2026-09-25"
+  },
+  "/ItServices/salesforce-marketing-cloud": {
+    "modified": "2026-09-16"
+  },
+  "/ItServices/salesforce-data-cloud": {
+    "modified": "2026-09-16"
+  },
+  "/ItServices/salesforce-nonprofit-cloud": {
+    "modified": "2026-08-25"
+  },
+  "/ItServices/salesforce-manufacturing-cloud": {
+    "modified": "2026-08-25"
+  },
+  "/ItServices/salesforce-energy-utilities-cloud": {
+    "modified": "2026-08-25"
+  },
+  "/ItServices/crm-development": {
+    "modified": "2026-09-25"
+  },
+  "/ItServices/building-llm": {
+    "modified": "2026-08-25"
+  },
+  "/ItServices/api-integration": {
+    "modified": "2026-08-25"
+  },
+  "/ItServices/data-integration": {
+    "modified": "2026-08-25"
+  },
+  "/ItServices/dotnet-application-development": {
+    "modified": "2026-08-25"
+  },
+  "/ItServices/react-application-development": {
+    "modified": "2026-09-16"
+  },
+  "/ItServices/python-application-development": {
+    "modified": "2026-08-25"
+  },
+  "/ItServices/technical-support": {
+    "modified": "2026-09-16"
+  },
+  "/ItServices/deployment-support": {
+    "modified": "2026-08-25"
+  },
+  "/products": {
+    "modified": "2026-09-16"
+  },
+  "/products/futura": {
+    "modified": "2026-09-25"
+  },
+  "/blog": {
+    "modified": "2026-09-25"
+  },
+  "/blog/agentforce-ai": {
+    "modified": "2026-08-10"
+  },
+  "/blog/salesforce-agentforce": {
+    "modified": "2026-09-25"
+  },
+  "/blog/agentforce-financial-services": {
+    "modified": "2026-08-10"
+  },
+  "/blog/salesforce-einstein-ai-synergy": {
+    "modified": "2026-09-25"
+  },
+  "/blog/salesforce-revenue-cloud": {
+    "modified": "2026-09-16"
+  },
+  "/blog/salesforce-llm-crm-automation": {
+    "modified": "2026-08-10"
+  },
+  "/blog/field-service-automation": {
+    "modified": "2026-08-10"
+  },
+  "/blog/salesforce-sso-authentication": {
+    "modified": "2026-08-10"
+  },
+  "/blog/integration-framework": {
+    "modified": "2026-09-16"
+  },
+  "/blog/trigger-framework": {
+    "modified": "2026-09-25"
+  },
+  "/blog/ai-powered-dashboard": {
+    "modified": "2026-09-16"
+  },
+  "/blog/g-cloud15": {
+    "modified": "2026-09-25"
+  },
+  "/PrivacyPolicy": {
+    "modified": "2026-09-25"
+  },
+  "/terms-conditions": {
+    "modified": "2026-09-25"
+  }
+}

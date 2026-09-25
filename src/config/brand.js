@@ -9,6 +9,7 @@ const hostname = window.location.hostname;
 const brandConfig = {
   codm: {
     name: "CODM Software",
+    siteUrl: "https://codmsoftware.co.uk",
     logo:codmlogo,
     key:"codm_Logo",
     title : "",
@@ -19,6 +20,7 @@ const brandConfig = {
   },
   saasai: {
     name: "SaasAi Labs",
+    siteUrl: "https://saasailabs.codmsoftware.co.uk",
     logo: saaslogo,
     key:"saas_logo",
     title: "SaasAi Labs | Modern SaaS Solutions",
@@ -33,6 +35,12 @@ let brand = "codm";
 
 if (hostname.includes("saasailabs")) {
   brand = "saasai";
+}
+
+// Build-time override (VITE_BRAND=saasai npm run build) so each domain gets
+// its own prerendered HTML; see docs/ai-visibility/REPORT.md.
+if (brandConfig[import.meta.env.VITE_BRAND]) {
+  brand = import.meta.env.VITE_BRAND;
 }
 
 // Dev-only preview switch: http://localhost:5173/?brand=saasai
