@@ -1,8 +1,10 @@
 import "./PrivacyPolicy.css";
+import SEO from "../SeoData/SEO";
 
 const PrivacyPolicy = () => {
   return (
     <div className="privacy">
+      <SEO title="Privacy Policy | CODM Software Limited" />
     <div className="privacy-container container">
 
       <h1 className="privacy-title text-center Heading3 pb-3">Privacy Policy</h1>

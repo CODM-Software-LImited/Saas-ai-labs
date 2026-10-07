@@ -9,7 +9,7 @@ const S_firstSection = () => {
     <section className="S_firstSection_Container section-page-header py-10 fix position-relative">
       <div className="container position-relative z-1 mt-5">
         <div className="text-md-start">
-          <h4 className="customServiceHeading">Salesforce Education Cloud</h4>
+          <h1 className="customServiceHeading">Salesforce Education Cloud</h1>
 
           <div className="d-flex">
             <a href="/" className="d-flex text-decoration-none black-text">
@@ -66,7 +66,7 @@ const S_firstSection = () => {
         className="position-absolute bottom-0 start-0 end-0 top-0 z-0"
         src={bgImg}
         width={'100%'}
-        alt="Codm"
+        alt=""
       />
 
     </section>

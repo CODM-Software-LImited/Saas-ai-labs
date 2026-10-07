@@ -32,6 +32,7 @@ const company = [
   { label: "FUTURA", to: "/products/futura" },
   { label: "Blog", to: "/blog" },
   { label: "G‑Cloud 15", to: "/g-cloud-15" },
+  { label: "FAQ", to: "/faq" },
 ];
 
 const phones = [

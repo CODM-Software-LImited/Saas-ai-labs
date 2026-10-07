@@ -10,7 +10,7 @@ function Header() {
             <DotBtn text='blog'/>
         </div>
       
-        <h2 className='pageBlogHeading text-center pb-5 text-uppercase'>Discover our latest blogs</h2>
+        <h1 className='pageBlogHeading text-center pb-5 text-uppercase'>Salesforce and AI insights from CODM</h1>
     </div>
   )
 }

@@ -40,11 +40,11 @@ function PythonApplication_Second() {
                                 {/* First Column */}
                                 <ul className="list-unstyled phase-items mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Web Development (Django, Flask)</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Data Science & Machine Learning </span>
                                     </li>
                                 </ul>
@@ -52,11 +52,11 @@ function PythonApplication_Second() {
                                 {/* Second Column */}
                                 <ul className="list-unstyled phase-items ms-md-6 mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Automation & Scripting</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">API Development</span>
                                     </li>
                                 </ul>
@@ -64,11 +64,11 @@ function PythonApplication_Second() {
                                 {/* Third Column */}
                                 <ul className="list-unstyled phase-items ms-md-6 mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Enterprise Software Solutions</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Data Analytics & AI</span>
                                     </li>
                                 </ul>
@@ -87,7 +87,7 @@ function PythonApplication_Second() {
                                     <div className="d-flex">
                                         <div className="position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon1} alt="Codm" />
+                                                <img src={icon1} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -102,7 +102,7 @@ function PythonApplication_Second() {
                                    <div className="d-flex pt-3">
                                         <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon3} alt="Codm" />
+                                                <img src={icon3} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -118,7 +118,7 @@ function PythonApplication_Second() {
                                     <div className="d-flex pt-3">
                                         <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon3} alt="Codm" />
+                                                <img src={icon3} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -193,7 +193,7 @@ function PythonApplication_Second() {
                             <S_rightSidebarDataDevelopment />
 
                             <div className="zoom-img mt-5 rounded-4">
-                                <img src={img3} className="" width={'100%'} />
+                                <img alt="" src={img3} className="" width={'100%'} />
                             </div>
                          
                         </div>

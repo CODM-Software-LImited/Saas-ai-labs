@@ -228,16 +228,16 @@ function EnergyUtilitiesCloud_First() {
                         </div> */}
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'} />
+                            <img alt="Salesforce Energy &amp; Utilities Cloud" src={img2} className="" width={'100%'} />
                         </div>
 
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img3} className="" width={'100%'} />
+                            <img alt="Salesforce Energy &amp; Utilities Cloud" src={img3} className="" width={'100%'} />
                         </div>
 
                          <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img4} className="" width={'100%'} />
+                            <img alt="Salesforce Energy &amp; Utilities Cloud" src={img4} className="" width={'100%'} />
                         </div>
 
                     </div>

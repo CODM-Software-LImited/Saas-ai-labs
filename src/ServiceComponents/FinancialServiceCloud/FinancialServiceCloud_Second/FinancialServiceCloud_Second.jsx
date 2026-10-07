@@ -50,11 +50,11 @@ function FinancialServiceCloud_Second() {
                                 {/* First Column */}
                                 <ul className="list-unstyled phase-items mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Client 360 View</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Relationship Management</span>
                                     </li>
                                 </ul>
@@ -62,11 +62,11 @@ function FinancialServiceCloud_Second() {
                                 {/* Second Column */}
                                 <ul className="list-unstyled phase-items ms-md-6 mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Action Plans & Workflows</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Financial Goal Tracking</span>
                                     </li>
                                 </ul>
@@ -74,11 +74,11 @@ function FinancialServiceCloud_Second() {
                                 {/* Third Column */}
                                 <ul className="list-unstyled phase-items ms-md-6 mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Client Interaction Tracking</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Regulatory Compliance Tools</span>
                                     </li>
                                 </ul>
@@ -96,7 +96,7 @@ function FinancialServiceCloud_Second() {
                                     <div className="d-flex">
                                         <div className="position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon1} alt="Codm" />
+                                                <img src={icon1} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -111,7 +111,7 @@ function FinancialServiceCloud_Second() {
                                     <div className="d-flex pt-3">
                                         <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon2} alt="Codm" />
+                                                <img src={icon2} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -126,7 +126,7 @@ function FinancialServiceCloud_Second() {
                                     <div className="d-flex pt-3">
                                         <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon3} alt="Codm" />
+                                                <img src={icon3} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -215,7 +215,7 @@ function FinancialServiceCloud_Second() {
                             <ServiceSidebar/>
 
                             <div className="zoom-img mt-5 rounded-4">
-                                    <img src={img3} className="" width={'100%'}/>
+                                    <img alt="" src={img3} className="" width={'100%'}/>
                             </div>
                             
                         </div>

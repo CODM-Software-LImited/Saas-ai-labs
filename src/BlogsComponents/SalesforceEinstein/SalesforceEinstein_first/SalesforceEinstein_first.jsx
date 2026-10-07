@@ -188,7 +188,7 @@ function SalesforceEinstein_first() {
 
                         <div className='border-bottom pb-3'></div>
                         {/* next section */}
-                        <h1 className="HeadingContent_heading pt-3">Use Case Comparison: Einstein vs Agentforce</h1>
+                        <h2 className="h1 HeadingContent_heading pt-3">Use Case Comparison: Einstein vs Agentforce</h2>
                         {/* table */}
                         <table class="table table-bordered table-striped text-start">
                             <thead class="table-light">

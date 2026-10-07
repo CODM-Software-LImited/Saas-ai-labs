@@ -7,9 +7,9 @@ const HeaderWithBg = ({ title, breadcrumbs = [] }) => {
       <div className="container position-relative z-1 mt-5">
         <div className="text-start">
 
-          <h3>{title}</h3>
+          <h1 className="page-header-title">{title}</h1>
 
-          <div className="d-flex align-items-center flex-wrap">
+          <nav aria-label="Breadcrumb" className="d-flex align-items-center flex-wrap">
             {breadcrumbs.map((crumb, index) => (
               <span key={index} className="d-flex align-items-center">
 
@@ -51,7 +51,7 @@ const HeaderWithBg = ({ title, breadcrumbs = [] }) => {
 
               </span>
             ))}
-          </div>
+          </nav>
 
         </div>
       </div>
@@ -61,7 +61,8 @@ const HeaderWithBg = ({ title, breadcrumbs = [] }) => {
         className="position-absolute bottom-0 start-0 end-0 top-0 z-0"
         src={bgImg}
         width="100%"
-        alt="background"
+        alt=""
+        aria-hidden="true"
       />
     </section>
   );

@@ -206,16 +206,16 @@ function NonprofitCloud_First() {
                         {/* need to create different componets with useState */}
                         <ServiceSidebar />
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'} />
+                            <img alt="" src={img2} className="" width={'100%'} />
                         </div>
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img3} className="" width={'100%'} />
+                            <img alt="" src={img3} className="" width={'100%'} />
                             {/* <p className="pt-3 text-center">Activity management</p> */}
                         </div>
 
                          <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img4} className="" width={'100%'} />
+                            <img alt="Salesforce Nonprofit Cloud" src={img4} className="" width={'100%'} />
                         </div>
 
                     </div>
@@ -436,7 +436,7 @@ export default NonprofitCloud_First;
 //                         <ServiceSidebar />
 
 //                         <div className="zoom-img mt-5 rounded-4 border">
-//                             <img src={img2} width={'100%'} />
+//                             <img alt="" src={img2} width={'100%'} />
 //                         </div>
 
 //                         <div className="zoom-img mt-5 rounded-4 border">

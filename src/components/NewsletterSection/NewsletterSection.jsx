@@ -126,13 +126,13 @@ function NewsletterSection() {
                                 <DotBtn text="Stay Updated"/>
                             </div>     
                             
-                            <h1
-                                className="mt-3 mb-3 aos-init"
+                            <h2
+                                className="h1 mt-3 mb-3 aos-init"
                                 data-aos="fade-zoom-in"
                                 data-aos-delay="100"
                             >
                                 Subscribe to our Blogs! 
-                            </h1>
+                            </h2>
                             <p
                                 className="fs-6 fw-medium aos-init"
                                 data-aos="fade-zoom-in"
@@ -169,7 +169,7 @@ function NewsletterSection() {
                 </div>
 
                 <div className="position-absolute top-50 start-50 translate-middle z-0">
-                    <img src={bgLine} alt="Codm"  width={'100%'}/>
+                    <img src={bgLine} alt=""  width={'100%'}/>
                 </div>
             </div>
         </section>

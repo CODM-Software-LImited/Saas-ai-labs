@@ -32,7 +32,7 @@ function CRMDevelopment_Second() {
 
 
                             <h4 className="my-3">Drive Business Growth with Salesforce CRM</h4>
-                            <p className="mb-0">At Codm, we empower businesses to transform their customer relationships, streamline operations, and boost revenue using Salesforce, the world’s #1 CRM platform. Whether you're a small business or a global enterprise, our Salesforce CRM services are tailored to help you unlock the full potential of your customer data and workflows. <b>Our innovative business</b> services are designed to help you navigate the complexities of the modern marketplace, leveraging cutting-edge technology and forward-thinking strategies to transform your operations and achieve your goals. We implement intelligent automation tools tailored to your specific needs.
+                            <p className="mb-0">At CODM, our certified Salesforce consultants and architects implement, customise and support Salesforce CRM so your teams can manage customer relationships, streamline operations and grow revenue. We handle the full project: <b>discovery and design</b>, configuration and custom development, data migration, integration with your other systems, user training and ongoing support after go-live. Whether you are a small business or a large organisation, we shape Salesforce around the way your team already works.
                             </p>
 
                             {/* Phase items */}
@@ -40,11 +40,11 @@ function CRMDevelopment_Second() {
                                 {/* First Column */}
                                 <ul className="list-unstyled phase-items mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Customer Journey Mapping</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Customer Feedback Systems</span>
                                     </li>
                                 </ul>
@@ -52,11 +52,11 @@ function CRMDevelopment_Second() {
                                 {/* Second Column */}
                                 <ul className="list-unstyled phase-items ms-md-6 mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Sustainable Business Practices</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Corporate Social Responsibility</span>
                                     </li>
                                 </ul>
@@ -64,11 +64,11 @@ function CRMDevelopment_Second() {
                                 {/* Third Column */}
                                 <ul className="list-unstyled phase-items ms-md-6 mb-0">
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Ideation and Concept</span>
                                     </li>
                                     <li className="d-flex align-items-center mt-3">
-                                        <img src={checkImg} alt="Codm" />
+                                        <img src={checkImg} alt="" />
                                         <span className="ms-2 text-900 fw-medium fs-6">Intellectual Property</span>
                                     </li>
                                 </ul>
@@ -88,7 +88,7 @@ function CRMDevelopment_Second() {
                                     <div className="d-flex">
                                         <div className="position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon1} alt="Codm" />
+                                                <img src={icon1} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -105,7 +105,7 @@ function CRMDevelopment_Second() {
                                     <div className="d-flex pt-3">
                                         <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon2} alt="Codm" />
+                                                <img src={icon2} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -122,7 +122,7 @@ function CRMDevelopment_Second() {
                                     <div className="d-flex pt-3">
                                         <div className="bg-primary-soft icon-flip position-relative icon-shape icon-xxl rounded-3">
                                             <div className="S_secondLineImg">
-                                                <img src={icon3} alt="Codm" />
+                                                <img src={icon3} alt="" />
                                                 <span className="customLine"></span>
                                             </div>
                                         </div>
@@ -219,7 +219,7 @@ function CRMDevelopment_Second() {
                             <S_rightSidebarDataDevelopment />
 
                             <div className="zoom-img mt-5 rounded-4">
-                                <img src={img3} className="" width={'100%'} />
+                                <img alt="" src={img3} className="" width={'100%'} />
                             </div>
                             
                             

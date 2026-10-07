@@ -1,8 +1,10 @@
 import "./TermsAndConditions.css";
+import SEO from "../SeoData/SEO";
 
 const TermsAndConditions = () => {
   return (
     <div className="terms-container">
+      <SEO title="Terms and Conditions | CODM Software Limited" />
       <h1 className="terms-title text-center">Terms and Conditions</h1>
       <p>
         Welcome to <strong>CODM Software Limited </strong>

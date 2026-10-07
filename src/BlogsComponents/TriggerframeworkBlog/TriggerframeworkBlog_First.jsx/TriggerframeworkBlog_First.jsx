@@ -113,7 +113,7 @@ function TriggerframeworkBlog_First() {
 
                        {/* next div =  Types of Salesforce Trigger Framework*/}
                        <div>
-                        <h1 className='pt-3'>Types of Salesforce Trigger Framework</h1>
+                        <h2 className='h1 pt-3'>Types of Salesforce Trigger Framework</h2>
 
                         <HeadingContent
                         title="#1 Salesforce Trigger Handler Pattern (Basic Handler Class)"

@@ -190,7 +190,7 @@ const TestimonialsSection = () => {
 
       {/* Background Line */}
       <div className="position-absolute top-0 start-0 z-0">
-        <img src={bgLine} alt="Codm"  width={'100%'}/>
+        <img src={bgLine} alt=""  width={'100%'}/>
       </div>
     </section>
   );

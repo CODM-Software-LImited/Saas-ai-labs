@@ -30,15 +30,17 @@ function Hero() {
             </span>
 
             <h1 className="cdmh-title">
-              AI-Driven Enterprise Software Solutions Built for{' '}
-              <span className="cdmh-highlight">Scale and Innovation</span>
+              UK Salesforce Consulting Partner for{' '}
+              <span className="cdmh-highlight">Agentforce, AI and Industry Clouds</span>
             </h1>
 
             <p className="cdmh-lead">
-              We deliver enterprise-scale Salesforce solutions and AI-driven
-              transformations that create measurable business impact, from Sales
-              Cloud optimization to intelligent automation, our certified experts
-              modernize, streamline, and scale your operations.
+              CODM Software Limited is a Salesforce Consulting Partner
+              headquartered in London, with a regional office in Birmingham and
+              teams in the USA and India. Our 12+ certified Salesforce specialists
+              implement and scale Sales Cloud, Service Cloud, Financial Services
+              Cloud, Education Cloud, Data Cloud and Agentforce for organisations
+              in the UK and worldwide.
             </p>
 
             <div className="cdmh-stats">

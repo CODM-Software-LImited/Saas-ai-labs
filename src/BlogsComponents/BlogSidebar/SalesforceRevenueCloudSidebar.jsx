@@ -60,7 +60,7 @@ function SalesforceRevenueCloudSidebar() {
         
                         <div class="developer-info mt-4 pt-3">
                             <div class="d-flex align-items-center">
-                                <img src={sumitImage} alt="Yamini Sharma" class="rounded-circle me-3" width={'100%'} />
+                                <img src={sumitImage} alt="Sumit Tiwari" class="rounded-circle me-3" width={'100%'} />
                             </div><p class="mb-1 text-muted">Written by:</p><p class="mb-0 fw-semibold">Sumit Tiwari, Senior Developer
                                 <br />  <a href="https://www.linkedin.com/in/chander-kant-9aa727222/" target="_blank" rel="noopener noreferrer" class="purple-text text-decoration-underline">View LinkedIn Profile</a></p>
                         </div>
@@ -90,7 +90,7 @@ function SalesforceRevenueCloudSidebar() {
         
                         {/* img container */}
                         <div className="zoom-img mt-5 rounded-4">
-                            <img src={img2} className="" width={'100%'} />
+                            <img alt="" src={img2} className="" width={'100%'} />
                         </div>
     
     </div>

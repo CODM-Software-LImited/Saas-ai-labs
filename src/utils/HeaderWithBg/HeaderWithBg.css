@@ -5,7 +5,8 @@
     background-color: #d1f0f8;
 }
 
-.S_firstSection_Container h3{
+.S_firstSection_Container h3,
+.S_firstSection_Container .page-header-title{
     font-size: 38px;
     font-weight: 700;
     color: #111827;
@@ -16,7 +17,8 @@
 
 
 @media (max-width:578px){
-    .S_firstSection_Container h3{
+    .S_firstSection_Container h3,
+    .S_firstSection_Container .page-header-title{
     font-size: 26px !important;
 }
 }

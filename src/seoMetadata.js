@@ -10,7 +10,7 @@ const seoMetadata = {
  
   about: {
     title: "About CODM Software | Expert Salesforce & AI Solutions Partner",
-    description: "Learn about CODM Software - a trusted Salesforce partner specializing in CRM development, AI solutions, and enterprise software innovation since 2015.",
+    description: "Learn about CODM Software - a trusted Salesforce partner specializing in CRM development, AI solutions, and enterprise software innovation since 2023.",
     url: "https://codmsoftware.co.uk/about",
     image: "https://codmsoftware.co.uk/images/about-hero.jpg",
     keywords: "About CODM Software, Salesforce partner, CRM experts, software development company, AI solutions provider, enterprise software"

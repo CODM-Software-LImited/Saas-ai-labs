@@ -195,7 +195,7 @@ function ManufacturingCloud_First() {
                         <ServiceSidebar />
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} width={'100%'} />
+                            <img alt="" src={img2} width={'100%'} />
                         </div>
 
                         <div className="zoom-img mt-5 rounded-4 border">

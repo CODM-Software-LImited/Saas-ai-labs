@@ -62,7 +62,7 @@ function SSOSidebar() {
         
                         <div class="developer-info mt-4 pt-3">
                             <div class="d-flex align-items-center">
-                                <img src={PriyaImage} alt="Yamini Sharma" class="rounded-circle me-3" width={'100%'} />
+                                <img src={PriyaImage} alt="Priya Kumari" class="rounded-circle me-3" width={'100%'} />
                             </div>
                             <p class="mb-1 text-muted">Written by:</p><p class="mb-0 fw-semibold">Priya Kumari , Software Engineer
                                 <br />  <a href="https://www.linkedin.com/in/priyakumari000/ " target="_blank" rel="noopener noreferrer" class="purple-text text-decoration-underline">View LinkedIn Profile</a></p>
@@ -93,7 +93,7 @@ function SSOSidebar() {
         
                         {/* img container */}
                         <div className="zoom-img mt-5 rounded-4">
-                            <img src={HowSsoWorks} className="" width={'100%'} />
+                            <img alt="How SSO works in Salesforce" src={HowSsoWorks} className="" width={'100%'} />
                         </div>
                          </div>
   )

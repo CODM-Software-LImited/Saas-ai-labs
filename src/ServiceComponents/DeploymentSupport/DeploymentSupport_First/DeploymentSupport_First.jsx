@@ -226,7 +226,7 @@ function DeploymentSupport_First() {
                         <S_rightSidebarDataDevelopment />
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img4} width={'100%'} />
+                            <img alt="Azure Features" src={img4} width={'100%'} />
                         </div>
 
                         <div className="pt-3">
@@ -264,7 +264,7 @@ function DeploymentSupport_First() {
 
                     <div>
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img5} width={'100%'} />
+                            <img alt="Bitbucket" src={img5} width={'100%'} />
                         </div>
                     </div>
                 </div>

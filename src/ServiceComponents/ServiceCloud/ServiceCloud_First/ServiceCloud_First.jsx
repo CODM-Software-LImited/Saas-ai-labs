@@ -56,7 +56,7 @@ function ServiceCloud_First() {
                             content={
                                 <>
                                     <p>
-                                        Salesforce Service Cloud is a customer relationship management (CRM) platform.That help  designed to enhance and automate customer service and support interactions. It centralizes customer data and service tools into one interface, providing service reps with a complete view of the customer's history. This helps prevent repetitive converations and enables faster, more personalized service.It include omnichannel support, AI powered assistance, and automation tools to improve service rep productivity, boost customer satisfaction, and lower service costs. It supports various use cases like highvolume case management, self service, and field service operations.
+                                        Salesforce Service Cloud is a customer relationship management (CRM) platform.That help  designed to enhance and automate customer service and support interactions. It centralizes customer data and service tools into one interface, providing service reps with a complete view of the customer's history. This helps prevent repetitive conversations and enables faster, more personalized service.It include omnichannel support, AI powered assistance, and automation tools to improve service rep productivity, boost customer satisfaction, and lower service costs. It supports various use cases like high-volume case management, self service, and field service operations.
                                     </p>
                                 </>
                             }
@@ -232,20 +232,20 @@ function ServiceCloud_First() {
                         </div>
 
                         {/* <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'} />
+                            <img alt="Salesforce Service Cloud" src={img2} className="" width={'100%'} />
                         </div> */}
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img3} className="" width={'100%'} />
+                            <img alt="Business person looking finance graphs" src={img3} className="" width={'100%'} />
                         </div>
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img4} className="" width={'100%'} />
+                            <img alt="Salesforce Service Cloud features" src={img4} className="" width={'100%'} />
                             <p className="pt-3 text-center">Salesforce Service Cloud Features </p>
                         </div>
 
                         <div className="zoom-img mt-5 rounded-4 border mb-3">
-                            <img src={img5} className="" width={'100%'} />
+                            <img alt="Omnichannel Customer Service" src={img5} className="" width={'100%'} />
                             <p className="pt-3 text-center">Omnichannel Support</p>
                         </div>
 

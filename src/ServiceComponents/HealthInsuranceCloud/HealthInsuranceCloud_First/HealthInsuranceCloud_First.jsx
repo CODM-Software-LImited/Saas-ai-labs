@@ -257,11 +257,11 @@ function HealthInsuranceCloud_First() {
                         {/* need to create different componets with useState */}
                         <ServiceSidebar/>
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'} />
+                            <img alt="Healthcare specific role" src={img2} className="" width={'100%'} />
                         </div>
 
                          <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img3} className="" width={'100%'} />
+                            <img alt="Agentforce Industries Health" src={img3} className="" width={'100%'} />
                         </div>
                     </div>
 

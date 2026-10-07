@@ -28,9 +28,9 @@ function GCloudSuppliersBlog_First() {
                         />
 
                         {/* H1 + Intro */}
-                        <h1 className="HeadingContent_heading my-3 pt-2">
+                        <h2 className="h1 HeadingContent_heading my-3 pt-2">
                             G&#8209;Cloud Framework Suppliers in the UK: How CODM Can Help with Cloud Support
-                        </h1>
+                        </h2>
                         <div className="HeadingContent_para mb-0">
                             <p>
                                 Finding the right cloud support partner is an important decision for public

@@ -41,7 +41,7 @@ function AgentforceAISidebar() {
         
                         <div class="developer-info mt-4 pt-3">
                             <div class="d-flex align-items-center">
-                                <img src={hardik} alt="hardik Sharma" class="rounded-circle me-3" width={'100%'} />
+                                <img src={hardik} alt="Hardik Sharma" class="rounded-circle me-3" width={'100%'} />
                             </div><p class="mb-1 text-muted">Written by:</p><p class="mb-0 fw-semibold">Hardik Sharma, LLM Engineer
                                 <br />  <a href="https://www.linkedin.com/in/hardik-sharma-374b58206/" target="_blank" rel="noopener noreferrer" class="purple-text text-decoration-underline">View LinkedIn Profile</a></p>
                         </div>
@@ -71,16 +71,16 @@ function AgentforceAISidebar() {
         
                         {/* img container */}
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'}/>
+                            <img alt="" src={img2} className="" width={'100%'}/>
                             <p className='text-center pt-3'>Salesforce project where Agentforce is deploying a Sales Operation Manager app</p>
                         </div>
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img2} className="" width={'100%'}/>
+                            <img alt="" src={img2} className="" width={'100%'}/>
                         </div>
 
                         <div className="zoom-img mt-5 rounded-4 border">
-                            <img src={img3} className="" width={'100%'}/>
+                            <img alt="Agentforce Vibes" src={img3} className="" width={'100%'}/>
                         </div>
             
     </div>

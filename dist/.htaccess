@@ -1,0 +1,61 @@
+# codmsoftware.co.uk (Hostinger / LiteSpeed, Apache-compatible).
+# Deployed from dist/ (Vite copies public/ into dist/ on build).
+#
+# URL scheme: no trailing slash. Each route is prerendered to a .html file by
+# scripts/prerender.mjs (/about -> about.html, /ItServices/x -> ItServices/x.html).
+# Anything not prerendered falls back to the SPA shell (200.html).
+
+Options -MultiViews -Indexes
+DirectorySlash Off
+DirectoryIndex index.html
+
+# MIME Type Fixes for JavaScript and WebAssembly
+AddType application/javascript .js .mjs
+AddType application/wasm .wasm
+AddType text/plain .txt
+AddType application/xml .xml
+
+RewriteEngine On
+RewriteBase /
+
+# 1. One host: www -> https://codmsoftware.co.uk (301). HTTP -> HTTPS is
+#    already handled by Hostinger ("Force HTTPS"); doing it here as well can
+#    loop behind the CDN.
+RewriteCond %{HTTP_HOST} ^www\.codmsoftware\.co\.uk$ [NC]
+RewriteRule ^(.*)$ https://codmsoftware.co.uk/$1 [R=301,L]
+
+# 2. Old / duplicate URLs (keep in sync with `redirects` in src/data/site-routes.js).
+RewriteCond %{THE_REQUEST} \s/+index(\.html)?[\s?/] [NC]
+RewriteRule ^index(\.html)?/?$ / [R=301,L]
+RewriteRule ^blog/g-cloud-framework-suppliers-uk/?$ /blog/g-cloud15 [R=301,L]
+
+# 3. Trailing slash -> no trailing slash (except the root).
+RewriteCond %{REQUEST_URI} !^/$
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# 4. Direct requests for the .html files -> clean URL.
+RewriteCond %{THE_REQUEST} \s/+([^\s?]+)\.html[\s?] [NC]
+RewriteCond %1 !^(index|200|404)$
+RewriteRule ^ /%1 [R=301,L]
+
+# 5. Serve prerendered HTML: /about -> about.html
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# 6. Real files (assets, robots.txt, sitemap.xml, llms.txt) are served as-is.
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# 7. Everything else except the homepage (index.html via DirectoryIndex):
+#    SPA shell, noindex until the app renders a known route.
+RewriteCond %{REQUEST_URI} !^/$
+RewriteRule ^ 200.html [L]
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  <FilesMatch "^(llms\.txt|robots\.txt|sitemap\.xml)$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+</IfModule>
