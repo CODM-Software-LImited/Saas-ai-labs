@@ -1,7 +1,6 @@
 import img1 from "../../assets/imgs/features-3/vision-hero.jpg";
 import './Hero4.css';
 import CountUp from "../../utils/CountUp/CountUp";
-import FreeQuote from "./FreeQuote";
 import DotBtn from "../../utils/Dotbtn/Dotbtn";
 
 const pillars = [
@@ -74,7 +73,6 @@ function Hero4() {
               </ul>
 
               <div className="hero4-actions">
-                <FreeQuote />
                 <a
                   href="/HowWeWork.pdf"
                   className="hero4-ghostbtn"

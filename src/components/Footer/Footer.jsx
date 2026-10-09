@@ -45,7 +45,12 @@ const offices = [
   { flag: flagUK, text: "Edmund House, 12-22 Newhall St, Birmingham B3 3AS" },
   { flag: flagUK, text: "71-75 Shelton Street, Covent Garden, London WC2H 9JQ" },
   { flag: flagUS, text: "4501 Nightland Dr, Plano, TX 75024, USA" },
+  { flag: flagIN, text: "IHDP Business Park, Plot 7, 2nd Floor, Sector 127, Noida 201304, India" },
 ];
+
+// The UK company number belongs on codmsoftware.co.uk only, not on the
+// SaaS AI Labs subdomain.
+const isMainDomain = brand.key === "codm_Logo";
 
 function Footer() {
   return (
@@ -181,7 +186,9 @@ function Footer() {
                   </li>
                 ))}
               </ul>
-              <p className="footer-company-no">Company number 15333870</p>
+              {isMainDomain && (
+                <p className="footer-company-no">Company number 15333870</p>
+              )}
             </div>
           </div>
         </div>

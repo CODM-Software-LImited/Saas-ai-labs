@@ -147,6 +147,15 @@
   -webkit-backdrop-filter: blur(8px);
 }
 
+/* The caption pill on its own (no photo behind it). */
+.cf-note {
+  position: static;
+  display: inline-flex;
+  margin-top: 2.2rem;
+  max-width: 460px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
 .cf-photo-dot {
   width: 8px;
   height: 8px;

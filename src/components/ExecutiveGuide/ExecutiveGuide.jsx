@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./ExecutiveGuide.css";
 
 const WEB_TO_LEAD_URL =
-  "https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DAe000009CRc3";
+  "https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DPu00000D6YMA";
 
 function GuideFormModal({ isOpen, onClose }) {
   const [submitted, setSubmitted] = useState(false);
@@ -65,13 +65,13 @@ function GuideFormModal({ isOpen, onClose }) {
               Where should we send your copy?
             </h4>
             <form action={WEB_TO_LEAD_URL} method="POST" onSubmit={handleSubmit}>
-              <input type="hidden" name="oid" value="00DAe000009CRc3" />
+              <input type="hidden" name="oid" value="00DPu00000D6YMA" />
               <input
                 type="hidden"
                 name="retURL"
                 value="http://www.codmsoftware.co.uk"
               />
-              <input type="hidden" name="lead_source" value="Website" />
+              <input type="hidden" name="lead_source" value="Website Guide" />
               <input
                 type="hidden"
                 name="description"

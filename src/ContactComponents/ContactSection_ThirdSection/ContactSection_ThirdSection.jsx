@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './ContactSection_ThirdSection.css';
-import teamImg from '../../assets/imgs/Contact/contact-team.jpg';
 
 // Same Salesforce Web-to-Lead endpoint the Executive Guide form uses.
 // NOTE: test.salesforce.com is the SANDBOX org. Switch to
 // https://webto.salesforce.com/... before production go-live.
+const SALESFORCE_OID = '00DPu00000D6YMA';
 const WEB_TO_LEAD_URL =
-  'https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DAe000009CRc3';
-const SALESFORCE_OID = '00DAe000009CRc3';
+  `https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=${SALESFORCE_OID}`;
 
 const topics = [
   'Salesforce implementation',
@@ -98,17 +97,9 @@ function ContactSection_ThirdSection() {
               ))}
             </ol>
 
-            <div className="cf-photo" data-aos="fade-up">
-              <img
-                src={teamImg}
-                alt="The CODM Software consulting team"
-                className="cf-photo-img"
-                loading="lazy"
-              />
-              <div className="cf-photo-caption">
-                <span className="cf-photo-dot"></span>
-                Your message goes straight to the delivery team
-              </div>
+            <div className="cf-photo-caption cf-note" data-aos="fade-up">
+              <span className="cf-photo-dot"></span>
+              Your message goes straight to the delivery team
             </div>
           </div>
 
@@ -139,8 +130,8 @@ function ContactSection_ThirdSection() {
               ) : (
                 <form action={WEB_TO_LEAD_URL} method="POST" onSubmit={handleSubmit} noValidate={false}>
                   <input type="hidden" name="oid" value={SALESFORCE_OID} />
-                  <input type="hidden" name="retURL" value="https://codmsoftware.co.uk/contact" />
-                  <input type="hidden" name="lead_source" value="Website" />
+                  <input type="hidden" name="retURL" value="" />
+                  <input type="hidden" name="lead_source" value="Website contact" />
 
                   <div className="cf-card-head">
                     <h3 className="cf-card-title">Get in touch</h3>
